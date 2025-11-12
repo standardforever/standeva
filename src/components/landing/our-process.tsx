@@ -129,7 +129,7 @@ const OurProcess: React.FC = () => {
 	const currentTrack = integrationTracks[activeTrack];
 
 	return (
-		<section className="py-20 bg-[linear-gradient(135deg,#0B0F19_0%,#0C2258_50%,#0B0F19_100%)] text-white">
+		<section className="py-20 bg-[linear-gradient(135deg,#0B0F19_0%,#0C2258_50%,#0B0F19_100%)] text-white overflow-x-hidden">
 			<div className="container mx-auto px-6">
 				<motion.div
 					ref={headerRef}

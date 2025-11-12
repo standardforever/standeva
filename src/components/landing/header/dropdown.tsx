@@ -125,6 +125,13 @@ const dropdownContent: DropdownContentMap = {
 	Solutions: {
 		sections: [
 			{
+				title: "Services",
+				items: [
+					{ label: "AI Consulting", href: "/solutions/ai-consulting" },
+					{ label: "ClickBuy", href: "/solutions/clickbuy" },
+				],
+			},
+			{
 				title: "By Industry",
 				items: [
 					{ label: "Healthcare", href: "/solutions/healthcare" },

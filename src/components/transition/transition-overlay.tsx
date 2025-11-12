@@ -3,15 +3,17 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Services from "@/components/services/services";
-// import FeaturedAPIs from "@/components/featured-apis/featured-apis";
-import OurProcess from "@/components/process/our-process";
-import WhyChooseUs from "@/components/why-choose-us/why-choose-us";
-import UseCases from "@/components/use-cases/use-cases";
-import SuccessStories from "@/components/success-stories/success-stories";
-import FAQ from "@/components/faq/faq";
-import CTASection from "@/components/cta/cta-section";
-import Footer from "@/components/footer/footer";
+import Services from "@/components/landing/services";
+// import FeaturedAPIs from "@/components/landing/featured-apis"; // Commented out as requested
+import OurProcess from "@/components/landing/our-process";
+import WhyChooseUs from "@/components/landing/why-choose-us";
+import UseCases from "@/components/landing/use-cases";
+import SuccessStories from "@/components/landing/success-stories";
+import Faq from "@/components/landing/faq";
+import CtaSection from "@/components/landing/cta-section";
+import Footer from "@/components/landing/footer";
+// import Process from "@/components/landing/process";
+// import TrainingPrograms from "@/components/landing/training-programs";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -71,11 +73,13 @@ const TransitionOverlay: React.FC = () => {
 			<Services />
 			{/* <FeaturedAPIs /> */}
 			<OurProcess />
+			{/* <Process /> */}
 			<WhyChooseUs />
 			<UseCases />
 			<SuccessStories />
-			<FAQ />
-			<CTASection />
+			{/* <TrainingPrograms /> */}
+			<Faq />
+			<CtaSection />
 			<Footer />
 		</>
 	);

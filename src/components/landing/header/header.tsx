@@ -65,7 +65,7 @@ const Header: React.FC = () => {
 		{ name: "Solutions", hasDropdown: true },
 		{ name: "Pricing", href: "#pricing" },
 		{ name: "Developers", hasDropdown: true },
-		{ name: "Company", href: "#company" },
+		{ name: "Company", href: "/company/about" },
 	];
 
 	const handleMouseEnter = (itemName: string) => {

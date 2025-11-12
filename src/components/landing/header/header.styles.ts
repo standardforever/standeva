@@ -6,6 +6,8 @@ export const HeaderContainer = styled(motion.header)`
 	top: 0;
 	left: 0;
 	right: 0;
+	width: 100vw;
+	overflow-x: hidden;
 	z-index: 1000;
 	background: rgba(15, 23, 42, 0.95);
 	backdrop-filter: blur(12px);
@@ -192,7 +194,6 @@ export const DropdownContainer = styled(motion.div)`
 	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 	z-index: 1000;
 `;
-
 
 export const DropdownColumn = styled.div`
 	display: flex;

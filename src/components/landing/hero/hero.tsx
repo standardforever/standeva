@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useEffect, useRef, useState } from "react";
 import { motion, Variants } from "framer-motion";
@@ -583,8 +583,9 @@ const Hero: React.FC = () => {
 						variants={subtitleVariants}
 						initial="hidden"
 						animate="visible">
-						Ready-made APIs for AI, product sourcing, integrations, and more.
-						Or request custom solutions built specifically for your platform.
+						Ready-made APIs for AI, product sourcing, integrations,
+						and more. Or request custom solutions built specifically
+						for your platform.
 					</HeroSubtitle>
 
 					<HeroCTAGroup
@@ -617,8 +618,20 @@ const Hero: React.FC = () => {
 							fontSize: "0.9rem",
 							color: "#94a3b8",
 						}}>
-						<div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-							<div style={{ width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#10b981" }} />
+						<div
+							style={{
+								display: "flex",
+								alignItems: "center",
+								gap: "0.5rem",
+							}}>
+							<div
+								style={{
+									width: "8px",
+									height: "8px",
+									borderRadius: "50%",
+									backgroundColor: "#10b981",
+								}}
+							/>
 							<span>99.9% Uptime</span>
 						</div>
 						<span style={{ color: "#475569" }}>•</span>
@@ -745,4 +758,4 @@ const Hero: React.FC = () => {
 	);
 };
 
-export default Hero
+export default Hero;
