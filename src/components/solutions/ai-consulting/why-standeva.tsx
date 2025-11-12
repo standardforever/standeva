@@ -32,7 +32,7 @@ const WhyStandeva: React.FC = () => {
 							Decades of Business Transformation Expertise:
 						</h4>
 						<p className="text-lg text-slate-300 leading-relaxed">
-							True solutions come from experience, not just technology. With a legacy of over 25 years in change management and overhauling complex financial and ERP systems, we possess a profound understanding of your operational hurdles. We don't simply install AI; we strategically deploy it with seasoned insight to guarantee genuine and lasting transformation.
+							True solutions come from experience, not just technology. With a legacy of over 25 years in change management and overhauling complex financial and ERP systems, we possess a profound understanding of your operational hurdles. We don&apos;t simply install AI; we strategically deploy it with seasoned insight to guarantee genuine and lasting transformation.
 						</p>
 					</motion.div>
 
@@ -46,7 +46,7 @@ const WhyStandeva: React.FC = () => {
 							An ROI-Centric Partnership:
 						</h4>
 						<p className="text-lg text-slate-300 leading-relaxed">
-							Our confidence in delivering concrete value is reflected in our "Invest to Gain" model. This unique approach aligns our success with the quantifiable savings you achieve. We are invested in your positive outcomes, creating a partnership where our profitability is contingent on yours—a truly symbiotic relationship.
+							Our confidence in delivering concrete value is reflected in our &quot;Invest to Gain&quot; model. This unique approach aligns our success with the quantifiable savings you achieve. We are invested in your positive outcomes, creating a partnership where our profitability is contingent on yours—a truly symbiotic relationship.
 						</p>
 					</motion.div>
 
