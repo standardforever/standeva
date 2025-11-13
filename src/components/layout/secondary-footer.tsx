@@ -64,15 +64,15 @@ const SecondaryFooter: React.FC = () => {
 					<div className="col-span-2 md:col-span-3 lg:col-span-1">
 						<div className="flex items-center gap-2 mb-4">
 							<div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-								<span className="text-white font-bold text-lg">S</span>
+								<span className="text-white font-bold text-lg">C</span>
 							</div>
-							<span className="text-xl font-bold">Standeva</span>
+							<span className="text-xl font-bold">Clickbuy</span>
 						</div>
 						<p className="text-slate-400 text-sm leading-relaxed mb-4">
 							Building scalable AI solutions that empower enterprises to automate, adapt, and accelerate.
 						</p>
 						<p className="text-slate-400 text-sm">
-							hello@standeva.com
+							hello@clickbuy.com
 						</p>
 					</div>
 
@@ -98,7 +98,7 @@ const SecondaryFooter: React.FC = () => {
 
 				<div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
 					<p className="text-slate-400 text-sm">
-						© 2025 Standeva. All rights reserved.
+						© 2025 Clickbuy. All rights reserved.
 					</p>
 
 					<div className="flex items-center gap-4">

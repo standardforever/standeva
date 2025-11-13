@@ -9,7 +9,7 @@ const comparisons = [
 		id: "time-to-market",
 		icon: Clock,
 		title: "Time to Market",
-		withStandeva: "Minutes to Hours",
+		withClickbuy: "Minutes to Hours",
 		buildingYourself: "Weeks to Months",
 		description:
 			"Integrate production-ready APIs instantly instead of spending months on development, testing, and deployment.",
@@ -19,7 +19,7 @@ const comparisons = [
 		id: "cost",
 		icon: DollarSign,
 		title: "Cost Efficiency",
-		withStandeva: "Pay per Use",
+		withClickbuy: "Pay per Use",
 		buildingYourself: "Full Development Team",
 		description:
 			"Eliminate hiring, infrastructure, and maintenance costs. Pay only for what you use with transparent, scalable pricing.",
@@ -29,7 +29,7 @@ const comparisons = [
 		id: "reliability",
 		icon: Shield,
 		title: "Reliability & Support",
-		withStandeva: "99.9% Uptime SLA",
+		withClickbuy: "99.9% Uptime SLA",
 		buildingYourself: "Your Responsibility",
 		description:
 			"Enterprise-grade infrastructure with 24/7 monitoring, dedicated support, and guaranteed uptime. We handle the complexity.",
@@ -39,7 +39,7 @@ const comparisons = [
 		id: "scalability",
 		icon: TrendingUp,
 		title: "Instant Scalability",
-		withStandeva: "Auto-scales Globally",
+		withClickbuy: "Auto-scales Globally",
 		buildingYourself: "Manual Scaling Required",
 		description:
 			"Handle traffic spikes effortlessly. Our infrastructure scales automatically from 10 to 10 million requests without intervention.",
@@ -74,11 +74,11 @@ const ComparisonCard: React.FC<{
 					<div className="flex items-center gap-2 mb-2">
 						<Check className="w-5 h-5 text-[#34D399]" />
 						<span className="text-sm font-semibold text-[#34D399] uppercase tracking-wide">
-							With Standeva
+							With Clickbuy
 						</span>
 					</div>
 					<p className="text-lg font-bold text-white">
-						{comparison.withStandeva}
+						{comparison.withClickbuy}
 					</p>
 				</div>
 
@@ -104,7 +104,7 @@ const WhyChooseUs: React.FC = () => {
 			<div className="container mx-auto px-6">
 				<div className="text-center mb-16">
 					<p className="text-sm uppercase tracking-wide text-[#60A5FA] font-semibold mb-4">
-						THE STANDEVA ADVANTAGE
+						THE CLICKBUY ADVANTAGE
 					</p>
 					<h2 className="text-4xl md:text-5xl font-bold mb-6">
 						Why Choose Our APIs?

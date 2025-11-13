@@ -94,10 +94,10 @@ const Footer: React.FC = () => {
 						<div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
 							<div className="w-10 h-10 bg-linear-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
 								<span className="text-white font-bold text-xl">
-									S
+									C
 								</span>
 							</div>
-							<span className="text-2xl font-bold">Standeva</span>
+							<span className="text-2xl font-bold">Clickbuy</span>
 						</div>
 
 						<p className="text-slate-400 leading-relaxed mb-6 max-w-sm">
@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
 						<div className="space-y-3 mb-6">
 							<div className="flex items-center gap-3 text-slate-400">
 								<Mail size={16} />
-								<span>hello@standeva.com</span>
+								<span>hello@clickbuy.com</span>
 							</div>
 							<div className="flex items-center gap-3 text-slate-400">
 								<Phone size={16} />
@@ -192,7 +192,7 @@ const Footer: React.FC = () => {
 				{/* Bottom Section */}
 				<div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
 					<p className="text-slate-400 text-sm">
-						© 2025 Standeva. All rights reserved.
+						© 2025 Clickbuy. All rights reserved.
 					</p>
 
 					{/* Product Hunt Badge Placeholder */}

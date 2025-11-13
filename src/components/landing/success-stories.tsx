@@ -30,7 +30,7 @@ const caseStudies = [
 		avatar: "👩‍💼",
 		rating: 5,
 		testimonial:
-			"We needed sentiment analysis for customer feedback but building an ML pipeline would have taken months. Standeva's AI/ML APIs got us production-ready features in days. The documentation and support made integration seamless.",
+			"We needed sentiment analysis for customer feedback but building an ML pipeline would have taken months. Clickbuy's AI/ML APIs got us production-ready features in days. The documentation and support made integration seamless.",
 		apiUsed: "AI/ML APIs",
 		results: [
 			"Live in 3 days",
@@ -47,7 +47,7 @@ const caseStudies = [
 		avatar: "👨‍🚀",
 		rating: 5,
 		testimonial:
-			"Our app needed custom backend APIs with real-time sync. Standeva built exactly what we needed in 6 weeks. The APIs are fast, reliable, and the custom solution fits our unique requirements perfectly.",
+			"Our app needed custom backend APIs with real-time sync. Clickbuy built exactly what we needed in 6 weeks. The APIs are fast, reliable, and the custom solution fits our unique requirements perfectly.",
 		apiUsed: "Custom Solution",
 		results: ["Launched in 6 weeks", "99.9% uptime", "50K+ active users"],
 		industry: "Mobile App",
@@ -74,7 +74,7 @@ const SuccessStories: React.FC = () => {
 					</h2>
 					<p className="text-lg text-[#CBD5E1] max-w-3xl mx-auto leading-relaxed">
 						See how companies are shipping faster and scaling
-						effortlessly with Standeva&apos;s APIs.
+						effortlessly with Clickbuy&apos;s APIs.
 					</p>
 				</div>
 

@@ -62,7 +62,7 @@ const FAQ: React.FC = () => {
 					</h2>
 					<p className="text-lg text-[#CBD5E1] max-w-3xl mx-auto">
 						Everything you need to know about integrating and using
-						Standeva&apos;s APIs
+						Clickbuy&apos;s APIs
 					</p>
 				</div>
 

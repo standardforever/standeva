@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Standeva",
-  description: "Standeva Landing Page",
+  title: "Clickbuy",
+  description: "Clickbuy Landing Page",
 };
 
 export default function RootLayout({

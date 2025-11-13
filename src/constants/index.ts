@@ -86,9 +86,9 @@ export const heroContent = {
 		},
 		{
 			title: "Integration",
-			code: `import { StandevaAI } from '@standeva/sdk'
+			code: `import { ClickbuyAI } from '@clickbuy/sdk'
 
-const ai = new StandevaAI({
+const ai = new ClickbuyAI({
   apiKey: process.env.API_KEY
 })
 
@@ -100,7 +100,7 @@ const result = await ai.generate({
 };
 
 export const headerContent = {
-	logoText: "Standeva",
+	logoText: "Clickbuy",
 	navItems: [
 		{ name: "Platform", hasDropdown: true },
 		{ name: "Solutions", hasDropdown: true },
