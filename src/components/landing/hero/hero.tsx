@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -23,6 +24,7 @@ import {
 	Server,
 	Terminal,
 } from "lucide-react";
+import Link from "next/link";
 const techIcons = [
 	{ name: "React", icon: Code, color: "#3b82f6" },
 	{ name: "Node.js", icon: Server, color: "#10b981" },
@@ -134,18 +136,16 @@ const Hero: React.FC = () => {
 					parallaxSpeed * 0.3
 				}px)`;
 
-				const curves = heroSectionRef.current.querySelector(
-					"[data-curves]"
-				);
+				const curves =
+					heroSectionRef.current.querySelector("[data-curves]");
 				if (curves) {
 					(curves as HTMLElement).style.transform = `translateY(${
 						parallaxSpeed * 0.2
 					}px)`;
 				}
 
-				const particleContainer = heroSectionRef.current.querySelector(
-					"[data-particles]"
-				);
+				const particleContainer =
+					heroSectionRef.current.querySelector("[data-particles]");
 				if (particleContainer) {
 					(
 						particleContainer as HTMLElement
@@ -434,7 +434,7 @@ const Hero: React.FC = () => {
 	const CodeBlock: React.FC = () => (
 		<div
 			className="absolute z-20 w-full max-w-[380px] rounded-2xl border border-blue-500/40 bg-slate-900/95 p-6 font-mono text-xs text-slate-100 shadow-2xl backdrop-blur-2xl sm:text-sm"
-			style={{ top: "68%", right: "11%" }}>
+			style={{ top: "75%", right: "-8%" }}>
 			<div
 				ref={codeTitleRef}
 				className="mb-3 text-sm font-bold uppercase tracking-wide text-blue-400">
@@ -452,7 +452,7 @@ const Hero: React.FC = () => {
 	return (
 		<section
 			ref={heroSectionRef}
-			className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 py-24">
+			className="relative flex min-h-screen items-center overflow-hidden bg-linear-to-br from-slate-950 via-slate-900 to-slate-800 py-24">
 			<ColorTransitionBox />
 
 			<motion.svg
@@ -466,8 +466,16 @@ const Hero: React.FC = () => {
 						y1="0%"
 						x2="100%"
 						y2="100%">
-						<stop offset="0%" stopColor="#3b82f6" stopOpacity="0.1" />
-						<stop offset="100%" stopColor="#8b5cf6" stopOpacity="0.2" />
+						<stop
+							offset="0%"
+							stopColor="#3b82f6"
+							stopOpacity="0.1"
+						/>
+						<stop
+							offset="100%"
+							stopColor="#8b5cf6"
+							stopOpacity="0.2"
+						/>
 					</linearGradient>
 				</defs>
 				<motion.path
@@ -529,7 +537,7 @@ const Hero: React.FC = () => {
 						<br />
 						<span
 							ref={platformTextRef}
-							className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+							className="bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
 							Platform
 						</span>
 					</motion.h1>
@@ -539,8 +547,9 @@ const Hero: React.FC = () => {
 						initial="hidden"
 						animate="visible"
 						className="text-lg text-slate-300 sm:text-xl">
-						Ready-made APIs for AI, product sourcing, integrations, and more. Or
-						request custom solutions built specifically for your platform.
+						Ready-made APIs for AI, product sourcing, integrations,
+						and more. Or request custom solutions built specifically
+						for your platform.
 					</motion.p>
 
 					<motion.div
@@ -551,7 +560,7 @@ const Hero: React.FC = () => {
 						<motion.button
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}
-							className="rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-500/30 transition hover:opacity-90">
+							className="rounded-xl bg-linear-to-r from-blue-500 to-purple-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-500/30 transition hover:opacity-90">
 							Browse APIs
 						</motion.button>
 						<motion.button
@@ -586,7 +595,9 @@ const Hero: React.FC = () => {
 				<div
 					ref={hexagonContainerRef}
 					className="relative h-[500px] w-full md:h-[580px]">
-					<svg viewBox="0 0 600 500" className="absolute inset-0 h-full w-full">
+					<svg
+						viewBox="0 0 600 500"
+						className="absolute inset-0 h-full w-full">
 						<defs>
 							<linearGradient
 								id="lineGrad"
@@ -594,9 +605,21 @@ const Hero: React.FC = () => {
 								y1="0%"
 								x2="100%"
 								y2="0%">
-								<stop offset="0%" stopColor="#3b82f6" stopOpacity="0.3" />
-								<stop offset="50%" stopColor="#8b5cf6" stopOpacity="0.6" />
-								<stop offset="100%" stopColor="#3b82f6" stopOpacity="0.3" />
+								<stop
+									offset="0%"
+									stopColor="#3b82f6"
+									stopOpacity="0.3"
+								/>
+								<stop
+									offset="50%"
+									stopColor="#8b5cf6"
+									stopOpacity="0.6"
+								/>
+								<stop
+									offset="100%"
+									stopColor="#3b82f6"
+									stopOpacity="0.3"
+								/>
 							</linearGradient>
 						</defs>
 						<motion.line
@@ -646,7 +669,12 @@ const Hero: React.FC = () => {
 
 					<motion.div
 						className="absolute flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white backdrop-blur-xl"
-						style={{ top: "0%", right: "50%", width: "140px", height: "60px" }}
+						style={{
+							top: "0%",
+							right: "50%",
+							width: "140px",
+							height: "60px",
+						}}
 						variants={floatingVariants}
 						animate="animate">
 						<Terminal className="h-5 w-5" />
@@ -655,7 +683,12 @@ const Hero: React.FC = () => {
 
 					<motion.div
 						className="absolute flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white backdrop-blur-xl"
-						style={{ bottom: "15%", left: "5%", width: "160px", height: "60px" }}
+						style={{
+							bottom: "15%",
+							left: "5%",
+							width: "160px",
+							height: "60px",
+						}}
 						variants={floatingVariants}
 						animate="animate"
 						transition={{ delay: 1 }}>
@@ -665,7 +698,12 @@ const Hero: React.FC = () => {
 
 					<motion.div
 						className="absolute flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white backdrop-blur-xl"
-						style={{ top: "45%", right: "25%", width: "130px", height: "60px" }}
+						style={{
+							top: "45%",
+							right: "25%",
+							width: "130px",
+							height: "60px",
+						}}
 						variants={floatingVariants}
 						animate="animate"
 						transition={{ delay: 2 }}>
