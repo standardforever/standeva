@@ -24,7 +24,7 @@ import {
 	Server,
 	Terminal,
 } from "lucide-react";
-import Link from "next/link";
+
 const techIcons = [
 	{ name: "React", icon: Code, color: "#3b82f6" },
 	{ name: "Node.js", icon: Server, color: "#10b981" },

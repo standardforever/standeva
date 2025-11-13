@@ -26,7 +26,7 @@ const FullStackSection: React.FC = () => {
 	return (
 		<section
 			id="capabilities"
-			className="py-20 bg-gradient-to-br from-slate-900 via-blue-900/10 to-slate-900 text-white">
+			className="py-20 bg-linear-to-br from-slate-900 via-blue-900/10 to-slate-900 text-white">
 			<div className="container mx-auto px-6">
 				<motion.div
 					className="text-center mb-12"
@@ -38,9 +38,15 @@ const FullStackSection: React.FC = () => {
 						Full Stack AI Solutions, Built for Impact
 					</h2>
 					<p className="text-lg text-slate-300 max-w-4xl mx-auto leading-relaxed mb-8">
-						We help growing companies design and scale AI solutions that deliver measurable impact. From preparing data to deploying production-ready systems, we focus on accelerating results, protecting operations, and driving ROI. Our approach blends strategy, engineering, and compliance so your AI evolves with your business, not against it.
+						We help growing companies design and scale AI solutions
+						that deliver measurable impact. From preparing data to
+						deploying production-ready systems, we focus on
+						accelerating results, protecting operations, and driving
+						ROI. Our approach blends strategy, engineering, and
+						compliance so your AI evolves with your business, not
+						against it.
 					</p>
-					<button className="px-8 py-3 bg-gradient-to-r from-[#2563EB] to-[#7C3AED] text-white font-medium rounded-lg hover:opacity-90 transition inline-flex items-center gap-2">
+					<button className="px-8 py-3 bg-linear-to-r from-[#2563EB] to-[#7C3AED] text-white font-medium rounded-lg hover:opacity-90 transition inline-flex items-center gap-2">
 						Schedule A Call
 						<ArrowRight size={18} />
 					</button>
@@ -56,13 +62,19 @@ const FullStackSection: React.FC = () => {
 								initial={{ opacity: 0, y: 30 }}
 								whileInView={{ opacity: 1, y: 0 }}
 								viewport={{ once: true }}
-								transition={{ duration: 0.6, delay: index * 0.15 }}>
-								<div className="w-14 h-14 bg-gradient-to-r from-[#2563EB] to-[#7C3AED] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+								transition={{
+									duration: 0.6,
+									delay: index * 0.15,
+								}}>
+								<div className="w-14 h-14 bg-linear-to-r from-[#2563EB] to-[#7C3AED] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
 									<Icon size={24} />
 								</div>
 								<h3 className="text-xl font-bold mb-3 flex items-center gap-2">
 									{solution.title}
-									<ArrowRight size={16} className="text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+									<ArrowRight
+										size={16}
+										className="text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity"
+									/>
 								</h3>
 								<p className="text-slate-400 text-sm leading-relaxed">
 									{solution.description}
