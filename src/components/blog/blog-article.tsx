@@ -75,6 +75,31 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 	const [showTOC, setShowTOC] = useState(false);
 	const [readingProgress, setReadingProgress] = useState(0);
 	const [activeHeading, setActiveHeading] = useState("");
+	const themeClasses = isDarkMode
+		? {
+				page: "bg-black text-white",
+				pattern: "opacity-20",
+				header: "bg-black/80 border-slate-800 text-white",
+				panel: "bg-slate-900/40 border border-slate-800",
+				panelSoft: "bg-slate-900/30 border-slate-800",
+				input: "bg-slate-900/50 border-slate-700 text-white placeholder-slate-400",
+				textMuted: "text-slate-400",
+				commentText: "text-slate-200",
+				cardBorder: "border-slate-700/50",
+				chip: "bg-slate-800 border-slate-700 text-slate-300"
+		  }
+		: {
+				page: "bg-slate-50 text-slate-900",
+				pattern: "opacity-5",
+				header: "bg-white/80 border-slate-200 text-slate-900",
+				panel: "bg-white border border-slate-200",
+				panelSoft: "bg-white border-slate-200",
+				input: "bg-white border-slate-300 text-slate-900 placeholder-slate-500",
+				textMuted: "text-slate-500",
+				commentText: "text-slate-700",
+				cardBorder: "border-slate-200",
+				chip: "bg-slate-100 border-slate-200 text-slate-600"
+		  };
 
 	// Load theme preference
 	useEffect(() => {
@@ -311,7 +336,7 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 			animate={{ opacity: 1, y: 0 }}
 			className={`${comment.level === 1 ? "ml-8 mt-4" : "mb-6"}`}
 		>
-			<div className="bg-slate-800/30 backdrop-blur-sm rounded-xl border border-slate-700/50 p-6">
+			<div className={`${themeClasses.panel} backdrop-blur-sm rounded-xl p-6`}>
 				<div className="flex items-start justify-between mb-4">
 					<div className="flex items-center gap-3">
 						<Image
@@ -319,16 +344,16 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 							alt={comment.author.name}
 							width={40}
 							height={40}
-							className="rounded-full"
+							className="rounded-full object-cover"
 						/>
 						<div>
 							<div className="flex items-center gap-2">
-								<h4 className="font-semibold text-white">{comment.author.name}</h4>
+								<h4 className="font-semibold">{comment.author.name}</h4>
 								{comment.author.bio && (
-									<span className="text-xs text-slate-400">• {comment.author.bio}</span>
+									<span className={`text-xs ${themeClasses.textMuted}`}>• {comment.author.bio}</span>
 								)}
 							</div>
-							<p className="text-xs text-slate-400">{comment.createdAt}</p>
+							<p className={`text-xs ${themeClasses.textMuted}`}>{comment.createdAt}</p>
 						</div>
 					</div>
 					<button className="text-slate-400 hover:text-white transition-colors">
@@ -336,7 +361,7 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 					</button>
 				</div>
 
-				<p className="text-slate-300 leading-relaxed mb-4">{comment.content}</p>
+				<p className={`${themeClasses.commentText} leading-relaxed mb-4`}>{comment.content}</p>
 
 				<div className="flex items-center gap-4">
 					<motion.button
@@ -467,19 +492,19 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 	};
 
 	return (
-		<div className={`min-h-screen bg-black text-white ${isDarkMode ? "dark" : "light"}`}>
+		<div className={`min-h-screen ${themeClasses.page} ${isDarkMode ? "dark" : "light"}`}>
 			{/* Background Pattern */}
-			<div className="fixed inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSg1OSwgMTMwLCAyNDYsIDAuMSkiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-20" />
+			<div className={`fixed inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSg1OSwgMTMwLCAyNDYsIDAuMSkiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] ${themeClasses.pattern}`} />
 
 			{/* Article Header */}
 			<motion.header
 				initial={{ opacity: 0, y: -20 }}
 				animate={{ opacity: 1, y: 0 }}
-				className="sticky top-0 z-50 bg-black/80 backdrop-blur-lg border-b border-slate-800"
+				className={`sticky top-0 z-50 backdrop-blur-lg border-b ${themeClasses.header}`}
 			>
 				<div className="container mx-auto px-6 py-4">
 					<div className="flex items-center justify-between">
-						<Link href="/blog" className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+						<Link href="/blog" className={`flex items-center gap-2 ${themeClasses.textMuted} hover:text-blue-400 transition-colors`}>
 							<ArrowLeft size={20} />
 							<span>Back to Blog</span>
 						</Link>
@@ -769,7 +794,7 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 							</h2>
 
 							{/* Comment Form */}
-							<div className="bg-slate-800/30 backdrop-blur-sm rounded-xl border border-slate-700/50 p-6 mb-8">
+							<div className={`${themeClasses.panel} backdrop-blur-sm rounded-xl p-6 mb-8`}>
 								<h3 className="text-xl font-semibold mb-4">Leave a Comment</h3>
 								<div className="flex gap-4">
 									<Image
@@ -777,14 +802,14 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 										alt="You"
 										width={48}
 										height={48}
-										className="rounded-full"
+										className="rounded-full object-cover"
 									/>
 									<div className="flex-1">
 										<textarea
 											value={newComment}
 											onChange={(e) => setNewComment(e.target.value)}
 											placeholder="Share your thoughts..."
-											className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 resize-none"
+											className={`w-full rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 resize-none ${themeClasses.input}`}
 											rows={4}
 										/>
 										<div className="flex justify-end gap-2 mt-4">
