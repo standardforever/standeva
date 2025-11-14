@@ -4,7 +4,7 @@ description: "Outsourcing to VAs was the smart play last decade. The next leap i
 keywords: ["virtual assistants", "AI agents", "agentic AI", "outsourcing", "business process automation", "future of work", "marginal cost", "clickbuy.ai"]
 ---
 
-<image src="../public/blog 3.1.png" alt="Timeline showing shift from in-house teams to VAs to AI agents" />
+<image src="../public/blog-3-1.png" alt="Timeline showing shift from in-house teams to VAs to AI agents" />
 
 # The End of the VA Era: Pivoting from Virtual Assistants to Agentic AI
 
@@ -28,7 +28,7 @@ Offloading work to VAs was brilliant—until you tally the hidden friction:
 - **Linear scaling:** Every growth spurt means sourcing, hiring, onboarding, and training more humans. Productivity only scales linearly.
 - **Quality ceiling:** Humans have good and bad days. Fatigue, distraction, and turnover make consistent excellence nearly impossible.
 
-<image src="../public/blog 3.2.png" alt="Diagram highlighting manager overhead in VA workflows" />
+<image src="../public/blog-3-2.png" alt="Diagram highlighting manager overhead in VA workflows" />
 
 ## Enter the Agentic Model
 
@@ -39,7 +39,7 @@ Agentic AI replaces the delegation paradigm with true automation. You don’t as
 - **Infinite scale.** Add capacity instantly without recruiting or onboarding. One agent can handle the workload of an entire team.
 - **Security-first.** Agents work through controlled APIs and scoped credentials, slashing the risk of shared passwords and unauthorized access.
 
-<image src="../public/blog 3.3.png" alt="Graphic showing AI agent executing VA tasks autonomously" />
+<image src="../public/blog-3-3.png" alt="Graphic showing AI agent executing VA tasks autonomously" />
 
 ## How to Make the Pivot
 

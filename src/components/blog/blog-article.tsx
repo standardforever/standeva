@@ -3,12 +3,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { notFound } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-	Clock, 
-	Calendar, 
-	User, 
-	ArrowLeft, 
-	Share2, 
+import {
+	Clock,
+	Calendar,
+	User,
+	ArrowLeft,
+	Share2,
 	Bookmark,
 	MessageCircle,
 	Send,
@@ -20,13 +20,17 @@ import {
 	Moon,
 	Menu,
 	X,
-	ArrowUp
+	ArrowUp,
+	Twitter,
+	Linkedin,
+	Link as LinkIcon,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
+import rehypeSlug from "rehype-slug";
 import type { BlogPost as BlogPostType } from "@/types/blog";
 
 // Types
@@ -52,6 +56,8 @@ interface TableOfContentsItem {
 	children?: TableOfContentsItem[];
 }
 
+const FALLBACK_IMAGE = "/blog-1-1.png";
+
 interface BlogArticleProps {
 	initialPost?: BlogPostType | null;
 }
@@ -65,16 +71,23 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 	const [isBookmarked, setIsBookmarked] = useState(false);
 	const [isLiked, setIsLiked] = useState(false);
 	const [showShareMenu, setShowShareMenu] = useState(false);
-	const [isDarkMode, setIsDarkMode] = useState(false);
+	const [isDarkMode, setIsDarkMode] = useState(true);
 	const [showTOC, setShowTOC] = useState(false);
 	const [readingProgress, setReadingProgress] = useState(0);
 	const [activeHeading, setActiveHeading] = useState("");
 
 	// Load theme preference
 	useEffect(() => {
-		const savedTheme = localStorage.getItem("theme");
-		setIsDarkMode(savedTheme === "dark");
+		const savedTheme = localStorage.getItem("blog-theme");
+		const dark = savedTheme !== "light";
+		setIsDarkMode(dark);
+		document.documentElement.classList.toggle("blog-dark", dark);
 	}, []);
+
+	useEffect(() => {
+		document.documentElement.classList.toggle("blog-dark", isDarkMode);
+		localStorage.setItem("blog-theme", isDarkMode ? "dark" : "light");
+	}, [isDarkMode]);
 
 	// Mock comments data
 	useEffect(() => {
@@ -116,64 +129,77 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 		const headingRegex = /^(#{1,6})\s+(.+)$/;
 		const lines = content.split("\n");
 		const toc: TableOfContentsItem[] = [];
-		
+		const stack: TableOfContentsItem[] = [];
+
 		lines.forEach((line) => {
 			const match = line.match(headingRegex);
 			if (match) {
 				const level = match[1].length;
 				const title = match[2].trim();
-				const id = title.toLowerCase().replace(/[^a-z0-9]/g, "-");
-				
-				toc.push({
+				const id = title
+					.toLowerCase()
+					.replace(/[^a-z0-9\s-]/g, "")
+					.replace(/\s+/g, "-");
+
+				const item: TableOfContentsItem = {
 					id,
 					title,
 					level,
-					children: []
-				});
+					children: [],
+				};
+
+				while (
+					stack.length > 0 &&
+					level <= stack[stack.length - 1].level
+				) {
+					stack.pop();
+				}
+
+				if (stack.length === 0) {
+					toc.push(item);
+				} else {
+					stack[stack.length - 1].children?.push(item);
+				}
+
+				stack.push(item);
 			}
 		});
-		
+
 		return toc;
 	};
 
 	// Handle theme toggle
 	const toggleTheme = () => {
-		const newTheme = !isDarkMode;
-		setIsDarkMode(newTheme);
-		localStorage.setItem("theme", newTheme ? "dark" : "light");
+		setIsDarkMode((prev) => !prev);
 	};
 
 	// Handle scroll for reading progress and active heading
-	const contentRef = useRef<HTMLDivElement>(null);
-
 	useEffect(() => {
+		if (!post) return;
 		const handleScroll = () => {
-			if (contentRef.current) {
-				const { scrollTop, scrollHeight, clientHeight } = contentRef.current;
-				const progress = (scrollTop / (scrollHeight - clientHeight)) * 100;
-				setReadingProgress(Math.min(progress, 100));
+			const doc = document.documentElement;
+			const scrollTop = doc.scrollTop || document.body.scrollTop;
+			const scrollHeight = doc.scrollHeight - window.innerHeight;
+			const progress =
+				scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+			setReadingProgress(Math.min(progress, 100));
 
-				// Update active heading based on scroll position
-				const headings = contentRef.current.querySelectorAll("h1, h2, h3, h4, h5, h6");
-				let currentHeading = "";
-				
-				headings.forEach((heading) => {
-					const rect = heading.getBoundingClientRect();
-					if (rect.top <= 100) {
-						currentHeading = heading.id;
-						return;
-					}
-				});
-				
-				setActiveHeading(currentHeading);
-			}
+			const headings = document.querySelectorAll(
+				".blog-article h1, .blog-article h2, .blog-article h3"
+			);
+			let currentHeading = "";
+			headings.forEach((heading) => {
+				const rect = heading.getBoundingClientRect();
+				if (rect.top <= 120) {
+					currentHeading = heading.id;
+				}
+			});
+			setActiveHeading(currentHeading);
 		};
 
-		const element = contentRef.current;
-		if (element) {
-			element.addEventListener("scroll", handleScroll);
-			return () => element.removeEventListener("scroll", handleScroll);
-		}
+		window.addEventListener("scroll", handleScroll, { passive: true });
+		handleScroll();
+		return () => window.removeEventListener("scroll", handleScroll);
 	}, [post]);
 
 	const handleComment = () => {
@@ -250,26 +276,30 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 	const scrollToHeading = (headingId: string) => {
 		const element = document.getElementById(headingId);
 		if (element) {
-			element.scrollIntoView({ behavior: "smooth" });
+			element.scrollIntoView({ behavior: "smooth", block: "start" });
 		}
 	};
 
 	const renderTOC = (items: TableOfContentsItem[], level = 0) => {
 		return items.map((item) => (
-			<div key={item.id} className={`ml-${level * 4}`}>
-				<motion.a
-					href={`#${item.id}`}
-					className={`block py-2 text-sm transition-colors ${
-						activeHeading === item.id 
-							? "text-blue-400 font-medium" 
+			<div key={item.id} style={{ marginLeft: level * 12 }}>
+				<motion.button
+					type="button"
+					className={`w-full text-left py-2 text-sm transition-colors ${
+						activeHeading === item.id
+							? "text-blue-400 font-semibold"
 							: "text-slate-400 hover:text-white"
 					}`}
 					whileHover={{ x: 4 }}
-					onClick={() => scrollToHeading(item.id)}
-				>
+					onClick={() => {
+						scrollToHeading(item.id);
+						setShowTOC(false);
+					}}>
 					{item.title}
-				</motion.a>
-				{item.children && item.children.length > 0 && renderTOC(item.children, level + 1)}
+				</motion.button>
+				{item.children &&
+					item.children.length > 0 &&
+					renderTOC(item.children, level + 1)}
 			</div>
 		));
 	};
@@ -399,7 +429,42 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 		);
 	}
 
-	const toc = post ? generateTOC(post.content) : [];
+	const toc = generateTOC(post.content);
+	const heroImage = post.image || FALLBACK_IMAGE;
+
+	const shareOptions = [
+		{
+			label: "Share on X",
+			icon: Twitter,
+			getUrl: (url: string, title: string) =>
+				`https://twitter.com/intent/tweet?url=${url}&text=${encodeURIComponent(
+					title
+				)}`,
+		},
+		{
+			label: "Share on LinkedIn",
+			icon: Linkedin,
+			getUrl: (url: string, title: string) =>
+				`https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${encodeURIComponent(
+					title
+				)}`,
+		},
+	];
+
+	const handleShare = (option: (typeof shareOptions)[number]) => {
+		if (!post) return;
+		const url = encodeURIComponent(window.location.href);
+		const shareUrl = option.getUrl(url, post.title);
+		window.open(shareUrl, "_blank", "noopener,noreferrer");
+	};
+
+	const handleCopyLink = async () => {
+		try {
+			await navigator.clipboard.writeText(window.location.href);
+		} catch (error) {
+			console.error("Failed to copy link", error);
+		}
+	};
 
 	return (
 		<div className={`min-h-screen bg-black text-white ${isDarkMode ? "dark" : "light"}`}>
@@ -467,8 +532,7 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 									onClick={() => setShowShareMenu(!showShareMenu)}
 									className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
 									whileHover={{ scale: 1.1 }}
-									whileTap={{ scale: 0.9 }}
-								>
+									whileTap={{ scale: 0.9 }}>
 									<Share2 size={20} />
 								</motion.button>
 
@@ -478,19 +542,28 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 											initial={{ opacity: 0, y: 10 }}
 											animate={{ opacity: 1, y: 0 }}
 											exit={{ opacity: 0, y: 10 }}
-											className="absolute right-0 mt-2 w-48 bg-slate-900 border border-slate-700 rounded-lg shadow-xl z-50"
-										>
-											<button className="w-full px-4 py-3 text-left hover:bg-slate-800 transition-colors flex items-center gap-3">
-												<span className="w-4 h-4 bg-blue-400 rounded-full" />
-												<span>Share on Twitter</span>
-											</button>
-											<button className="w-full px-4 py-3 text-left hover:bg-slate-800 transition-colors flex items-center gap-3">
-												<span className="w-4 h-4 bg-blue-400 rounded-full" />
-												<span>Share on LinkedIn</span>
-											</button>
-											<button className="w-full px-4 py-3 text-left hover:bg-slate-800 transition-colors flex items-center gap-3">
-												<span className="w-4 h-4 bg-blue-400 rounded-full" />
-												<span>Copy Link</span>
+											className="absolute right-0 mt-2 w-56 rounded-xl border border-white/10 bg-slate-900/95 p-2 shadow-2xl backdrop-blur"
+											onMouseLeave={() => setShowShareMenu(false)}>
+											{shareOptions.map((option) => (
+												<button
+													key={option.label}
+													onClick={() => {
+														handleShare(option);
+														setShowShareMenu(false);
+													}}
+													className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm text-slate-200 transition hover:bg-white/5">
+													<option.icon size={16} />
+													{option.label}
+												</button>
+											))}
+											<button
+												onClick={() => {
+													handleCopyLink();
+													setShowShareMenu(false);
+												}}
+												className="mt-1 flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm text-slate-200 transition hover:bg-white/5">
+												<LinkIcon size={16} />
+												Copy link
 											</button>
 										</motion.div>
 									)}
@@ -529,20 +602,18 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 			</AnimatePresence>
 
 			{/* Article Content */}
-			<article className="relative z-10" ref={contentRef}>
+			<article className="relative z-10 blog-article">
 				{/* Hero Image */}
-				{post.image && (
-					<div className="relative h-[60vh] overflow-hidden">
-						<Image
-							src={post.image}
-							alt={post.title}
-							fill
-							className="object-cover"
-							priority
-						/>
-						<div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-					</div>
-				)}
+				<div className="relative h-[60vh] overflow-hidden">
+					<Image
+						src={heroImage}
+						alt={post.title}
+						fill
+						className="object-cover"
+						priority
+					/>
+					<div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+				</div>
 
 				{/* Article Body */}
 				<div className="container mx-auto px-6 py-16 max-w-4xl">
@@ -562,7 +633,7 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 					>
 						<ReactMarkdown
 							remarkPlugins={[remarkGfm]}
-							rehypePlugins={[rehypeHighlight]}
+							rehypePlugins={[rehypeHighlight, rehypeSlug]}
 							components={{
 								h1: ({ children, id, ...props }) => (
 									<h1 id={id} className="text-3xl md:text-4xl font-bold text-white mb-6 mt-8" {...props}>
@@ -584,21 +655,28 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 										{children}
 									</p>
 								),
-								img: ({ src, alt, ...props }) => (
-									<div className="my-8">
-										<Image
-											src={src}
-											alt={alt}
-											width={800}
-											height={400}
-											className="rounded-xl object-cover"
-											{...props}
-										/>
-										{alt && (
-											<p className="text-center text-slate-400 text-sm mt-2 italic">{alt}</p>
-										)}
-									</div>
-								),
+								img: ({ src, alt }) => {
+									const resolvedSrc =
+										typeof src === "string" && src.length
+											? src
+											: FALLBACK_IMAGE;
+									return (
+										<div className="my-8">
+											<Image
+												src={resolvedSrc}
+												alt={alt || post.title}
+												width={1200}
+												height={600}
+												className="rounded-xl object-cover border border-white/10"
+											/>
+											{alt && (
+												<p className="text-center text-slate-400 text-sm mt-2 italic">
+													{alt}
+												</p>
+											)}
+										</div>
+									);
+								},
 								code: ({ children, className, ...props }) => (
 									<div className={`bg-slate-900 rounded-lg p-4 overflow-x-auto my-4 ${className || ""}`} {...props}>
 										<code className="text-sm">{children}</code>
@@ -652,18 +730,27 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 								</div>
 							</div>
 
-							<div className="flex items-center gap-2">
-								<span className="text-slate-400">Share this article:</span>
-								{["Twitter", "LinkedIn"].map((platform) => (
+							<div className="flex flex-wrap items-center gap-2">
+								<span className="text-slate-400">Share:</span>
+								{shareOptions.map((option) => (
 									<motion.button
-										key={platform}
-										className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 transition-colors"
-										whileHover={{ scale: 1.1 }}
-										whileTap={{ scale: 0.9 }}
-									>
-										<span className="w-4 h-4 bg-blue-400 rounded-full" />
+										key={option.label}
+										onClick={() => handleShare(option)}
+										className="flex items-center gap-2 rounded-lg border border-white/10 px-3 py-2 text-sm text-slate-200 transition hover:border-blue-500 hover:text-white"
+										whileHover={{ scale: 1.05 }}
+										whileTap={{ scale: 0.95 }}>
+										<option.icon size={16} />
+										{option.label.replace("Share on ", "")}
 									</motion.button>
 								))}
+								<motion.button
+									onClick={handleCopyLink}
+									className="flex items-center gap-2 rounded-lg border border-white/10 px-3 py-2 text-sm text-slate-200 transition hover:border-blue-500 hover:text-white"
+									whileHover={{ scale: 1.05 }}
+									whileTap={{ scale: 0.95 }}>
+									<LinkIcon size={16} />
+									Copy link
+								</motion.button>
 							</div>
 						</div>
 					</motion.div>

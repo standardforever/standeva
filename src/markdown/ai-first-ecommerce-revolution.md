@@ -4,7 +4,7 @@ description: "Why an AI-first mindset, powered by autonomous agents, is now the 
 keywords: ["AI-first e-commerce", "agentic AI", "automation", "retail technology", "business efficiency", "autonomous commerce", "future of commerce", "clickbuy.ai"]
 ---
 
-<image src="../public/blog 1.1.png" alt="Automation dashboard illustrating agentic AI" />
+<image src="../public/blog-1-1.png" alt="Automation dashboard illustrating agentic AI" />
 
 # The AI-First E-commerce Revolution: Why Your Only Choice Is to Automate or Stagnate
 
@@ -24,7 +24,7 @@ An AI-first business model isn’t about bolting a chatbot onto your storefront 
 
 That discipline shifts your mindset from tolerating operational drag to engineering it out. Daily sales reports, multi-channel inventory syncs, refund processing, supplier sourcing, and repetitive customer FAQs are no longer “just the cost of doing business.” They’re targets for elimination or automation. The companies that win in 2025 will be the ones ruthless enough to redesign their operating systems around that belief.
 
-<image src="../public/blog 1.2.png" alt="Workflow depicting eliminate, automate, escalate hierarchy" />
+<image src="../public/blog-1-2.png" alt="Workflow depicting eliminate, automate, escalate hierarchy" />
 
 ## The New Operational Hierarchy: Eliminate, Automate, Escalate
 

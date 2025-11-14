@@ -4,7 +4,7 @@ description: "How forward-looking enterprises are using agentic AI to slash oper
 keywords: ["agentic AI", "enterprise AI", "ROI of AI", "cost savings", "business automation", "profit margin", "profitability", "clickbuy.ai"]
 ---
 
-<image src="../public/blog 4.1.png" alt="Enterprise dashboard visualizing AI-driven ROI" />
+<image src="../public/blog-4-1.png" alt="Enterprise dashboard visualizing AI-driven ROI" />
 
 # The ROI of Agentic AI: Your New Engine for Enterprise Profitability
 
@@ -22,7 +22,7 @@ Winning a net-new customer has never been harder or more expensive. Growth-at-al
 
 Customer acquisition is now a war of attrition. The fastest-growing, most resilient enterprises are winning by mastering their internal economics—specifically, by driving marginal costs as close to zero as possible. Every process you streamline or automate creates permanent profit. Agentic AI is the toolkit that makes this strategic shift feasible because it turns recurring operational drag into autonomous workflows.
 
-<image src="../public/blog 4.2.png" alt="Graphic illustrating eliminate-automate-escalate for enterprise tasks" />
+<image src="../public/blog-4-2.png" alt="Graphic illustrating eliminate-automate-escalate for enterprise tasks" />
 
 ## The Three Dimensions of Compounding ROI
 
@@ -47,7 +47,7 @@ If the answer is yes, build an agent. Finance reconciliations, logistics trackin
 3. **Measure ruthlessly.** Track hours saved, error-rate reductions, cycle-time improvements, and direct cost savings.
 4. **Share the case study.** Use that data to secure buy-in for broader rollout, then scale to adjacent processes.
 
-<image src="../public/blog 4.3.png" alt="Infographic showing ROI metrics after deploying agentic AI" />
+<image src="../public/blog-4-3.png" alt="Infographic showing ROI metrics after deploying agentic AI" />
 
 ## Turn Efficiency Into Enduring Profit
 

@@ -4,7 +4,7 @@ description: "Modern agentic AI now outperforms human sourcing in cost, accuracy
 keywords: ["AI sourcing", "human sourcing", "recruitment automation", "AI in HR", "talent acquisition", "procurement", "cost reduction", "clickbuy.ai"]
 ---
 
-<image src="../public/blog 2.1.png" alt="Illustration comparing human sourcing workflows to AI agents" />
+<image src="../public/blog-2-1.png" alt="Illustration comparing human sourcing workflows to AI agents" />
 
 # Human Sourcing vs. AI Sourcing: The Data Shows It’s No Longer a Contest
 
@@ -25,7 +25,7 @@ Two converging forces broke the argument for clinging to human sourcing:
 1. **Beyond keyword matching.** Today’s AI—powered by large language models—understands semantics, context, project outcomes, and inferred skills. It vets thousands of data points without ever tiring or letting bias slip in.
 2. **The economic inversion.** Compute costs have plunged while intelligence has skyrocketed, making elite automation accessible to every business. The result: sourcing engines that cost a fraction of even the leanest offshore team.
 
-<image src="../public/blog 2.2.png" alt="Chart showing cost decline of AI versus human sourcing" />
+<image src="../public/blog-2-2.png" alt="Chart showing cost decline of AI versus human sourcing" />
 
 ## The Irrefutable Economics of AI Sourcing
 
@@ -47,7 +47,7 @@ The move isn’t about dabbling with chatbots; it’s about codifying your sourc
 3. **Measure relentlessly.** Track cost per qualified lead, time-to-pipeline, accuracy, and throughput to quantify ROI.
 4. **Iterate fast.** Because agents are software, you can update heuristics instantly instead of retraining entire teams.
 
-<image src="../public/blog 2.3.png" alt="Workflow of AI agent handling sourcing steps" />
+<image src="../public/blog-2-3.png" alt="Workflow of AI agent handling sourcing steps" />
 
 ## Make the Pivot Now
 

@@ -61,11 +61,34 @@ function parseFrontmatter(content: string): { frontmatter: BlogPostFrontmatter; 
 	return { frontmatter, content: markdownContent };
 }
 
+function normalizeImagePath(src: string | undefined): string | undefined {
+	if (!src) return undefined;
+	let normalized = src.trim();
+	if (normalized.startsWith("../public")) {
+		normalized = normalized.replace("../public", "");
+	}
+	if (!normalized.startsWith("/")) {
+		normalized = `/${normalized}`;
+	}
+	return normalized;
+}
+
 // Function to extract first image from markdown content
 function extractFirstImage(content: string): string | undefined {
-	const imageRegex = /<image\s+src="([^"]+)"\s+alt="([^"]*)"\s*\/>/;
-	const imageMatch = content.match(imageRegex);
-	return imageMatch ? imageMatch[1] : undefined;
+	const htmlRegex = /<image\s+src="([^"]+)"\s+alt="([^"]*)"\s*\/>/;
+	const markdownRegex = /!\[[^\]]*]\(([^)]+)\)/;
+
+	const htmlMatch = content.match(htmlRegex);
+	if (htmlMatch) {
+		return normalizeImagePath(htmlMatch[1]);
+	}
+
+	const markdownMatch = content.match(markdownRegex);
+	if (markdownMatch) {
+		return normalizeImagePath(markdownMatch[1]);
+	}
+
+	return undefined;
 }
 
 // Function to calculate reading time (average 200 words per minute)
@@ -79,12 +102,9 @@ function calculateReadTime(content: string): number {
 function convertCustomImages(content: string): string {
 	return content.replace(
 		/<image\s+src="([^"]+)"\s+alt="([^"]*)"\s*\/>/g,
-		(match, src, alt) => {
-			// Convert relative paths to absolute paths for public folder
-			const imageSrc = src.startsWith('../public/') 
-				? src.replace('../public/', '/')
-				: src;
-			return `![${alt}](${imageSrc})`;
+		(_, src, alt) => {
+			const normalized = normalizeImagePath(src) ?? "";
+			return alt ? `![${alt}](${normalized})` : `![](${normalized})`;
 		}
 	);
 }
@@ -105,7 +125,9 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
 				
 				const slug = file.replace('.md', '');
 				const processedContent = convertCustomImages(content);
-				const image = extractFirstImage(processedContent);
+				const image =
+					extractFirstImage(content) ??
+					extractFirstImage(processedContent);
 				const readTime = calculateReadTime(processedContent);
 
 				// Default author info - you can customize this per post if needed
