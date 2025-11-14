@@ -77,27 +77,25 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 	const [activeHeading, setActiveHeading] = useState("");
 	const themeClasses = isDarkMode
 		? {
-				page: "bg-black text-white",
+				page: "bg-[#05060a] text-white",
 				pattern: "opacity-20",
-				header: "bg-black/80 border-slate-800 text-white",
-				panel: "bg-slate-900/40 border border-slate-800",
-				panelSoft: "bg-slate-900/30 border-slate-800",
-				input: "bg-slate-900/50 border-slate-700 text-white placeholder-slate-400",
+				header: "bg-[#05060afb]/90 border-slate-800 text-white",
+				panel: "bg-[#0b0f19]/70 border border-slate-800",
+				panelSoft: "bg-[#0b0f19]/50 border-slate-800",
+				input: "bg-[#05060a] border-slate-700 text-white placeholder-slate-400",
 				textMuted: "text-slate-400",
-				commentText: "text-slate-200",
-				cardBorder: "border-slate-700/50",
-				chip: "bg-slate-800 border-slate-700 text-slate-300"
+				commentText: "text-slate-100",
+				chip: "bg-slate-800 border-slate-700 text-slate-200"
 		  }
 		: {
-				page: "bg-slate-50 text-slate-900",
+				page: "bg-[#f5f7fb] text-slate-900",
 				pattern: "opacity-5",
-				header: "bg-white/80 border-slate-200 text-slate-900",
+				header: "bg-white/90 border-slate-200 text-slate-900",
 				panel: "bg-white border border-slate-200",
 				panelSoft: "bg-white border-slate-200",
 				input: "bg-white border-slate-300 text-slate-900 placeholder-slate-500",
 				textMuted: "text-slate-500",
 				commentText: "text-slate-700",
-				cardBorder: "border-slate-200",
 				chip: "bg-slate-100 border-slate-200 text-slate-600"
 		  };
 
@@ -339,13 +337,13 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 			<div className={`${themeClasses.panel} backdrop-blur-sm rounded-xl p-6`}>
 				<div className="flex items-start justify-between mb-4">
 					<div className="flex items-center gap-3">
-						<Image
-							src={comment.author.avatar}
-							alt={comment.author.name}
-							width={40}
-							height={40}
-							className="rounded-full object-cover"
-						/>
+									<Image
+										src={comment.author.avatar}
+										alt={comment.author.name}
+										width={48}
+										height={48}
+										className="h-12 w-12 rounded-full object-cover"
+									/>
 						<div>
 							<div className="flex items-center gap-2">
 								<h4 className="font-semibold">{comment.author.name}</h4>
@@ -629,7 +627,7 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 			{/* Article Content */}
 			<article className="relative z-10 blog-article">
 				{/* Hero Image */}
-				<div className="relative h-[60vh] overflow-hidden">
+				<div className="relative h-[45vh] md:h-[55vh] overflow-hidden">
 					<Image
 						src={heroImage}
 						alt={post.title}
@@ -686,16 +684,19 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 											? src
 											: FALLBACK_IMAGE;
 									return (
-										<div className="my-8">
-											<Image
-												src={resolvedSrc}
-												alt={alt || post.title}
-												width={1200}
-												height={600}
-												className="rounded-xl object-cover border border-white/10"
-											/>
+										<div className="my-10 flex flex-col items-center">
+											<div className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-white/10 shadow-lg">
+												<Image
+													src={resolvedSrc}
+													alt={alt || post.title}
+													width={1400}
+													height={900}
+													className="w-full max-h-[420px] object-cover md:object-contain bg-black/20"
+													priority={false}
+												/>
+											</div>
 											{alt && (
-												<p className="text-center text-slate-400 text-sm mt-2 italic">
+												<p className="text-center text-slate-400 text-sm mt-3 italic max-w-2xl">
 													{alt}
 												</p>
 											)}
@@ -798,11 +799,11 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 								<h3 className="text-xl font-semibold mb-4">Leave a Comment</h3>
 								<div className="flex gap-4">
 									<Image
-										src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150&auto=format&fit=crop"
+										src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=200&auto=format&fit=crop"
 										alt="You"
 										width={48}
 										height={48}
-										className="rounded-full object-cover"
+										className="h-12 w-12 rounded-full object-cover"
 									/>
 									<div className="flex-1">
 										<textarea
