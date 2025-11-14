@@ -569,14 +569,9 @@ const Hero: React.FC = () => {
 							className="rounded-xl border border-blue-500/40 px-6 py-3 font-semibold text-slate-100 transition hover:border-blue-500 hover:bg-blue-500/10">
 							Request Custom Solution
 						</motion.button>
-						<Link
-							href="/blog"
-							className="inline-flex items-center justify-center rounded-xl border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-blue-400 hover:text-blue-200">
-							Visit Blog
-						</Link>
 					</motion.div>
 
-					<motion.div
+					{/* <motion.div
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8, delay: 0.9 }}
@@ -589,7 +584,7 @@ const Hero: React.FC = () => {
 						<span>Trusted by 500+ Developers</span>
 						<span className="text-slate-600">•</span>
 						<span>Built in the UK</span>
-					</motion.div>
+					</motion.div> */}
 				</motion.div>
 
 				<div

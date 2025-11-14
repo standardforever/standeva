@@ -1,17 +1,5 @@
-import { getAllBlogPosts, getBlogPost, type BlogPost } from "@/lib/blog-server";
-
-export interface BlogPostSummary {
-	slug: string;
-	title: string;
-	excerpt: string;
-	author: BlogPost["author"];
-	publishedAt: string;
-	readTime: number;
-	tags: string[];
-	image: string;
-	views: number;
-	likes: number;
-}
+import { getAllBlogPosts, getBlogPost } from "@/lib/blog-server";
+import type { BlogPost, BlogPostSummary } from "@/types/blog";
 
 const seededMetric = (slug: string, base: number, variance: number) => {
 	const seed = slug.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);

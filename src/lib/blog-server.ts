@@ -1,21 +1,6 @@
-import fs from 'fs';
-import path from 'path';
-
-export interface BlogPost {
-	slug: string;
-	title: string;
-	description: string;
-	keywords: string[];
-	content: string;
-	image?: string;
-	publishedAt: string;
-	readTime: number;
-	author: {
-		name: string;
-		avatar: string;
-		bio: string;
-	};
-}
+import fs from "fs";
+import path from "path";
+import type { BlogPost } from "@/types/blog";
 
 export interface BlogPostFrontmatter {
 	title: string;
@@ -77,28 +62,10 @@ function parseFrontmatter(content: string): { frontmatter: BlogPostFrontmatter; 
 }
 
 // Function to extract first image from markdown content
-function normalizeImagePath(src: string): string {
-	if (src.startsWith("../public/")) {
-		return src.replace("../public", "");
-	}
-	return src;
-}
-
 function extractFirstImage(content: string): string | undefined {
-	const htmlRegex = /<image\s+src="([^"]+)"\s+alt="([^"]*)"\s*\/>/;
-	const markdownRegex = /!\[[^\]]*]\(([^)]+)\)/;
-
-	const htmlMatch = content.match(htmlRegex);
-	if (htmlMatch) {
-		return normalizeImagePath(htmlMatch[1]);
-	}
-
-	const markdownMatch = content.match(markdownRegex);
-	if (markdownMatch) {
-		return normalizeImagePath(markdownMatch[1]);
-	}
-
-	return undefined;
+	const imageRegex = /<image\s+src="([^"]+)"\s+alt="([^"]*)"\s*\/>/;
+	const imageMatch = content.match(imageRegex);
+	return imageMatch ? imageMatch[1] : undefined;
 }
 
 // Function to calculate reading time (average 200 words per minute)
@@ -138,12 +105,12 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
 				
 				const slug = file.replace('.md', '');
 				const processedContent = convertCustomImages(content);
-				const image = extractFirstImage(content) ?? extractFirstImage(processedContent);
+				const image = extractFirstImage(processedContent);
 				const readTime = calculateReadTime(processedContent);
 
 				// Default author info - you can customize this per post if needed
 				const author = {
-					name: "Clickbuy Editorial Team",
+					name: "Standeva Team",
 					avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150&auto=format&fit=crop",
 					bio: "AI Strategy Consultants and Technology Experts"
 				};
@@ -184,4 +151,41 @@ export async function getBlogPostsByKeyword(keyword: string): Promise<BlogPost[]
 	return posts.filter(post => 
 		post.keywords.some(k => k.toLowerCase().includes(keyword.toLowerCase()))
 	);
+}
+
+// Server action to get all blog posts for client components
+export async function getBlogPostsData() {
+	try {
+		const posts = await getAllBlogPosts();
+		return posts;
+	} catch (error) {
+		console.error('Error fetching blog posts:', error);
+		return [];
+	}
+}
+
+// Server action to get a single blog post by slug
+export async function getBlogPostData(slug: string) {
+	try {
+		const posts = await getAllBlogPosts();
+		const post = posts.find(p => p.slug === slug);
+		if (!post) return null;
+		
+		return {
+			id: post.slug,
+			title: post.title,
+			excerpt: post.description,
+			author: post.author,
+			publishedAt: post.publishedAt,
+			readTime: post.readTime,
+			tags: post.keywords,
+			image: post.image || '',
+			views: Math.floor(Math.random() * 30000) + 5000,
+			likes: Math.floor(Math.random() * 500) + 50,
+			content: post.content
+		};
+	} catch (error) {
+		console.error('Error fetching blog post:', error);
+		return null;
+	}
 }

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Clock, ArrowRight } from "lucide-react";
-import type { BlogPostSummary } from "@/lib/blog-data";
+import type { BlogPostSummary } from "@/types/blog";
 
 interface BlogPreviewProps {
 	posts: BlogPostSummary[];
