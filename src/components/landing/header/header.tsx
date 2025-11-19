@@ -48,6 +48,7 @@ const Header: React.FC = () => {
 		{ name: "Partner", href: "/partner" },
 		{ name: "Company", href: "/company/about" },
 		{ name: "Blog", href: "/blog" },
+		// Note: Some dropdown items may point to unimplemented pages
 	];
 
 	const handleMouseEnter = (itemName: string) => {

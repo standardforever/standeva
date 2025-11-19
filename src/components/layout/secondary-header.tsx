@@ -25,12 +25,12 @@ const defaultNavItems: NavItemConfig[] = [
 	{ label: "Home", href: "/" },
 	{ label: "Solutions", href: "/solutions/ai-consulting" },
 	{ label: "Company", href: "/company/about" },
-	{ label: "Contact", href: "/contact" },
+	// { label: "Contact", href: "/contact" }, // Not implemented yet
 ];
 
 const defaultCTA: CTAConfig = {
 	label: "Get in touch",
-	href: "/contact",
+	href: "#contact", // Changed to anchor link since contact page not implemented
 };
 
 const SecondaryHeader: React.FC<SecondaryHeaderProps> = ({
@@ -120,25 +120,25 @@ const SecondaryHeader: React.FC<SecondaryHeaderProps> = ({
 			initial={{ y: -40, opacity: 0 }}
 			variants={headerVariants}
 			animate={isVisible ? "visible" : "hidden"}
-			className={`fixed top-0 left-0 right-0 z-40 h-20 border-b border-white/5 ${isScrolled ? "bg-slate-950/95" : "bg-slate-950/80"} backdrop-blur-xl transition-all ${className}`}>
-			<nav className="mx-auto flex h-full w-full max-w-6xl items-center justify-between px-6">
-				<Link href="/" className="flex items-center gap-3 no-underline">
+			className={`fixed top-0 left-0 right-0 z-40 h-16 sm:h-20 border-b border-white/5 ${isScrolled ? "bg-slate-950/95" : "bg-slate-950/80"} backdrop-blur-xl transition-all ${className}`}>
+			<nav className="mx-auto flex h-full w-full max-w-6xl items-center justify-between px-4 sm:px-6">
+				<Link href="/" className="flex items-center gap-2 sm:gap-3 no-underline">
 					<motion.div
-						className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-linear-to-br from-blue-500 to-purple-600"
+						className="relative flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-linear-to-br from-blue-500 to-purple-600"
 						animate={{ rotate: 360 }}
 						transition={{
 							duration: 20,
 							repeat: Infinity,
 							ease: "linear",
 						}}>
-						<span className="h-5 w-5 rounded-md bg-white" />
+						<span className="h-4 w-4 sm:h-5 sm:w-5 rounded-md bg-white" />
 					</motion.div>
-					<span className="text-xl font-bold text-white">
+					<span className="text-lg sm:text-xl font-bold text-white">
 						Clickbuy
 					</span>
 				</Link>
 
-				<ul className="hidden items-center gap-8 md:flex">
+				<ul className="hidden items-center gap-4 lg:gap-8 md:flex">
 					{items.map((item) => {
 						const isActive = getIsActive(item.href);
 						return (
@@ -186,7 +186,7 @@ const SecondaryHeader: React.FC<SecondaryHeaderProps> = ({
 						animate={{ height: "auto", opacity: 1 }}
 						exit={{ height: 0, opacity: 0 }}
 						transition={{ duration: 0.3 }}
-						className="border-t border-white/5 bg-slate-950/95 px-6 py-4 md:hidden">
+						className="border-t border-white/5 bg-slate-950/95 px-4 sm:px-6 py-4 md:hidden">
 						<div className="flex flex-col space-y-3">
 							{items.map((item) => {
 								const isActive = getIsActive(item.href);

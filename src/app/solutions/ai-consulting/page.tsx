@@ -31,20 +31,22 @@ export default async function AIConsultingPage() {
 	];
 
 	return (
-		<main className="min-h-screen bg-black overflow-x-hidden">
+		<main className="min-h-screen bg-black overflow-x-hidden w-full">
 			<SecondaryHeader
 				navItems={navItems}
 				cta={{ label: "Book Consultation", href: "#consulting-cta" }}
 			/>
-			<ConsultingHero />
-			{/* <ConsultingIntro /> */}
-			<WhatWeOffer />
-			<InternalAISolutions />
-			<WhyClickbuy />
-			<TechnologyPartners />
-			<FAQSection />
-			<BlogPreview posts={blogPosts} />
-			<FinalCTA />
+			<div className="w-full pt-16 sm:pt-20">
+				<ConsultingHero />
+				{/* <ConsultingIntro /> */}
+				<WhatWeOffer />
+				<InternalAISolutions />
+				<WhyClickbuy />
+				<TechnologyPartners />
+				<FAQSection />
+				<BlogPreview posts={blogPosts} />
+				<FinalCTA />
+			</div>
 			<SecondaryFooter />
 		</main>
 	);

@@ -24,17 +24,19 @@ export default function AboutPage() {
 	];
 
 	return (
-		<main className="min-h-screen bg-black">
+		<main className="min-h-screen bg-black overflow-x-hidden w-full">
 			<SecondaryHeader
 				navItems={navItems}
 				cta={{ label: "Plan a Call", href: "#contact" }}
 			/>
-			<AboutHero />
-			<CoreSolutions />
-			<FullStackSection />
-			<ApproachSection />
-			<CTASection />
-			<PerspectiveSection />
+			<div className="w-full pt-16 sm:pt-20">
+				<AboutHero />
+				<CoreSolutions />
+				<FullStackSection />
+				<ApproachSection />
+				<CTASection />
+				<PerspectiveSection />
+			</div>
 			<SecondaryFooter />
 		</main>
 	);

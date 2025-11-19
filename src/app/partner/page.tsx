@@ -24,17 +24,19 @@ const AffiliatePage = () => {
 	];
 
 	return (
-		<main className="min-h-screen bg-black overflow-x-hidden">
+		<main className="min-h-screen bg-black overflow-x-hidden w-full">
 			<SecondaryHeader
 				navItems={navItems}
 				cta={{ label: "Become a Partner", href: "#affiliate-cta" }}
 			/>
-			<AffiliateHero />
-			<AffiliateSolutions />
-			<AffiliateWhyClickbuy />
-			<AffiliateBeforeAfter />
-			<AffiliatePricing />
-			<AffiliateCta />
+			<div className="w-full pt-16 sm:pt-20">
+				<AffiliateHero />
+				<AffiliateSolutions />
+				<AffiliateWhyClickbuy />
+				<AffiliateBeforeAfter />
+				<AffiliatePricing />
+				<AffiliateCta />
+			</div>
 			<SecondaryFooter />
 		</main>
 	);

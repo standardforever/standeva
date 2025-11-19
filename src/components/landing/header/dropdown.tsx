@@ -67,46 +67,49 @@ const dropdownContent: DropdownContentMap = {
 			{
 				title: "Core Platform",
 				items: [
-					{ label: "API Gateway", href: "/platform/api-gateway" },
-					{ label: "Model Hub", href: "/platform/model-hub" },
-					{ label: "Analytics", href: "/platform/analytics" },
-					{ label: "Dashboard", href: "/platform/dashboard" },
+					// All platform pages not implemented yet
+					// { label: "API Gateway", href: "/platform/api-gateway" },
+					// { label: "Model Hub", href: "/platform/model-hub" },
+					// { label: "Analytics", href: "/platform/analytics" },
+					// { label: "Dashboard", href: "/platform/dashboard" },
 				],
 			},
 			{
 				title: "APIs",
 				items: [
-					{ label: "Sourceora API", href: "/apis/sourceora" },
-					{ label: "AI/ML API", href: "/apis/ai-ml" },
-					{
-						label: "Speech-to-Text API",
-						href: "/apis/speech-to-text",
-					},
-					{
-						label: "Image Generation API",
-						href: "/apis/image-generation",
-					},
-					{
-						label: "Prompt Optimization",
-						href: "/apis/prompt-optimization",
-					},
+					// All API pages not implemented yet
+					// { label: "Sourceora API", href: "/apis/sourceora" },
+					// { label: "AI/ML API", href: "/apis/ai-ml" },
+					// {
+					// 	label: "Speech-to-Text API",
+					// 	href: "/apis/speech-to-text",
+					// },
+					// {
+					// 	label: "Image Generation API",
+					// 	href: "/apis/image-generation",
+					// },
+					// {
+					// 	label: "Prompt Optimization",
+					// 	href: "/apis/prompt-optimization",
+					// },
 				],
 			},
 			{
 				title: "Tools",
 				items: [
-					{ label: "Playground", href: "/tools/playground" },
-					{ label: "Testing Suite", href: "/tools/testing" },
-					{ label: "Monitoring", href: "/tools/monitoring" },
+					// All tool pages not implemented yet
+					// { label: "Playground", href: "/tools/playground" },
+					// { label: "Testing Suite", href: "/tools/testing" },
+					// { label: "Monitoring", href: "/tools/monitoring" },
 				],
 			},
 		],
 		featured: {
-			title: "Sourceora API Launch 🚀",
+			title: "Coming Soon 🚀",
 			description:
-				"Our powerful sourcing engine is now available via API. Connect, query, and automate product sourcing in real time.",
+				"Our powerful platform features are being built. Stay tuned for updates on our API gateway, model hub, and analytics tools.",
 			image: "📦",
-			link: "/apis/sourceora",
+			link: "#",
 		},
 	},
 	Solutions: {
@@ -115,33 +118,35 @@ const dropdownContent: DropdownContentMap = {
 				title: "Services",
 				items: [
 					{ label: "AI Consulting", href: "/solutions/ai-consulting" },
-					{ label: "ClickBuy", href: "/solutions/clickbuy" },
+					// { label: "ClickBuy", href: "/solutions/clickbuy" }, // Not implemented yet
 				],
 			},
 			{
 				title: "By Industry",
 				items: [
-					{ label: "Healthcare", href: "/solutions/healthcare" },
-					{ label: "Finance", href: "/solutions/finance" },
-					{ label: "E-commerce", href: "/solutions/ecommerce" },
-					{ label: "Education", href: "/solutions/education" },
+					// Industry pages not implemented yet
+					// { label: "Healthcare", href: "/solutions/healthcare" },
+					// { label: "Finance", href: "/solutions/finance" },
+					// { label: "E-commerce", href: "/solutions/ecommerce" },
+					// { label: "Education", href: "/solutions/education" },
 				],
 			},
 			{
 				title: "By Use Case",
 				items: [
-					{ label: "Content Generation", href: "/use-cases/content" },
-					{ label: "Data Analysis", href: "/use-cases/analysis" },
-					{ label: "Automation", href: "/use-cases/automation" },
+					// Use case pages not implemented yet
+					// { label: "Content Generation", href: "/use-cases/content" },
+					// { label: "Data Analysis", href: "/use-cases/analysis" },
+					// { label: "Automation", href: "/use-cases/automation" },
 				],
 			},
 		],
 		featured: {
-			title: "Industry Solutions",
+			title: "AI Consulting Services",
 			description:
-				"Discover how leading companies across industries are transforming with AI-powered solutions.",
+				"Explore our expert AI consulting services to help your business navigate AI adoption and implementation.",
 			image: "🏢",
-			link: "/case-studies",
+			link: "/solutions/ai-consulting",
 		},
 	},
 	Developers: {
@@ -149,30 +154,32 @@ const dropdownContent: DropdownContentMap = {
 			{
 				title: "Resources",
 				items: [
-					{ label: "Documentation", href: "/docs" },
-					{ label: "API Reference", href: "/docs/api" },
-					{ label: "SDKs", href: "/docs/sdks" },
-					{ label: "Tutorials", href: "/docs/tutorials" },
+					// Documentation pages not implemented yet
+					// { label: "Documentation", href: "/docs" },
+					// { label: "API Reference", href: "/docs/api" },
+					// { label: "SDKs", href: "/docs/sdks" },
+					// { label: "Tutorials", href: "/docs/tutorials" },
 				],
 			},
 			{
 				title: "Community",
 				items: [
-					{ label: "Discord", href: "https://discord.gg/standeva" },
-					{ label: "GitHub", href: "https://github.com/standeva" },
-					{
-						label: "Stack Overflow",
-						href: "https://stackoverflow.com",
-					},
+					// Community links - external
+					// { label: "Discord", href: "https://discord.gg/standeva" },
+					// { label: "GitHub", href: "https://github.com/standeva" },
+					// {
+					// 	label: "Stack Overflow",
+					// 	href: "https://stackoverflow.com",
+					// },
 				],
 			},
 		],
 		featured: {
-			title: "Developer Toolkit",
+			title: "Developer Resources Coming Soon",
 			description:
-				"New SDKs, enhanced documentation, and developer-friendly tools to accelerate your integration.",
+				"We're building comprehensive documentation, SDKs, and developer tools. Check back soon for updates.",
 			image: "⚡",
-			link: "/developer-toolkit",
+			link: "#",
 		},
 	},
 };

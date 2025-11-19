@@ -110,7 +110,7 @@ export const headerContent = {
 	],
 	cta: {
 		signIn: "Sign in",
-		signUp: "Get Started",
+		signUp: "Get Free AI Audit",
 	},
 	dropdownContent: {
 		Platform: {

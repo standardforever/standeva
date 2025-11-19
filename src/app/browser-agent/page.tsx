@@ -15,9 +15,9 @@ import Footer from "@/components/layout/secondary-footer";
 
 const BrowserAgentPage: React.FC = () => {
 	return (
-		<div className="min-h-screen bg-slate-950">
+		<div className="min-h-screen bg-slate-950 overflow-x-hidden w-full">
 			<Header />
-			<main>
+			<main className="w-full">
 				<Hero />
 				<ProblemSection />
 				<SolutionSection />
@@ -27,8 +27,8 @@ const BrowserAgentPage: React.FC = () => {
 				<FitSection />
 				<FAQSection />
 				<FinalCTA />
-				<Footer />
 			</main>
+			<Footer />
 		</div>
 	);
 };
