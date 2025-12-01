@@ -38,7 +38,8 @@ const OurProcess: FC = () => {
 						Getting Started is Easy
 					</h2>
 					<p className="mx-auto max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
-						From first conversation to an actionable AI plan in just three simple steps.
+						From first conversation to an actionable AI plan in just
+						three simple steps.
 					</p>
 				</div>
 
@@ -58,14 +59,6 @@ const OurProcess: FC = () => {
 							</p>
 						</div>
 					))}
-				</div>
-
-				<div className="mt-10">
-					<a
-						href="/company/about#approach"
-						className="text-sm font-medium text-emerald-300 underline decoration-emerald-400/60 underline-offset-4 hover:text-emerald-200">
-						See Our Full Development Roadmap →
-					</a>
 				</div>
 			</div>
 		</section>

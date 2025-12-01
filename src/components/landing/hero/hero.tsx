@@ -169,7 +169,7 @@ const Hero: FC = () => {
 										className="block"
 										variants={lineRevealVariants}
 										custom={0}>
-										Free Your Team From Repetitive
+										Free Your Team
 									</motion.span>
 								</span>
 								<span className="block overflow-hidden text-sky-400">
@@ -177,7 +177,7 @@ const Hero: FC = () => {
 										className="block"
 										variants={lineRevealVariants}
 										custom={1}>
-										Finance, HR &amp; Sales Plus Work.
+										From Repetitive Work.
 									</motion.span>
 								</span>
 							</h1>
@@ -186,9 +186,9 @@ const Hero: FC = () => {
 								initial={{ opacity: 0, y: 12 }}
 								animate={isInView ? { opacity: 1, y: 0 } : {}}
 								transition={{ duration: 0.6, delay: 0.2 }}>
-								ProcessZero automates your finance, HR, and
-								sales plus workflows so teams can focus on
-								high-impact work instead of manual tasks.
+								ProcessZero automates your workflows so teams
+								can focus on high-impact work instead of manual
+								tasks.
 							</motion.p>
 						</motion.div>
 

@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const FounderMissionSection: FC = () => {
 	return (
@@ -40,17 +41,6 @@ const FounderMissionSection: FC = () => {
 							agents are designed to live inside your network,
 							controlled and owned by your team, so your data
 							stays private while automations scale.
-						</p>
-						<p>
-							That&apos;s why I created ProcessZero: to help
-							organisations adopt AI‑first workflows safely,
-							freeing teams to focus on the work that actually
-							moves the business forward.
-						</p>
-						<p className="text-sm font-medium text-slate-100">
-							<span className="text-slate-50">
-								— Founder, ProcessZero
-							</span>
 						</p>
 					</div>
 
@@ -100,6 +90,18 @@ const FounderMissionSection: FC = () => {
 							</div>
 						</div>
 					</div>
+				</div>
+
+				{/* Link to About Us page */}
+				<div className="mt-8 flex justify-center">
+					<Link
+						href="/about-us"
+						className="group inline-flex items-center gap-2 text-sm font-semibold text-sky-400 transition hover:text-sky-300">
+						Learn More About Our Story
+						<span className="transition-transform group-hover:translate-x-1">
+							→
+						</span>
+					</Link>
 				</div>
 			</div>
 		</section>
