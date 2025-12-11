@@ -1,5 +1,5 @@
 ---
-title: "Invoice Processing Automation: The Complete Guide to Eliminating 90% of Manual Work"
+title: "invoice processing automation: the complete guide to eliminating 90% of manual work"
 description: "Invoice processing is slow, error-prone, and consumes hours every week. This 10-step guide shows you how to automate it using private AI agents — achieving 50-90% workload reduction while maintaining accuracy, compliance, and full control."
 keywords: ["Invoice Automation", "AI Invoice Processing", "Finance Automation", "Invoice Processing", "Accounts Payable Automation", "Document Processing", "Private LLM", "Open Source AI", "Agentic Workflow", "Finance AI", "AP Automation", "Invoice OCR", "ERP Integration"]
 ---
@@ -269,7 +269,7 @@ Automation is not a one-off project.
 
 ---
 
-## Final Thought: Automation Requires Process Maturity, Not Hype
+## final thought: automation requires process maturity, not hype
 
 Invoice automation doesn't start with AI.
 
@@ -288,7 +288,7 @@ If you follow the steps above, you can transform your finance operations and fre
 
 ---
 
-## Ready to Automate Your Invoice Processing?
+## ready to automate your invoice processing?
 
 Find out how private AI agents can eliminate manual invoice work in your finance team.
 

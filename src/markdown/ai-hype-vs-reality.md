@@ -1,5 +1,5 @@
 ---
-title: "AI Hype vs Reality: The Truth About Digital Workforce Automation"
+title: "AI hype vs reality: the truth about digital workforce automation"
 description: "Most organisations get sold generic chatbots. We build private AI automation agents that eliminate 50-90% of repetitive digital tasks. Here's the simple rule to know if your work can be automated."
 keywords: ["AI Automation", "Process Automation", "Digital Workforce", "Repetitive Tasks", "Private AI", "Business Process Automation", "AI Agents", "Workflow Automation", "RPA Alternative", "Data Sovereignty"]
 ---
@@ -15,7 +15,7 @@ We deliver closed-loop, private AI automation that integrates with your existing
 
 ---
 
-## Can Your Tasks Be Automated? - The Simple Rule
+## can your tasks be automated? - the simple rule
 
 A practical rule we use with clients:
 
@@ -26,9 +26,9 @@ Our agents take them over completely.
 
 ---
 
-## What We Build
+## what we build
 
-### AI Automation Agents
+### AI automation agents
 
 Agents that can:
 
@@ -45,7 +45,7 @@ Your data stays private and protected throughout the process.
 
 ---
 
-### Intelligent Assistants for Teams
+### intelligent assistants for teams
 
 Private assistants trained on your business processes, capable of:
 
@@ -59,7 +59,7 @@ Private assistants trained on your business processes, capable of:
 
 ---
 
-### Document & Data Automation
+### document & data automation
 
 We automate data extraction and processing from:
 
@@ -74,7 +74,7 @@ Agents read, understand, validate, and route data into your systems automaticall
 
 ---
 
-### Workflow & System Automation
+### workflow & system automation
 
 Our agents connect and automate:
 
@@ -90,7 +90,7 @@ Our agents connect and automate:
 
 ---
 
-## How Our Agents Work
+## how our agents work
 
 Our agents replicate the same steps a human completes, but faster and with perfect consistency:
 
@@ -105,7 +105,7 @@ They operate continuously inside your secure environment.
 
 ---
 
-## Where We Deliver the Biggest Impact
+## where we deliver the biggest impact
 
 We specialise in removing repetitive work across:
 
@@ -120,7 +120,7 @@ We specialise in removing repetitive work across:
 
 ---
 
-## Deployment Options - Your Data Stays Private
+## deployment options - your data stays private
 
 We build automation using open-source models and deploy them:
 
@@ -134,13 +134,13 @@ No external AI providers receive your information unless you explicitly authoris
 
 ---
 
-## Our Delivery Approach
+## our delivery approach
 
-### 1. 15-Minute Intro Call
+### 1. 15-minute intro call
 
 A short conversation to understand your goals and confirm automation opportunities.
 
-### 2. Discovery Series (AI Audit)
+### 2. discovery series (AI audit)
 
 A structured assessment to identify:
 
@@ -152,18 +152,18 @@ A structured assessment to identify:
 
 Delivered as a clear **AI Strategy & Automation Roadmap**.
 
-### 3. Agent Build & Deployment
+### 3. agent build & deployment
 
 We design, build, and implement your private automation agents within your chosen environment.
 
-### 4. Ongoing Improvement
+### 4. ongoing improvement
 
 We monitor performance, optimise workflows, and expand automation over time.
 Each agent builds the foundation for the next — automation compounds.
 
 ---
 
-## Why Organisations Choose Process Zero
+## why organisations choose process zero
 
 - **Private, secure, on-premise or cloud-based AI models**
 - **Full data sovereignty** — no sending your data to external LLMs
@@ -177,7 +177,7 @@ We remove the repetitive work so your people can focus on what truly moves the b
 
 ---
 
-## Ready to Automate Your Repetitive Work?
+## ready to automate your repetitive work?
 
 Find out what tasks in your organisation can be automated.
 
