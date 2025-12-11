@@ -1,12 +1,11 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
 import SecondaryHeader from "@/components/layout/secondary-header";
 import SecondaryFooter from "@/components/layout/secondary-footer";
+import CalendarModal from "@/components/ui/calendar-modal";
 import { CheckCircle2, PhoneCall, Rocket, FileText } from "lucide-react";
-
-export const metadata = {
-	title: "Book a 15-Minute Intro Call | ProcessZero",
-	description:
-		"Schedule a free 15-minute intro call to see if AI automation is the right fit. Get clarity on pain points, process, pricing, and next steps toward a £100 Discovery Day.",
-};
 
 const whatWeCover = [
 	"Your current pain points",
@@ -23,6 +22,8 @@ const discoveryDayItems = [
 ];
 
 export default function IntroCallPage() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
 	const cta = {
 		label: "Book discovery series",
 		href: "/discovery-day",
@@ -31,6 +32,13 @@ export default function IntroCallPage() {
 	return (
 		<main className="min-h-screen w-full overflow-x-hidden bg-black">
 			<SecondaryHeader cta={cta} />
+
+			{/* Calendar Modal */}
+			<CalendarModal
+				isOpen={isModalOpen}
+				onClose={() => setIsModalOpen(false)}
+			/>
+
 			<div className="w-full pt-16 sm:pt-20">
 				<section
 					id="overview"
@@ -40,20 +48,40 @@ export default function IntroCallPage() {
 						<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.28),transparent_60%),radial-gradient(circle_at_bottom,rgba(16,185,129,0.25),transparent_55%)] opacity-70 mix-blend-screen" />
 					</div>
 
-					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
+					<div className="relative mx-auto max-w-7xl px-4 md:px-6">
 						<div className="inline-flex items-center gap-2 rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.22em] text-sky-200">
 							<PhoneCall className="h-4 w-4" />
 							Book a 15-Minute Intro Call
 						</div>
 
-						<div className="mt-6 space-y-4 text-left">
-							<h1 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-								Busy? Let’s keep it quick and useful.
-							</h1>
-							<p className="max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg">
-								This short call helps us understand your needs —
-								and whether AI automation is the right fit.
-							</p>
+						<div className="mt-8 grid gap-8 lg:grid-cols-2 lg:gap-12">
+							{/* Left Column - Text Content */}
+							<div className="space-y-6 text-left">
+								<h1 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
+									Busy? Let&apos;s keep it quick and useful.
+								</h1>
+								<p className="text-base leading-relaxed text-slate-300 sm:text-lg">
+									This short call helps us understand your
+									needs — and whether AI automation is the
+									right fit.
+								</p>
+								<button
+									onClick={() => setIsModalOpen(true)}
+									className="rounded-lg bg-linear-to-r from-blue-500 to-purple-600 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-blue-500/40 transition-all duration-300 ease-out hover:scale-105 hover:from-blue-600 hover:to-purple-700 hover:shadow-xl hover:shadow-blue-500/50">
+									Book Your 15-Minute Call
+								</button>
+							</div>
+
+							{/* Right Column - Calendar Image */}
+							<div className="relative h-[400px] overflow-hidden rounded-2xl lg:h-[500px]">
+								<Image
+									src="/calender.jpg"
+									alt="Calendar scheduling"
+									fill
+									className="object-cover"
+									priority
+								/>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -65,7 +93,7 @@ export default function IntroCallPage() {
 						<div className="grid gap-6 lg:grid-cols-2 lg:items-start">
 							<div className="h-full rounded-2xl border border-slate-800 bg-slate-900/60 p-6 backdrop-blur-sm">
 								<h2 className="text-xl font-semibold text-slate-100 sm:text-2xl">
-									What We’ll Cover
+									What We&apos;ll Cover
 								</h2>
 								<ul className="mt-4 space-y-3">
 									{whatWeCover.map((item) => (
@@ -123,29 +151,6 @@ export default function IntroCallPage() {
 										automation transformation.
 									</p>
 								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section
-					id="book"
-					className="relative overflow-hidden bg-black py-12 text-slate-50 sm:py-16">
-					<div className="pointer-events-none absolute inset-0">
-						<div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(124,58,237,0.2),transparent_55%)] opacity-60" />
-					</div>
-					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
-						<div className="rounded-3xl border border-slate-800 bg-slate-900/60 p-8 text-center backdrop-blur-sm">
-							<h3 className="text-2xl font-semibold text-slate-100 sm:text-3xl">
-								Looking forward to speaking with you.
-							</h3>
-							<p className="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
-								Use the scheduler below to book your free
-								15-minute intro call. We’ll add a calendar
-								integration here soon.
-							</p>
-							<div className="mt-6 rounded-2xl border border-dashed border-slate-700 bg-slate-900/80 p-8 text-sm text-slate-400">
-								Calendar integration placeholder
 							</div>
 						</div>
 					</div>
