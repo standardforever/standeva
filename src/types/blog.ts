@@ -25,6 +25,4 @@ export interface BlogPostSummary {
 	readTime: number;
 	tags: string[];
 	image: string;
-	views: number;
-	likes: number;
 }

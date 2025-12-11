@@ -130,9 +130,8 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
 					extractFirstImage(processedContent);
 				const readTime = calculateReadTime(processedContent);
 
-				// Default author info - you can customize this per post if needed
 				const author = {
-					name: "Standeva Team",
+					name: "Process Zero Team",
 					avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150&auto=format&fit=crop",
 					bio: "AI Strategy Consultants and Technology Experts"
 				};
@@ -186,13 +185,12 @@ export async function getBlogPostsData() {
 	}
 }
 
-// Server action to get a single blog post by slug
 export async function getBlogPostData(slug: string) {
 	try {
 		const posts = await getAllBlogPosts();
 		const post = posts.find(p => p.slug === slug);
 		if (!post) return null;
-		
+
 		return {
 			id: post.slug,
 			title: post.title,
@@ -202,8 +200,6 @@ export async function getBlogPostData(slug: string) {
 			readTime: post.readTime,
 			tags: post.keywords,
 			image: post.image || '',
-			views: Math.floor(Math.random() * 30000) + 5000,
-			likes: Math.floor(Math.random() * 500) + 50,
 			content: post.content
 		};
 	} catch (error) {

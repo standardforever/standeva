@@ -1,0 +1,29 @@
+intro-call
+
+// const whyDifferent = [
+// 	"Your data stays in your network",
+// 	"Built with open-source AI",
+// 	"Zero hidden licences or fees",
+// 	"Simple, transparent pricing",
+// ];
+
+{/* <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 backdrop-blur-sm">
+								<h2 className="text-xl font-semibold text-slate-100 sm:text-2xl">
+									Why ProcessZero Is Different
+								</h2>
+								<ul className="mt-4 space-y-3">
+									{whyDifferent.map((item) => (
+										<li
+											key={item}
+											className="flex items-start gap-2">
+											<CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-sky-400" />
+											<span className="text-sm text-slate-200">
+												{item}
+											</span>
+										</li>
+									))}
+								</ul>
+							</div> */}
+
+
+

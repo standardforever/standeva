@@ -15,13 +15,6 @@ const whatWeCover = [
 	"Why ProcessZero is different",
 ];
 
-const whyDifferent = [
-	"Your data stays in your network",
-	"Built with open-source AI",
-	"Zero hidden licences or fees",
-	"Simple, transparent pricing",
-];
-
 const discoveryDayItems = [
 	"AI strategy session to identify automation and scaling opportunities",
 	"Process mapping of repetitive tasks suitable for automation",
@@ -31,8 +24,8 @@ const discoveryDayItems = [
 
 export default function IntroCallPage() {
 	const cta = {
-		label: "Book intro call",
-		href: "#book",
+		label: "Book discovery series",
+		href: "/discovery-day",
 	};
 
 	return (
@@ -43,8 +36,8 @@ export default function IntroCallPage() {
 					id="overview"
 					className="relative overflow-hidden py-16 text-slate-50 sm:py-20 md:py-24">
 					<div className="pointer-events-none absolute inset-0">
-						<div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-950 to-black" />
-						<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.28),transparent_60%),radial-gradient(circle_at_bottom,_rgba(16,185,129,0.25),transparent_55%)] opacity-70 mix-blend-screen" />
+						<div className="absolute inset-0 bg-linear-to-b from-slate-950 via-slate-950 to-black" />
+						<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.28),transparent_60%),radial-gradient(circle_at_bottom,rgba(16,185,129,0.25),transparent_55%)] opacity-70 mix-blend-screen" />
 					</div>
 
 					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
@@ -69,8 +62,8 @@ export default function IntroCallPage() {
 					id="cover"
 					className="relative z-10 bg-black pb-12 text-slate-50 sm:pb-16">
 					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
-						<div className="grid gap-6 lg:grid-cols-2">
-							<div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 backdrop-blur-sm">
+						<div className="grid gap-6 lg:grid-cols-2 lg:items-start">
+							<div className="h-full rounded-2xl border border-slate-800 bg-slate-900/60 p-6 backdrop-blur-sm">
 								<h2 className="text-xl font-semibold text-slate-100 sm:text-2xl">
 									What We’ll Cover
 								</h2>
@@ -79,7 +72,7 @@ export default function IntroCallPage() {
 										<li
 											key={item}
 											className="flex items-start gap-2">
-											<CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-emerald-400" />
+											<CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-400" />
 											<span className="text-sm text-slate-200">
 												{item}
 											</span>
@@ -87,75 +80,49 @@ export default function IntroCallPage() {
 									))}
 								</ul>
 							</div>
-
-							<div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 backdrop-blur-sm">
-								<h2 className="text-xl font-semibold text-slate-100 sm:text-2xl">
-									Why ProcessZero Is Different
-								</h2>
-								<ul className="mt-4 space-y-3">
-									{whyDifferent.map((item) => (
-										<li
-											key={item}
-											className="flex items-start gap-2">
-											<CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-sky-400" />
-											<span className="text-sm text-slate-200">
-												{item}
-											</span>
-										</li>
-									))}
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section
-					id="next"
-					className="relative overflow-hidden bg-slate-950/40 py-12 text-slate-50 sm:py-16">
-					<div className="pointer-events-none absolute inset-0">
-						<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(56,189,248,0.12),transparent_55%)]" />
-					</div>
-					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
-						<div className="rounded-3xl border border-sky-500/30 bg-sky-500/5 p-6 shadow-[0_0_40px_rgba(56,189,248,0.15)] backdrop-blur-sm sm:p-8">
-							<div className="flex items-start gap-3">
-								<div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-sky-500/20 text-sky-200 ring-1 ring-sky-400/40">
-									<Rocket className="h-5 w-5" />
+							<div
+								id="next"
+								className="relative h-full overflow-hidden rounded-2xl border border-sky-500/30 bg-slate-950/60 p-6 shadow-[0_0_40px_rgba(56,189,248,0.15)] backdrop-blur-sm sm:p-8">
+								<div className="pointer-events-none absolute inset-0">
+									<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.12),transparent_55%)]" />
 								</div>
-								<div>
-									<h3 className="text-xl font-semibold text-slate-100 sm:text-2xl">
-										Next Steps: Book Your £100 Discovery Day
-									</h3>
-									<p className="mt-2 text-sm leading-relaxed text-slate-300">
-										Post 15-min call, the next step is a
-										£100 Discovery Day, which includes:
+								<div className="relative flex h-full flex-col">
+									<div className="flex items-start gap-3">
+										<div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-sky-500/20 text-sky-200 ring-1 ring-sky-400/40">
+											<Rocket className="h-5 w-5" />
+										</div>
+										<div>
+											<h3 className="text-xl font-semibold text-slate-100 sm:text-2xl">
+												Next Steps: Book Your £100
+												Discovery Day
+											</h3>
+											<p className="mt-2 text-sm leading-relaxed text-slate-300">
+												Post 15-min call, the next step
+												is a £100 Discovery Day, which
+												includes:
+											</p>
+										</div>
+									</div>
+
+									<ul className="mt-4 space-y-3">
+										{discoveryDayItems.map((item) => (
+											<li
+												key={item}
+												className="flex items-start gap-2">
+												<FileText className="mt-0.5 h-5 w-5 shrink-0 text-sky-300" />
+												<span className="text-sm text-slate-200">
+													{item}
+												</span>
+											</li>
+										))}
+									</ul>
+
+									<p className="mt-4 text-sm leading-relaxed text-slate-300">
+										This session provides a clear,
+										actionable roadmap to begin your AI
+										automation transformation.
 									</p>
 								</div>
-							</div>
-
-							<ul className="mt-4 space-y-3">
-								{discoveryDayItems.map((item) => (
-									<li
-										key={item}
-										className="flex items-start gap-2">
-										<FileText className="mt-0.5 h-5 w-5 flex-shrink-0 text-sky-300" />
-										<span className="text-sm text-slate-200">
-											{item}
-										</span>
-									</li>
-								))}
-							</ul>
-
-							<p className="mt-4 text-sm leading-relaxed text-slate-300">
-								This session provides a clear, actionable
-								roadmap to begin your AI automation
-								transformation.
-							</p>
-							<div className="mt-5 flex flex-wrap gap-3">
-								<a
-									href="/discovery-day"
-									className="inline-flex items-center justify-center rounded-md bg-sky-500 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-sky-500/40 transition hover:bg-sky-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black">
-									Discovery Day
-								</a>
 							</div>
 						</div>
 					</div>
@@ -165,7 +132,7 @@ export default function IntroCallPage() {
 					id="book"
 					className="relative overflow-hidden bg-black py-12 text-slate-50 sm:py-16">
 					<div className="pointer-events-none absolute inset-0">
-						<div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_rgba(124,58,237,0.2),transparent_55%)] opacity-60" />
+						<div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(124,58,237,0.2),transparent_55%)] opacity-60" />
 					</div>
 					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
 						<div className="rounded-3xl border border-slate-800 bg-slate-900/60 p-8 text-center backdrop-blur-sm">

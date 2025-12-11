@@ -28,6 +28,15 @@ const footerSections = [
 			// { name: "ML Development", href: "/services/ml-development" },
 		],
 	},
+	{
+		title: "Legal",
+		links: [
+			{ name: "GDPR & Privacy", href: "/legal/gdpr" },
+			// { name: "Privacy Policy", href: "/legal/privacy" }, // Not implemented yet
+			// { name: "Terms of Service", href: "/legal/terms" }, // Not implemented yet
+			// { name: "Cookie Policy", href: "/legal/cookies" }, // Not implemented yet
+		],
+	},
 	// {
 	// 	title: "Agentic AI",
 	// 	links: [

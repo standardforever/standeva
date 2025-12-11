@@ -112,8 +112,8 @@ export default function DiscoveryDayPage() {
 	];
 
 	const cta = {
-		label: "Book Discovery Day",
-		href: "#book",
+		label: "Start with a free 15-minute intro call.",
+		href: "/intro-call",
 	};
 
 	return (
@@ -295,13 +295,8 @@ export default function DiscoveryDayPage() {
 							<div className="mt-6 flex flex-wrap justify-center gap-4">
 								<a
 									href="/intro-call"
-									className="inline-flex items-center justify-center rounded-md bg-sky-500 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-sky-500/40 transition hover:bg-sky-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black">
-									Start with a 15-min Intro Call
-								</a>
-								<a
-									href="#agenda"
-									className="inline-flex items-center justify-center rounded-md border border-sky-500 px-6 py-3 text-sm font-semibold text-sky-300 transition hover:bg-sky-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black">
-									View the agenda
+									className="rounded-lg bg-linear-to-r from-blue-500 to-purple-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-lg shadow-blue-500/40 transition-colors duration-300 ease-out hover:from-slate-800 hover:to-slate-800">
+									Start free with a 15-min Intro Call
 								</a>
 							</div>
 						</div>

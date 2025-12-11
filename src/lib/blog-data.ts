@@ -3,11 +3,6 @@ import type { BlogPost, BlogPostSummary } from "@/types/blog";
 
 const FALLBACK_IMAGE = "/blog-1-1.png";
 
-const seededMetric = (slug: string, base: number, variance: number) => {
-	const seed = slug.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
-	return base + (seed % variance);
-};
-
 export async function getBlogPostsData(): Promise<BlogPostSummary[]> {
 	try {
 		const posts = await getAllBlogPosts();
@@ -20,8 +15,6 @@ export async function getBlogPostsData(): Promise<BlogPostSummary[]> {
 			readTime: post.readTime,
 			tags: post.keywords,
 			image: post.image || FALLBACK_IMAGE,
-			views: seededMetric(post.slug, 8000, 25000),
-			likes: seededMetric(post.slug, 120, 500)
 		}));
 	} catch (error) {
 		console.error("Error fetching blog posts:", error);

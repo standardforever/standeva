@@ -10,10 +10,11 @@ const startSteps = [
 	"£100 Discovery Day & AI Audit",
 ];
 
-const trustPoints = [
-	"Transparent pricing with open-source stack",
-	"Up to 90% reduction in repetitive workload costs",
-	"Data privacy & control",
+const actsReasons = [
+	"Aligned strategy before anything is built",
+	"Clear and validated processes",
+	"Securely built and deployed agents",
+	"Continuous support and improvement",
 ];
 
 const ServicesCTA: FC = () => {
@@ -60,9 +61,8 @@ const ServicesCTA: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.2 }}
 					className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-					Start with a free 15-minute introductory call, followed by a
-					£100 Discovery Day & AI Audit to pinpoint where automation
-					will deliver the greatest impact for your organisation.
+					It gives you clarity, structure, and a predictable pathway from
+					first conversation to fully automated operations.
 				</motion.p>
 
 				{/* Start steps */}
@@ -83,22 +83,30 @@ const ServicesCTA: FC = () => {
 					))}
 				</motion.div>
 
-				{/* Trust elements */}
+				{/* Why ACTS Works */}
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.35 }}
-					className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
-					{trustPoints.map((point, index) => (
-						<div
-							key={index}
-							className="flex items-center gap-3 rounded-xl border border-slate-800 bg-slate-900/60 px-6 py-4 backdrop-blur-sm">
-							<CheckCircle2 className="h-5 w-5 flex-shrink-0 text-sky-400" />
-							<span className="text-sm font-medium text-slate-200">
-								{point}
-							</span>
-						</div>
-					))}
+					className="mx-auto mt-12">
+					<h3 className="text-xl font-semibold text-slate-100 sm:text-2xl">
+						Why ACTS Works
+					</h3>
+					<p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-slate-400 sm:text-base">
+						ACTS keeps you safe from hype, misalignment and wasted investment by ensuring:
+					</p>
+					<div className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2">
+						{actsReasons.map((reason, index) => (
+							<div
+								key={index}
+								className="flex items-center gap-3 rounded-xl border border-slate-800 bg-slate-900/60 px-6 py-4 backdrop-blur-sm">
+								<CheckCircle2 className="h-5 w-5 flex-shrink-0 text-sky-400" />
+								<span className="text-sm font-medium text-slate-200">
+									{reason}
+								</span>
+							</div>
+						))}
+					</div>
 				</motion.div>
 
 				{/* CTA buttons */}
@@ -107,12 +115,23 @@ const ServicesCTA: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.4 }}
 					className="mt-12 flex flex-col items-center gap-6">
+					<div className="text-center">
+						<h4 className="text-lg font-semibold text-slate-100 sm:text-xl">
+							Ready to Begin?
+						</h4>
+						<p className="mt-2 text-sm text-slate-400 sm:text-base">
+							Start with <span className="font-semibold text-sky-400">A – Align</span>
+						</p>
+						<p className="mt-1 text-xs text-slate-500 sm:text-sm">
+							Book your 15-Minute Introductory Call to begin the alignment stage.
+						</p>
+					</div>
 					<motion.a
 						href="/intro-call"
 						whileHover={{ scale: 1.05 }}
 						whileTap={{ scale: 0.95 }}
 						className="inline-flex items-center justify-center gap-2 rounded-md bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 text-base font-semibold text-white shadow-[0_0_40px_rgba(56,189,248,0.4)] transition-colors duration-300 ease-out hover:from-slate-800 hover:to-slate-800 hover:shadow-[0_0_60px_rgba(56,189,248,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black">
-						Start With a Free Intro Call
+						Book Intro Call
 					</motion.a>
 				</motion.div>
 			</div>

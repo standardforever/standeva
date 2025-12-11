@@ -24,8 +24,6 @@ interface BlogPost {
 	readTime: number;
 	tags: string[];
 	image?: string;
-	views: number;
-	likes: number;
 }
 
 interface BlogListingProps {
@@ -50,7 +48,7 @@ const BlogListing: React.FC<BlogListingProps> = ({
 		],
 		[blogPosts]
 	);
-	const sortOptions = ["Latest", "Most Popular", "Most Viewed", "Trending"];
+	const sortOptions = ["Latest"];
 
 	const filteredPosts = useMemo(() => {
 		return blogPosts
@@ -66,21 +64,12 @@ const BlogListing: React.FC<BlogListingProps> = ({
 				return matchesSearch && matchesCategory;
 			})
 			.sort((a, b) => {
-				switch (sortBy) {
-					case "Most Popular":
-						return b.likes - a.likes;
-					case "Most Viewed":
-						return b.views - a.views;
-					case "Trending":
-						return b.likes + b.views - (a.likes + a.views);
-					default:
-						return (
-							new Date(b.publishedAt).getTime() -
-							new Date(a.publishedAt).getTime()
-						);
-				}
+				return (
+					new Date(b.publishedAt).getTime() -
+					new Date(a.publishedAt).getTime()
+				);
 			});
-	}, [blogPosts, searchTerm, selectedCategory, sortBy]);
+	}, [blogPosts, searchTerm, selectedCategory]);
 
 	const BlogCard = ({
 		post,
@@ -133,8 +122,6 @@ const BlogListing: React.FC<BlogListingProps> = ({
 							<span>{post.publishedAt}</span>
 							<span>•</span>
 							<span>{post.readTime} min read</span>
-							<span>•</span>
-							<span>{post.views.toLocaleString()} views</span>
 						</div>
 					)}
 
@@ -180,13 +167,7 @@ const BlogListing: React.FC<BlogListingProps> = ({
 						))}
 					</div>
 
-					<div className="flex items-center justify-between">
-						<div className="flex items-center gap-3 text-xs text-slate-400">
-							<span>{post.views.toLocaleString()} views</span>
-							<span>•</span>
-							<span>{post.likes} likes</span>
-						</div>
-
+					<div className="flex items-center justify-end">
 						<motion.div
 							className="flex items-center gap-2 text-blue-400 font-medium opacity-0 group-hover:opacity-100 transition-all duration-300"
 							whileHover={{ x: 5 }}>
