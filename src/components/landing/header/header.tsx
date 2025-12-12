@@ -43,11 +43,11 @@ const Header: React.FC = () => {
 	const navItems: NavItemConfig[] = [
 		// { name: "Platform", hasDropdown: true },
 		// { name: "Solutions", hasDropdown: true },
-		{ name: "Pricing", href: "#pricing" },
+		{ name: "pricing", href: "#pricing" },
 		// { name: "Developers", hasDropdown: true },
 		// { name: "Partner", href: "/partner" },
 		// { name: "Company", href: "/company/about" },
-		{ name: "Blog", href: "/blog" },
+		{ name: "blog", href: "/blog" },
 		// Note: Some dropdown items may point to unimplemented pages
 	];
 
@@ -249,7 +249,7 @@ const Header: React.FC = () => {
 								className="hidden rounded-lg bg-linear-to-r from-blue-500 to-purple-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-500/30 transition hover:opacity-90 md:inline-flex"
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}>
-								Get Free AI Audit
+								get free ai audit
 							</motion.button>
 
 							<motion.button
@@ -309,7 +309,7 @@ const Header: React.FC = () => {
 								<button
 									type="button"
 									className="rounded-lg bg-linear-to-r from-blue-500 to-purple-600 px-3 py-2 text-center text-sm font-semibold text-white">
-									Get Free AI Audit
+									get free ai audit
 								</button>
 							</div>
 						</div>

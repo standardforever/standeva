@@ -49,8 +49,8 @@ const WhatWeAutomate: FC = () => {
 					initial={{ opacity: 0, y: 20 }}
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
-					className="inline-flex items-center rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.22em] text-sky-200">
-					What We Automate
+					className="inline-flex items-center rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-sky-200">
+					what we automate
 				</motion.div>
 
 				<motion.h2
@@ -58,7 +58,7 @@ const WhatWeAutomate: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.1 }}
 					className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-					Automation Built for SME Operations
+					automation built for sme operations
 				</motion.h2>
 
 				<motion.p

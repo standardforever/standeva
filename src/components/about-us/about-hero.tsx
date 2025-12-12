@@ -28,8 +28,8 @@ const AboutUsHero: FC = () => {
 					initial={{ opacity: 0, y: 20 }}
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
-					className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-					About ProcessZero
+					className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-emerald-200">
+					about processzero
 				</motion.div>
 
 				{/* Main heading */}
@@ -38,7 +38,7 @@ const AboutUsHero: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.1 }}
 					className="mt-6 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
-					Automating Repetitive Work. Helping Teams Focus on Growth.
+					automating repetitive work. helping teams focus on growth.
 				</motion.h1>
 
 				{/* Description */}
@@ -93,7 +93,7 @@ const AboutUsHero: FC = () => {
 							30+
 						</div>
 						<div className="mt-2 text-center text-sm font-medium text-slate-300">
-							Years Combined Experience
+							years combined experience
 						</div>
 					</div>
 					<div className="flex flex-col items-center rounded-2xl border border-slate-800 bg-slate-900/60 px-6 py-8 backdrop-blur-sm">
@@ -101,7 +101,7 @@ const AboutUsHero: FC = () => {
 							90%
 						</div>
 						<div className="mt-2 text-center text-sm font-medium text-slate-300">
-							Up to Reduction in Task Costs
+							up to reduction in task costs
 						</div>
 					</div>
 					<div className="flex flex-col items-center rounded-2xl border border-slate-800 bg-slate-900/60 px-6 py-8 backdrop-blur-sm">
@@ -109,7 +109,7 @@ const AboutUsHero: FC = () => {
 							100%
 						</div>
 						<div className="mt-2 text-center text-sm font-medium text-slate-300">
-							Data Privacy & Control
+							data privacy & control
 						</div>
 					</div>
 				</motion.div>

@@ -21,20 +21,20 @@ export const metadata = {
 export default async function AIConsultingPage() {
 	const blogPosts = (await getBlogPostsData()).slice(0, 4);
 	const navItems = [
-		{ label: "Overview", href: "#consulting-overview" },
-		{ label: "Services", href: "#consulting-services" },
-		{ label: "Internal AI", href: "#internal-ai" },
-		{ label: "Why ProcessZero", href: "#why-ProcessZero" },
-		{ label: "Partners", href: "#partners" },
-		{ label: "FAQ", href: "#consulting-faq" },
-		{ label: "Blog", href: "/blog" }
+		{ label: "overview", href: "#consulting-overview" },
+		{ label: "services", href: "#consulting-services" },
+		{ label: "internal ai", href: "#internal-ai" },
+		{ label: "why processzero", href: "#why-ProcessZero" },
+		{ label: "partners", href: "#partners" },
+		{ label: "faq", href: "#consulting-faq" },
+		{ label: "blog", href: "/blog" }
 	];
 
 	return (
 		<main className="min-h-screen bg-black overflow-x-hidden w-full">
 			<SecondaryHeader
 				navItems={navItems}
-				cta={{ label: "Book Consultation", href: "#consulting-cta" }}
+				cta={{ label: "book consultation", href: "#consulting-cta" }}
 			/>
 			<div className="w-full pt-16 sm:pt-20">
 				<ConsultingHero />

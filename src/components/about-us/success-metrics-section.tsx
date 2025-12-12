@@ -7,32 +7,32 @@ import { CheckCircle2 } from "lucide-react";
 
 const metrics = [
 	{
-		title: "Up to 90% reduction in repetitive task costs",
-		description: "Dramatic decrease in manual workload and overhead",
+		title: "up to 90% reduction in repetitive task costs",
+		description: "dramatic decrease in manual workload and overhead",
 	},
 	{
-		title: "Faster, more consistent, error-free workflows",
-		description: "Eliminate human error and process variability",
+		title: "faster, more consistent, error-free workflows",
+		description: "eliminate human error and process variability",
 	},
 	{
-		title: "Reduction in operational bottlenecks",
-		description: "Smooth, uninterrupted process flows",
+		title: "reduction in operational bottlenecks",
+		description: "smooth, uninterrupted process flows",
 	},
 	{
-		title: "Higher output without hiring additional staff",
-		description: "Scale operations without increasing headcount",
+		title: "higher output without hiring additional staff",
+		description: "scale operations without increasing headcount",
 	},
 	{
-		title: "Stronger data integrity and compliance",
-		description: "Automated audit trails and regulatory adherence",
+		title: "stronger data integrity and compliance",
+		description: "automated audit trails and regulatory adherence",
 	},
 	{
-		title: "Enhanced employee satisfaction and productivity",
-		description: "Free teams from soul-crushing repetitive work",
+		title: "enhanced employee satisfaction and productivity",
+		description: "free teams from soul-crushing repetitive work",
 	},
 	{
-		title: "A more agile, scalable, future-proof organisation",
-		description: "Built to adapt and grow with your business",
+		title: "a more agile, scalable, future-proof organisation",
+		description: "built to adapt and grow with your business",
 	},
 ];
 
@@ -58,8 +58,8 @@ const SuccessMetricsSection: FC = () => {
 					initial={{ opacity: 0, y: 20 }}
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
-					className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-					Client Results
+					className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-emerald-200">
+					client results
 				</motion.div>
 
 				{/* Title */}
@@ -68,7 +68,7 @@ const SuccessMetricsSection: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.1 }}
 					className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-					WHAT SUCCESS LOOKS LIKE
+					what success looks like
 				</motion.h2>
 
 				<motion.p
@@ -122,18 +122,18 @@ const SuccessMetricsSection: FC = () => {
 					<div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
 						<div className="text-center md:text-left">
 							<p className="text-lg font-semibold text-slate-100">
-								Ready to transform your operations?
+								ready to transform your operations?
 							</p>
 							<p className="mt-1 text-sm text-slate-300">
 								Join the organisations already achieving these
 								results.
 							</p>
 						</div>
-						<a
-							href="#partnership"
-							className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-emerald-500 to-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:opacity-90">
-							Get Started
-						</a>
+							<a
+								href="#partnership"
+								className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-emerald-500 to-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:opacity-90">
+							get started
+							</a>
 					</div>
 				</motion.div>
 			</div>

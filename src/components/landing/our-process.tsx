@@ -5,17 +5,17 @@ import type { FC } from "react";
 const steps = [
 	{
 		id: 1,
-		title: "Book Your Intro Call",
+		title: "book your intro call",
 		body: "Schedule a free 15-minute introductory call so we can understand your goals and highlight where AI automation could deliver the greatest impact.",
 	},
 	{
 		id: 2,
-		title: "£100 Discovery Day",
+		title: "£100 discovery day",
 		body: "Spend a focused day mapping your processes, identifying automation opportunities and shaping your AI strategy.",
 	},
 	{
 		id: 3,
-		title: "Receive Your AI Audit Report",
+		title: "receive your ai audit report",
 		body: "Get a clear, actionable report outlining proposed automations, expected savings, timelines and recommended next steps.",
 	},
 ];
@@ -29,13 +29,13 @@ const OurProcess: FC = () => {
 			</div>
 
 			<div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 text-center md:px-6">
-				<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-					Our Process
+				<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
+					our process
 				</div>
 
 				<div className="mt-6 space-y-4">
 					<h2 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-[2.4rem]">
-						Getting Started is Easy
+						getting started is easy
 					</h2>
 					<p className="mx-auto max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
 						From first conversation to a clear automation roadmap in

@@ -86,11 +86,11 @@ const Hero: FC = () => {
 								))}
 							</motion.div>
 							<motion.p
-								className="text-xs font-medium uppercase tracking-[0.25em] text-slate-400"
+								className="text-xs font-medium tracking-[0.25em] text-slate-400"
 								initial={{ opacity: 0, y: 10 }}
 								animate={isInView ? { opacity: 1, y: 0 } : {}}
 								transition={{ duration: 0.4, delay: 0.1 }}>
-								Your trusted AI partner
+								your trusted ai partner
 							</motion.p>
 						</div>
 
@@ -101,7 +101,7 @@ const Hero: FC = () => {
 										className="block"
 										variants={lineRevealVariants}
 										custom={0}>
-										Free Your Team
+										free your team
 									</motion.span>
 								</span>
 								<span className="block overflow-hidden text-sky-400">
@@ -109,7 +109,7 @@ const Hero: FC = () => {
 										className="block"
 										variants={lineRevealVariants}
 										custom={1}>
-										From Repetitive Work.
+										from repetitive work.
 									</motion.span>
 								</span>
 							</h1>
@@ -143,10 +143,10 @@ const Hero: FC = () => {
 								whileHover={{ scale: 1.03 }}
 								whileTap={{ scale: 0.97 }}>
 								<span className="text-slate-100 leading-none">
-									Discovery Day
+									discovery day
 								</span>
 								<span className="text-[0.72rem] leading-tight font-normal text-slate-300">
-									1-Day AI Audit + Strategy Session (£100)
+									1-day ai audit + strategy session (£100)
 								</span>
 							</motion.a>
 						</motion.div>

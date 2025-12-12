@@ -8,43 +8,43 @@ import { TrendingUp, Zap, Lock, Code, Layers } from "lucide-react";
 const differentiators = [
 	{
 		icon: Lock,
-		title: "Your data stays in your network",
-		subtitle: "Total control",
+		title: "your data stays in your network",
+		subtitle: "total control",
 		description:
 			"No external AI models or third-party platforms. Your data and workflows stay inside your environment with full oversight.",
-		highlight: "In-network only",
+		highlight: "in-network only",
 	},
 	{
 		icon: Zap,
-		title: "You fully own your AI agents",
-		subtitle: "Open-source by default",
+		title: "you fully own your ai agents",
+		subtitle: "open-source by default",
 		description:
 			"Everything is built with open-source tooling — no vendor lock-in, no hidden licensing, and complete transparency.",
-		highlight: "Open-source & auditable",
+		highlight: "open-source & auditable",
 	},
 	{
 		icon: TrendingUp,
-		title: "Simple, fair pricing",
-		subtitle: "No surprises",
+		title: "simple, fair pricing",
+		subtitle: "no surprises",
 		description:
 			"No ongoing platform fees or hidden costs. Solutions are priced for strong, recurring ROI with transparent payment options.",
-		highlight: "Transparent costs",
+		highlight: "transparent costs",
 	},
 	{
 		icon: Code,
-		title: "Real impact for SMEs",
-		subtitle: "Outcomes that matter",
+		title: "real impact for smes",
+		subtitle: "outcomes that matter",
 		description:
 			"Our automations often reduce repetitive workload costs by up to 90%, freeing teams to focus on growth and customers.",
-		highlight: "Up to 90% reduction",
+		highlight: "up to 90% reduction",
 	},
 	{
 		icon: Layers,
-		title: "End-to-end delivery",
-		subtitle: "From strategy to optimisation",
+		title: "end-to-end delivery",
+		subtitle: "from strategy to optimisation",
 		description:
 			"We support you through the entire journey — from strategy and build to deployment and ongoing optimisation.",
-		highlight: "Strategy → build → optimise",
+		highlight: "strategy → build → optimise",
 	},
 ];
 
@@ -70,8 +70,8 @@ const WhatMakesUsDifferent: FC = () => {
 					initial={{ opacity: 0, y: 20 }}
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
-					className="inline-flex items-center rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.22em] text-sky-200">
-					Our Advantage
+					className="inline-flex items-center rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-sky-200">
+					our advantage
 				</motion.div>
 
 				{/* Title */}
@@ -80,7 +80,7 @@ const WhatMakesUsDifferent: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.1 }}
 					className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-					Why ProcessZero Is Different
+					why processzero is different
 				</motion.h2>
 
 				<motion.p
@@ -114,7 +114,7 @@ const WhatMakesUsDifferent: FC = () => {
 								</div>
 
 								{/* Subtitle */}
-								<div className="mt-4 text-xs font-semibold uppercase tracking-wider text-sky-400">
+								<div className="mt-4 text-xs font-semibold tracking-wider text-sky-400">
 									{item.subtitle}
 								</div>
 

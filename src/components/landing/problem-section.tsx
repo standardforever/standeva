@@ -5,19 +5,19 @@ const items = [
 	{
 		id: "finance",
 		icon: CreditCard,
-		title: "Finance",
+		title: "finance",
 		body: "The cost of processing finance tasks is increasing, driven by rising salaries and software licensing fees, as well as growing demands for information.",
 	},
 	{
 		id: "hr",
 		icon: Users,
-		title: "HR",
+		title: "hr",
 		body: "Onboarding, staff changes, and routine requests consume an increasing number of manual hours, driving up your operational costs.",
 	},
 	{
 		id: "sales-plus",
 		icon: ShoppingBag,
-		title: "Sales Plus",
+		title: "sales plus",
 		body: "Finding, sourcing, and processing orders is extremely manual and expensive, putting pressure on your profit margins.",
 	},
 ];
@@ -34,11 +34,11 @@ const ProblemSection: FC = () => {
 
 			<div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 text-center md:px-6 md:gap-12">
 				<div className="space-y-4">
-					<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-						The Problem
+					<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
+						the problem
 					</div>
 					<h2 className="text-balance text-2xl font-semibold leading-tight sm:text-3xl md:text-[2.1rem]">
-						Your team&apos;s processing costs are too high
+						your team&apos;s processing costs are too high
 					</h2>
 					<p className="mx-auto max-w-3xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
 						Most of your processing tasks are not automated, which

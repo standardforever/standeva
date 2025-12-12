@@ -30,16 +30,16 @@ const PricingSection: FC = () => {
 			</div>
 
 			<div className="relative mx-auto flex max-w-5xl flex-col items-center px-4 text-center md:px-6">
-				<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-					Pricing
+				<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
+					pricing
 				</div>
 
 				<h2 className="mt-6 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-[2.4rem]">
-					Simple, Fair Pricing
+					simple, fair pricing
 				</h2>
 
 				<p className="mt-4 max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
-					Free intro call → £100 Discovery Day → AI Audit Report → Automation Implementation
+					free intro call → £100 discovery day → ai audit report → automation implementation
 				</p>
 
 				<div className="mt-10 grid w-full gap-6 text-left sm:grid-cols-2 lg:grid-cols-4">
@@ -51,8 +51,8 @@ const PricingSection: FC = () => {
 								<div className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500/90 text-xs font-semibold text-slate-950">
 									{step.id}
 								</div>
-								<p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-emerald-200">
-									Step {step.id}
+								<p className="text-[0.7rem] font-semibold tracking-[0.18em] text-emerald-200">
+									step {step.id}
 								</p>
 							</div>
 							<p className="text-sm leading-relaxed text-slate-200 sm:text-[0.95rem] md:text-base">

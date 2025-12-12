@@ -11,11 +11,11 @@ export const metadata = {
 
 export default function ServicesPage() {
 	const navItems = [
-		{ label: "Overview", href: "#overview" },
-		{ label: "Process Audit", href: "#process-audit" },
-		{ label: "Transformation", href: "#transformation" },
-		{ label: "Implementation", href: "#implementation" },
-		{ label: "Maintenance", href: "#maintenance" },
+		{ label: "overview", href: "#overview" },
+		{ label: "process audit", href: "#process-audit" },
+		{ label: "transformation", href: "#transformation" },
+		{ label: "implementation", href: "#implementation" },
+		{ label: "maintenance", href: "#maintenance" },
 	];
 
 	const cta = {

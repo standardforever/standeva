@@ -14,18 +14,18 @@ const FounderMissionSection: FC = () => {
 
 			<div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 md:px-6">
 				<div className="text-center">
-					<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-						Built on Experience, Backed by Leaders
+					<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
+						built on experience, backed by leaders
 					</div>
 					<h2 className="mt-6 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-[2.4rem]">
-						A Founder&apos;s Mission to Make AI Safe and Useful.
+						a founder&apos;s mission to make ai safe and useful.
 					</h2>
 				</div>
 
 				<div className="grid gap-12 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] md:items-center">
 					<div className="space-y-6 text-left text-sm text-slate-200 sm:text-[0.95rem] md:text-base">
-						<p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
-							A FOUNDER&apos;S MISSION
+						<p className="text-xs font-semibold tracking-[0.22em] text-slate-400">
+							a founder&apos;s mission
 						</p>
 						<p>
 							My mission is to help your organisation use AI to
@@ -63,8 +63,8 @@ const FounderMissionSection: FC = () => {
 
 						<div className="w-full max-w-sm space-y-6 text-right text-xs text-slate-300 sm:text-[0.8rem]">
 							<div>
-								<p className="font-semibold uppercase tracking-[0.2em] text-slate-400">
-									Recognised &amp; Supported By
+								<p className="font-semibold tracking-[0.2em] text-slate-400">
+									recognised &amp; supported by
 								</p>
 								<p className="mt-2 text-slate-200">
 									Selected for the Microsoft for Startups
@@ -73,8 +73,8 @@ const FounderMissionSection: FC = () => {
 							</div>
 
 							<div>
-								<p className="font-semibold uppercase tracking-[0.2em] text-slate-400">
-									Our Technology Partners
+								<p className="font-semibold tracking-[0.2em] text-slate-400">
+									our technology partners
 								</p>
 								<div className="mt-3 flex flex-wrap justify-end gap-3">
 									{["Meta AI", "GitHub", "Browse AI"].map(
@@ -97,7 +97,7 @@ const FounderMissionSection: FC = () => {
 					<Link
 						href="/about-us"
 						className="group inline-flex items-center gap-2 text-sm font-semibold text-sky-400 transition hover:text-sky-300">
-						Learn More About Our Story
+						learn more about our story
 						<span className="transition-transform group-hover:translate-x-1">
 							→
 						</span>

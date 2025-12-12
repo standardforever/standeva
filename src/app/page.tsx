@@ -5,11 +5,11 @@ import TransitionOverlay from "@/components/transition/transition-overlay";
 
 export default function Home() {
 	const navItems = [
-		{ label: "Home", href: "/" },
-		{ label: "Solutions", href: "#solutions" },
-		{ label: "Services", href: "/services" },
-		{ label: "Pricing", href: "#pricing" },
-		{ label: "About Us", href: "/about-us" },
+		{ label: "home", href: "/" },
+		{ label: "solutions", href: "#solutions" },
+		{ label: "services", href: "/services" },
+		{ label: "pricing", href: "#pricing" },
+		{ label: "about us", href: "/about-us" },
 	];
 
 	const cta = {

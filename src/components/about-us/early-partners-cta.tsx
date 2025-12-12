@@ -8,21 +8,21 @@ import { PhoneCall, Search, Rocket } from "lucide-react";
 const actions = [
 	{
 		icon: PhoneCall,
-		title: "Book your Free Intro Call",
+		title: "book your free intro call",
 		description:
 			"A 15-minute call to align on goals and confirm automation fit.",
 		accent: "from-sky-500/20 to-emerald-500/15",
 	},
 	{
 		icon: Search,
-		title: "Start your £100 Discovery Day",
+		title: "start your £100 discovery day",
 		description:
 			"A focused day mapping processes, stakeholders, and automation opportunities.",
 		accent: "from-emerald-500/15 to-sky-500/20",
 	},
 	{
 		icon: Rocket,
-		title: "Unlock your AI Audit Report",
+		title: "unlock your ai audit report",
 		description:
 			"Receive a tailored automation roadmap with solutions, timelines, and ROI.",
 		accent: "from-purple-500/15 to-sky-500/15",
@@ -51,8 +51,8 @@ const EarlyPartnersCTA: FC = () => {
 					initial={{ opacity: 0, scale: 0.9 }}
 					animate={isInView ? { opacity: 1, scale: 1 } : {}}
 					transition={{ duration: 0.5 }}
-					className="inline-flex items-center rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.22em] text-sky-200">
-					Next Steps
+					className="inline-flex items-center rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-sky-200">
+					next steps
 				</motion.div>
 
 				<motion.h2
@@ -60,7 +60,7 @@ const EarlyPartnersCTA: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.1 }}
 					className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-					Ready to Reduce Manual Workload?
+					ready to reduce manual workload?
 				</motion.h2>
 
 				<motion.p
@@ -129,7 +129,7 @@ const EarlyPartnersCTA: FC = () => {
 						className="inline-flex items-center justify-center rounded-md bg-slate-800/90 px-7 py-3 text-sm font-semibold text-slate-100 shadow-md shadow-slate-900/30 transition-colors duration-300 ease-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-600/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
 						whileHover={{ scale: 1.03 }}
 						whileTap={{ scale: 0.97 }}>
-						Discovery Day
+						discovery day
 					</motion.a>
 				</motion.div>
 			</div>

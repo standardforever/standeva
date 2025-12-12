@@ -11,12 +11,12 @@ export const metadata = {
 
 export default function AboutUsPage() {
 	const navItems = [
-		{ label: "Overview", href: "#overview" },
-		{ label: "Our Story", href: "#story" },
-		{ label: "Mission", href: "#mission" },
-		{ label: "Values", href: "#values" },
-		{ label: "How We Work", href: "#how-we-work" },
-		{ label: "Partnership", href: "#partnership" },
+		{ label: "overview", href: "#overview" },
+		{ label: "our story", href: "#story" },
+		{ label: "mission", href: "#mission" },
+		{ label: "values", href: "#values" },
+		{ label: "how we work", href: "#how-we-work" },
+		{ label: "partnership", href: "#partnership" },
 	];
 
 	const cta = {

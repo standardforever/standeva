@@ -30,8 +30,8 @@ const MissionSection: FC = () => {
 					initial={{ opacity: 0, y: 20 }}
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
-					className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-					Our Purpose
+					className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-emerald-200">
+					our purpose
 				</motion.div>
 
 				{/* Title */}
@@ -40,7 +40,7 @@ const MissionSection: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.1 }}
 					className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-					Our Mission
+					our mission
 				</motion.h2>
 
 				{/* Content grid */}
@@ -75,7 +75,7 @@ const MissionSection: FC = () => {
 							</div>
 							<div>
 								<h3 className="text-xl font-semibold text-slate-100 sm:text-2xl">
-									After 25+ years in change and ops
+									after 25+ years in change and ops
 								</h3>
 								<p className="mt-2 text-base leading-relaxed text-slate-300">
 									we&apos;ve seen SMEs drowning in repetitive work — costing time,
@@ -86,7 +86,7 @@ const MissionSection: FC = () => {
 
 						<div className="rounded-2xl border border-sky-500/30 bg-sky-500/5 p-6">
 							<h4 className="text-lg font-semibold text-slate-100">
-								Our mission is to help organisations become AI-first:
+								our mission is to help organisations become ai-first:
 							</h4>
 							<div className="mt-4 space-y-2">
 								<div className="flex items-start gap-2">

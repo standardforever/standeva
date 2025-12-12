@@ -5,23 +5,23 @@ import Link from "next/link";
 
 const footerSections = [
 	{
-		title: "Company",
+		title: "company",
 		links: [
-			{ name: "About us", href: "/company/about" },
-			{ name: "Blog", href: "/blog" },
+			{ name: "about us", href: "/company/about" },
+			{ name: "blog", href: "/blog" },
 			// { name: "Resources", href: "/resources" }, // Not implemented yet
 			// { name: "Careers", href: "/careers" }, // Not implemented yet
 			// { name: "Contact us", href: "/contact" }, // Not implemented yet
 		],
 	},
 	{
-		title: "AI Development",
+		title: "ai development",
 		links: [
 			// All AI development service pages not implemented yet
 			// { name: "AI Development Services", href: "/services/ai-development" },
 			// { name: "Enterprise AI Development", href: "/services/enterprise-ai" },
 			{
-				name: "AI Consulting Services",
+				name: "ai consulting services",
 				href: "/solutions/ai-consulting",
 			}, // Implemented
 			// { name: "Computer Vision Development", href: "/services/computer-vision" },
@@ -29,9 +29,9 @@ const footerSections = [
 		],
 	},
 	{
-		title: "Legal",
+		title: "legal",
 		links: [
-			{ name: "GDPR & Privacy", href: "/legal/gdpr" },
+			{ name: "gdpr & privacy", href: "/legal/gdpr" },
 			// { name: "Privacy Policy", href: "/legal/privacy" }, // Not implemented yet
 			// { name: "Terms of Service", href: "/legal/terms" }, // Not implemented yet
 			// { name: "Cookie Policy", href: "/legal/cookies" }, // Not implemented yet

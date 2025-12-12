@@ -65,7 +65,7 @@ const dropdownContent: DropdownContentMap = {
 	Platform: {
 		sections: [
 			{
-				title: "Core Platform",
+				title: "core platform",
 				items: [
 					// All platform pages not implemented yet
 					// { label: "API Gateway", href: "/platform/api-gateway" },
@@ -75,7 +75,7 @@ const dropdownContent: DropdownContentMap = {
 				],
 			},
 			{
-				title: "APIs",
+				title: "apis",
 				items: [
 					// All API pages not implemented yet
 					// { label: "Sourceora API", href: "/apis/sourceora" },
@@ -95,7 +95,7 @@ const dropdownContent: DropdownContentMap = {
 				],
 			},
 			{
-				title: "Tools",
+				title: "tools",
 				items: [
 					// All tool pages not implemented yet
 					// { label: "Playground", href: "/tools/playground" },
@@ -105,7 +105,7 @@ const dropdownContent: DropdownContentMap = {
 			},
 		],
 		featured: {
-			title: "Coming Soon 🚀",
+			title: "coming soon 🚀",
 			description:
 				"Our powerful platform features are being built. Stay tuned for updates on our API gateway, model hub, and analytics tools.",
 			image: "📦",
@@ -115,14 +115,14 @@ const dropdownContent: DropdownContentMap = {
 	Solutions: {
 		sections: [
 			{
-				title: "Services",
+				title: "services",
 				items: [
-					{ label: "AI Consulting", href: "/solutions/ai-consulting" },
+					{ label: "ai consulting", href: "/solutions/ai-consulting" },
 					// { label: "ProcessZero", href: "/solutions/ProcessZero" }, // Not implemented yet
 				],
 			},
 			{
-				title: "By Industry",
+				title: "by industry",
 				items: [
 					// Industry pages not implemented yet
 					// { label: "Healthcare", href: "/solutions/healthcare" },
@@ -132,7 +132,7 @@ const dropdownContent: DropdownContentMap = {
 				],
 			},
 			{
-				title: "By Use Case",
+				title: "by use case",
 				items: [
 					// Use case pages not implemented yet
 					// { label: "Content Generation", href: "/use-cases/content" },
@@ -142,7 +142,7 @@ const dropdownContent: DropdownContentMap = {
 			},
 		],
 		featured: {
-			title: "AI Consulting Services",
+			title: "ai consulting services",
 			description:
 				"Explore our expert AI consulting services to help your business navigate AI adoption and implementation.",
 			image: "🏢",
@@ -152,7 +152,7 @@ const dropdownContent: DropdownContentMap = {
 	Developers: {
 		sections: [
 			{
-				title: "Resources",
+				title: "resources",
 				items: [
 					// Documentation pages not implemented yet
 					// { label: "Documentation", href: "/docs" },
@@ -162,7 +162,7 @@ const dropdownContent: DropdownContentMap = {
 				],
 			},
 			{
-				title: "Community",
+				title: "community",
 				items: [
 					// Community links - external
 					// { label: "Discord", href: "https://discord.gg/standeva" },
@@ -175,7 +175,7 @@ const dropdownContent: DropdownContentMap = {
 			},
 		],
 		featured: {
-			title: "Developer Resources Coming Soon",
+			title: "developer resources coming soon",
 			description:
 				"We're building comprehensive documentation, SDKs, and developer tools. Check back soon for updates.",
 			image: "⚡",
@@ -218,7 +218,7 @@ export const Dropdown: React.FC<DropdownProps> = ({
 							<div className="grid flex-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 								{currentContent.sections.map((section, sectionIndex) => (
 									<div key={section.title} className="flex flex-col gap-3">
-										<p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+										<p className="text-xs font-semibold tracking-[0.3em] text-slate-400">
 											{section.title}
 										</p>
 										{section.items.map((item, itemIndex) => (
@@ -237,8 +237,8 @@ export const Dropdown: React.FC<DropdownProps> = ({
 							</div>
 
 							<div className="flex w-full max-w-sm flex-col gap-3 rounded-2xl border border-blue-500/20 bg-gradient-to-br from-blue-500/10 to-purple-500/10 p-6 text-white">
-								<p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-300">
-									Latest
+								<p className="text-xs font-semibold tracking-[0.3em] text-slate-300">
+									latest
 								</p>
 								<motion.div
 									whileHover={{ scale: 1.02 }}

@@ -8,7 +8,7 @@ import { Shield, Eye, Handshake, DollarSign, Settings } from "lucide-react";
 const values = [
 	{
 		icon: Shield,
-		title: "Security First",
+		title: "security first",
 		description:
 			"Your data never leaves your environment. All automation runs as a closed-loop, on-prem system, using open-source components you fully own.",
 		color: "from-sky-500 to-blue-600",
@@ -17,7 +17,7 @@ const values = [
 	},
 	{
 		icon: Eye,
-		title: "Transparency & Trust",
+		title: "transparency & trust",
 		description:
 			"No black boxes. No vague promises. No data sharing with frontier models. Everything we build is visible and auditable.",
 		color: "from-emerald-500 to-teal-600",
@@ -26,7 +26,7 @@ const values = [
 	},
 	{
 		icon: Handshake,
-		title: "Partnership Over Projects",
+		title: "partnership over projects",
 		description:
 			"We work as your long-term AI Customer Success Team, not just a delivery vendor. Your success is our success.",
 		color: "from-purple-500 to-indigo-600",
@@ -35,7 +35,7 @@ const values = [
 	},
 	{
 		icon: DollarSign,
-		title: "Value Before Fees",
+		title: "value before fees",
 		description:
 			"Our pricing model is based purely on the savings we help you achieve. You only pay when automation delivers measurable results.",
 		color: "from-amber-500 to-orange-600",
@@ -44,7 +44,7 @@ const values = [
 	},
 	{
 		icon: Settings,
-		title: "Ethical, Controlled AI",
+		title: "ethical, controlled ai",
 		description:
 			"Your systems operate within clear rules, safeguards, and governance frameworks. Full control, full accountability.",
 		color: "from-rose-500 to-pink-600",
@@ -76,8 +76,8 @@ const ValuesSection: FC = () => {
 					initial={{ opacity: 0, y: 20 }}
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
-					className="inline-flex items-center rounded-full border border-purple-400/40 bg-purple-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.22em] text-purple-200">
-					What Drives Us
+					className="inline-flex items-center rounded-full border border-purple-400/40 bg-purple-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-purple-200">
+					what drives us
 				</motion.div>
 
 				{/* Title */}
@@ -86,7 +86,7 @@ const ValuesSection: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.1 }}
 					className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-					OUR VALUES & PRINCIPLES
+					our values & principles
 				</motion.h2>
 
 				<motion.p

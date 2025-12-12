@@ -24,13 +24,13 @@ const WhyChooseUs: React.FC = () => {
 			</div>
 
 			<div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 text-center md:px-6">
-				<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-					Why ProcessZero
+				<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
+					why processzero
 				</div>
 
 				<div className="mt-6 space-y-4">
 					<h2 className="text-balance text-3xl font-semibold leading-tight text-slate-50 sm:text-4xl md:text-[2.5rem]">
-						Not All Automation is Created Equal.
+						not all automation is created equal.
 					</h2>
 					<p className="mx-auto max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
 						See how our approach keeps your data secure, preserves ownership and
@@ -42,13 +42,13 @@ const WhyChooseUs: React.FC = () => {
 				<div className="mt-10 w-full max-w-5xl">
 					<div className="grid overflow-hidden rounded-[2.25rem] border border-slate-800 bg-slate-950/80 shadow-[0_26px_90px_rgba(15,23,42,0.9)] md:grid-cols-2">
 						<div className="border-b border-slate-800 bg-rose-950/40 px-8 py-5 text-left md:border-b-0 md:border-r">
-							<div className="inline-flex rounded-full bg-rose-900/70 px-5 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-rose-200">
-								Other Providers
+							<div className="inline-flex rounded-full bg-rose-900/70 px-5 py-2 text-xs font-semibold tracking-[0.18em] text-rose-200">
+								other providers
 							</div>
 						</div>
 						<div className="border-b border-slate-800 bg-emerald-950/40 px-8 py-5 text-left md:border-b-0">
-							<div className="inline-flex rounded-full bg-emerald-900/70 px-5 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-200">
-								The ProcessZero Approach
+							<div className="inline-flex rounded-full bg-emerald-900/70 px-5 py-2 text-xs font-semibold tracking-[0.18em] text-emerald-200">
+								the processzero approach
 							</div>
 						</div>
 

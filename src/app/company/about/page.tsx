@@ -15,19 +15,19 @@ export const metadata = {
 
 export default function AboutPage() {
 	const navItems = [
-		{ label: "Overview", href: "#overview" },
-		{ label: "Core Solutions", href: "#core-solutions" },
-		{ label: "Capabilities", href: "#capabilities" },
-		{ label: "Approach", href: "#approach" },
-		{ label: "Insights", href: "#insights" },
-		{ label: "Blog", href: "/blog" }
+		{ label: "overview", href: "#overview" },
+		{ label: "core solutions", href: "#core-solutions" },
+		{ label: "capabilities", href: "#capabilities" },
+		{ label: "approach", href: "#approach" },
+		{ label: "insights", href: "#insights" },
+		{ label: "blog", href: "/blog" }
 	];
 
 	return (
 		<main className="min-h-screen bg-black overflow-x-hidden w-full">
 			<SecondaryHeader
 				navItems={navItems}
-				cta={{ label: "Plan a Call", href: "#contact" }}
+				cta={{ label: "plan a call", href: "#contact" }}
 			/>
 			<div className="w-full pt-16 sm:pt-20">
 				<AboutHero />

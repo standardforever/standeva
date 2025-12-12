@@ -16,18 +16,18 @@ export const metadata: Metadata = {
 
 const AffiliatePage = () => {
 	const navItems = [
-		{ label: "Overview", href: "#affiliate-overview" },
-		{ label: "Solutions", href: "#affiliate-solutions" },
-		{ label: "Why ProcessZero", href: "#affiliate-why-ProcessZero" },
-		{ label: "Before vs After", href: "#affiliate-before-after" },
-		{ label: "Pricing", href: "#affiliate-pricing" },
+		{ label: "overview", href: "#affiliate-overview" },
+		{ label: "solutions", href: "#affiliate-solutions" },
+		{ label: "why processzero", href: "#affiliate-why-ProcessZero" },
+		{ label: "before vs after", href: "#affiliate-before-after" },
+		{ label: "pricing", href: "#affiliate-pricing" },
 	];
 
 	return (
 		<main className="min-h-screen bg-black overflow-x-hidden w-full">
 			<SecondaryHeader
 				navItems={navItems}
-				cta={{ label: "Become a Partner", href: "#affiliate-cta" }}
+				cta={{ label: "become a partner", href: "#affiliate-cta" }}
 			/>
 			<div className="w-full pt-16 sm:pt-20">
 				<AffiliateHero />

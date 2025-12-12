@@ -11,12 +11,31 @@ import {
 	UserCheck,
 	Printer,
 	AlertCircle,
+	ChevronDown,
+	List,
 } from "lucide-react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import SecondaryHeader from "@/components/layout/secondary-header";
 import SecondaryFooter from "@/components/layout/secondary-footer";
 
 const LAST_UPDATED = "10 December 2025";
+const DATA_PROTECTION_OFFICER = {
+	name: "Martin McDonagh",
+	email: "martinm@processzero.co.uk",
+};
+const SECTION_LINKS = [
+	{ id: "overview", label: "overview" },
+	{ id: "commitment", label: "our commitment" },
+	{ id: "role", label: "our role" },
+	{ id: "data-processing", label: "what data we process" },
+	{ id: "why-process", label: "why we process data" },
+	{ id: "lawful-bases", label: "lawful bases" },
+	{ id: "retention", label: "data retention" },
+	{ id: "security", label: "data security" },
+	{ id: "third-parties", label: "third parties" },
+	{ id: "rights", label: "your rights" },
+];
 
 function AnchorTitle({
 	id,
@@ -57,6 +76,8 @@ export default function GDPRPage() {
 		href: "/intro-call",
 	};
 
+	const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
 	return (
 		<div className="min-h-screen ">
 			<SecondaryHeader navItems={navItems} cta={cta} />
@@ -64,7 +85,7 @@ export default function GDPRPage() {
 			<main className="pt-24 pb-20 bg-black text-white">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:flex lg:gap-8">
 					{/* Sidebar */}
-					<aside className="w-full lg:w-80 lg:flex-shrink-0 mb-8 lg:mb-0 sticky top-20 sm:top-24 lg:top-24 self-start">
+					<aside className="hidden lg:block w-full lg:w-80 lg:flex-shrink-0 mb-8 lg:mb-0 lg:sticky lg:top-24 self-start">
 						<div className="rounded-2xl border border-slate-700 p-4 lg:p-6 bg-slate-900/60 backdrop-blur shadow-xl max-h-[calc(100vh-6rem)] sm:max-h-[calc(100vh-7rem)] overflow-y-auto">
 							<div className="flex items-center gap-3 mb-6">
 								<div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 text-white flex items-center justify-center shadow-lg">
@@ -72,7 +93,7 @@ export default function GDPRPage() {
 								</div>
 								<div>
 									<p className="text-xs text-slate-400">
-										Last updated
+										last updated
 									</p>
 									<p className="text-sm font-semibold text-white">
 										{LAST_UPDATED}
@@ -81,87 +102,19 @@ export default function GDPRPage() {
 							</div>
 
 							<nav className="space-y-3 text-sm">
-								<p className="uppercase tracking-wide text-slate-400 text-xs font-semibold">
-									On this page
+								<p className="tracking-wide text-slate-400 text-xs font-semibold">
+									on this page
 								</p>
 								<ul className="space-y-2">
-									<li>
-										<a
-											className="text-slate-300 hover:text-blue-400 transition-colors"
-											href="#overview">
-											overview
-										</a>
-									</li>
-									<li>
-										<a
-											className="text-slate-300 hover:text-blue-400 transition-colors"
-											href="#commitment">
-											our commitment
-										</a>
-									</li>
-									<li>
-										<a
-											className="text-slate-300 hover:text-blue-400 transition-colors"
-											href="#role">
-											our role
-										</a>
-									</li>
-									<li>
-										<a
-											className="text-slate-300 hover:text-blue-400 transition-colors"
-											href="#data-processing">
-											what data we process
-										</a>
-									</li>
-									<li>
-										<a
-											className="text-slate-300 hover:text-blue-400 transition-colors"
-											href="#why-process">
-											why we process data
-										</a>
-									</li>
-									<li>
-										<a
-											className="text-slate-300 hover:text-blue-400 transition-colors"
-											href="#lawful-bases">
-											lawful bases
-										</a>
-									</li>
-									<li>
-										<a
-											className="text-slate-300 hover:text-blue-400 transition-colors"
-											href="#retention">
-											data retention
-										</a>
-									</li>
-									<li>
-										<a
-											className="text-slate-300 hover:text-blue-400 transition-colors"
-											href="#security">
-											data security
-										</a>
-									</li>
-									<li>
-										<a
-											className="text-slate-300 hover:text-blue-400 transition-colors"
-											href="#third-parties">
-											third parties
-										</a>
-									</li>
-									<li>
-										<a
-											className="text-slate-300 hover:text-blue-400 transition-colors"
-											href="#rights">
-											your rights
-										</a>
-									</li>
-									<li>
-										<a
-											className="text-slate-300 hover:text-blue-400 transition-colors"
-											href="#contact">
-											contact
-										</a>
-									</li>
+									{SECTION_LINKS.map((section) => (
+										<li key={section.id}>
+											<a
+												className="text-slate-300 hover:text-blue-400 transition-colors"
+												href={`#${section.id}`}>
+												{section.label}
+											</a>
+										</li>
+									))}
 								</ul>
 
 								<div className="pt-4 mt-4 border-t border-slate-700">
@@ -180,9 +133,54 @@ export default function GDPRPage() {
 
 					{/* Main Content */}
 					<section className="lg:flex-1 lg:min-w-0 space-y-8 overflow-x-hidden">
+						{/* Mobile/Tablet On-Page Nav */}
+						<div className="lg:hidden rounded-2xl border border-slate-800 p-4 bg-slate-900/60 shadow-lg">
+							<button
+								type="button"
+								className="flex w-full items-center justify-between"
+								aria-expanded={isMobileNavOpen}
+								onClick={() =>
+									setIsMobileNavOpen((open) => !open)
+								}>
+								<div className="flex items-center gap-3">
+									<div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 text-white flex items-center justify-center shadow-lg">
+										<List className="w-4 h-4" />
+									</div>
+									<div className="text-left">
+										<p className="text-xs tracking-wide text-slate-400">
+											on this page
+										</p>
+										<p className="text-sm font-semibold text-white">
+											jump to a section
+										</p>
+									</div>
+								</div>
+								<ChevronDown
+									className={`w-4 h-4 text-slate-300 transition-transform ${
+										isMobileNavOpen ? "rotate-180" : ""
+									}`}
+								/>
+							</button>
+							{isMobileNavOpen && (
+								<ul className="mt-4 space-y-2">
+									{SECTION_LINKS.map((section) => (
+										<li key={section.id}>
+											<a
+												className="block rounded-lg border border-slate-800 bg-slate-900/40 px-4 py-2 text-sm text-slate-200 hover:text-blue-400 hover:border-blue-500/60"
+												href={`#${section.id}`}>
+												{section.label}
+											</a>
+										</li>
+									))}
+								</ul>
+							)}
+						</div>
+
 						{/* Header Section */}
-						<div className="rounded-2xl border border-slate-800 p-6 sm:p-8 bg-slate-900/40 shadow-lg">
-							<div className="flex items-center gap-4 mb-4">
+						<div
+							id="overview"
+							className="rounded-2xl border border-slate-800 p-6 sm:p-8 bg-slate-900/40 shadow-lg">
+							<div className="flex items-center gap-4 mb-6">
 								<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 text-white flex items-center justify-center shadow-lg">
 									<Shield className="w-6 h-6" />
 								</div>
@@ -190,9 +188,35 @@ export default function GDPRPage() {
 									<h1 className="text-3xl sm:text-4xl font-bold text-white">
 										process zero GDPR statement
 									</h1>
-									<p className="text-sm text-slate-400 mt-1">
-										Last updated: {LAST_UPDATED}
-									</p>
+								</div>
+							</div>
+							<div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+								<div className="flex items-center gap-3 p-3 rounded-lg border border-slate-800 bg-slate-900/60">
+									<Clock className="w-4 h-4 text-blue-400" />
+									<div>
+										<p className="text-xs tracking-wide text-slate-400">
+											last updated
+										</p>
+										<p className="text-sm font-semibold text-white">
+											{LAST_UPDATED}
+										</p>
+									</div>
+								</div>
+								<div className="flex items-center gap-3 p-3 rounded-lg border border-slate-800 bg-slate-900/60">
+									<UserCheck className="w-4 h-4 text-blue-400" />
+									<div>
+										<p className="text-xs tracking-wide text-slate-400">
+											data protection officer
+										</p>
+										<p className="text-sm font-semibold text-white">
+											{DATA_PROTECTION_OFFICER.name}
+										</p>
+										<a
+											href={`mailto:${DATA_PROTECTION_OFFICER.email}`}
+											className="text-xs text-blue-400 hover:text-blue-300 underline">
+											{DATA_PROTECTION_OFFICER.email}
+										</a>
+									</div>
 								</div>
 							</div>
 							<p className="text-slate-300 leading-relaxed text-lg">
@@ -212,19 +236,6 @@ export default function GDPRPage() {
 							</ul>
 							<p className="text-slate-300 leading-relaxed text-lg mt-4">
 								This helps protect both your business and the individuals whose data may be involved in the services we deliver.
-							</p>
-						</div>
-
-						{/* Data Protection Officer Section */}
-						<div className="rounded-2xl border border-slate-800 p-6 sm:p-8 bg-slate-900/40 shadow-lg">
-							<h2 className="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3 mb-4">
-								<span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 text-white shadow-lg">
-									<UserCheck className="w-5 h-5" />
-								</span>
-								<span>data protection officer</span>
-							</h2>
-							<p className="text-slate-300 leading-relaxed text-lg">
-								Our data protection officer is Martin McDonagh (<a href="mailto:martinm@processzero.co.uk" className="text-blue-400 hover:text-blue-300 underline">martinm@processzero.co.uk</a>)
 							</p>
 						</div>
 

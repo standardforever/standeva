@@ -9,7 +9,7 @@ const steps = [
 	{
 		number: "01",
 		icon: PhoneCall,
-		title: "Intro Call (Free, 15 minutes)",
+		title: "intro call (free, 15 minutes)",
 		description:
 			"A short conversation to understand your goals and highlight where automation can quickly reduce workload or improve efficiency.",
 		color: "from-sky-500 to-emerald-500",
@@ -17,7 +17,7 @@ const steps = [
 	{
 		number: "02",
 		icon: Map,
-		title: "Discovery Day & AI Audit (£100)",
+		title: "discovery day & ai audit (£100)",
 		description:
 			"A one-day deep dive into your business processes. We speak with key staff, review your workflows and identify high-value automation opportunities.",
 		color: "from-emerald-500 to-teal-600",
@@ -25,7 +25,7 @@ const steps = [
 	{
 		number: "03",
 		icon: FileText,
-		title: "AI Audit Report",
+		title: "ai audit report",
 		description:
 			"You receive a clear, structured plan outlining recommended automations, expected savings, implementation timelines, and project cost options.",
 		color: "from-purple-500 to-indigo-600",
@@ -33,7 +33,7 @@ const steps = [
 	{
 		number: "04",
 		icon: Rocket,
-		title: "Implementation",
+		title: "implementation",
 		description:
 			"We build and deploy your automations using secure, open-source AI agents operating within your network.",
 		color: "from-amber-500 to-orange-600",
@@ -41,7 +41,7 @@ const steps = [
 	{
 		number: "05",
 		icon: RefreshCw,
-		title: "Ongoing Support & AI Transformation",
+		title: "ongoing support & ai transformation",
 		description:
 			"As your organisation grows, we help refine, extend and scale your automations — guiding you on the journey to becoming an AI-first business.",
 		color: "from-rose-500 to-pink-600",
@@ -71,8 +71,8 @@ const HowWeWorkSection: FC = () => {
 					initial={{ opacity: 0, y: 20 }}
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
-					className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-					Our Process
+					className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-emerald-200">
+					our process
 				</motion.div>
 
 				{/* Title */}
@@ -81,7 +81,7 @@ const HowWeWorkSection: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.1 }}
 					className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-					Our 5-Step AI Automation Framework
+					our 5-step ai automation framework
 				</motion.h2>
 
 				<motion.p

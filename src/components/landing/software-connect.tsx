@@ -81,15 +81,15 @@ const SoftwareConnect: FC = () => {
 
 			<div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 text-center md:px-6 md:gap-12">
 				<div className="space-y-4">
-					<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-						Software Connectivity
+					<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
+						software connectivity
 					</div>
 					<h2 className="text-balance text-2xl font-semibold leading-tight sm:text-3xl md:text-[2.1rem]">
-						Automate Your teams processes on all major software
+						automate your teams processes on all major software
 						solutions.
 					</h2>
 					<p className="mx-auto max-w-3xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
-						Mimic any human processing on any software solution.
+						mimic any human processing on any software solution.
 					</p>
 				</div>
 			</div>

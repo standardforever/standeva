@@ -4,21 +4,21 @@ import Image from "next/image";
 const cards = [
 	{
 		id: "finance",
-		title: "Finance Repetitive Tasks",
+		title: "finance repetitive tasks",
 		description:
 			"Automate purchase ledger, sales ledger, general ledger and everything in between.",
 		imageSrc: "/card-image-new.png",
 	},
 	{
 		id: "hr",
-		title: "HR & Functions",
+		title: "hr & functions",
 		description:
 			"Handle activation, escalation, processing and scheduling tasks while AI manages the flow.",
 		imageSrc: "/card-2-image-new.png",
 	},
 	{
 		id: "sales-plus",
-		title: "Sales Plus Driven Tasks",
+		title: "sales plus driven tasks",
 		description:
 			"Streamline product sourcing and order workflows so your team can focus on strategy.",
 		imageSrc: "/card-3-image-new.png",
@@ -36,13 +36,13 @@ const SolutionsSection: FC = () => {
 			</div>
 
 			<div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 text-center md:px-6">
-				<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-					Solutions
+				<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
+					solutions
 				</div>
 
 				<div className="mt-6 space-y-4">
 					<h2 className="text-balance text-3xl font-semibold leading-tight text-slate-50 sm:text-4xl md:text-5xl">
-						Reduce your operational costs by up to 90%
+						reduce your operational costs by up to 90%
 					</h2>
 					<p className="mx-auto max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
 						Not all automation solutions are created equal. Our

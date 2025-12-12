@@ -6,12 +6,12 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqData = [
 	{
 		id: 1,
-		question: "What makes the ProcessZero approach different?",
+		question: "what makes the processzero approach different?",
 		answer: "Our approach prioritises your security and ownership. Your data stays within your network and is never exposed to public AI models. We build open, transparent solutions with no hidden fees so you fully own and control your AI agents—unlike providers that run on rented, third‑party platforms.",
 	},
 	{
 		id: 2,
-		question: "How does your pricing model work?",
+		question: "how does your pricing model work?",
 		answer: (
 			<>
 				Our pricing model is designed to be simple and fair. We start
@@ -31,7 +31,7 @@ const faqData = [
 	},
 	{
 		id: 3,
-		question: "What is the process for getting started?",
+		question: "what is the process for getting started?",
 		answer: (
 			<>
 				Our process is simple and collaborative:
@@ -65,12 +65,12 @@ const faqData = [
 	},
 	{
 		id: 4,
-		question: "What kind of tasks can you automate?",
+		question: "what kind of tasks can you automate?",
 		answer: "We specialise in automating Finance, HR and sales plus workflows: invoice processing, approvals, reconciliations, exception handling, journal entries, onboarding tasks, and product or order operations. If it’s repetitive, rules‑based and high volume, it’s a strong candidate for automation.",
 	},
 	{
 		id: 5,
-		question: "Do I need a technical team to manage the AI agents?",
+		question: "do i need a technical team to manage the ai agents?",
 		answer: "No. We design and run the agents with you, including monitoring, updates and health checks. Your existing teams stay in control of decisions and workflows, while we handle the technical complexity behind the scenes.",
 	},
 ];
@@ -104,14 +104,14 @@ const FAQ: React.FC = () => {
 
 			<div className="relative mx-auto max-w-6xl px-4 md:px-6">
 				<div className="mb-12 text-center sm:mb-16">
-					<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-						FAQs
+					<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
+						faqs
 					</div>
 					<h2 className="mt-6 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-[2.4rem]">
-						All You Need to Know
+						all you need to know
 					</h2>
 					<p className="mt-4 text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
-						Got questions? We have answers. Find out everything you
+						got questions? we have answers. find out everything you
 						need to know before getting started.
 					</p>
 				</div>

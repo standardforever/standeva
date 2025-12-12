@@ -24,7 +24,7 @@ const included = [
 const accordionItems = [
 	{
 		id: 1,
-		title: "Understanding Your Goals",
+		title: "understanding your goals",
 		summary:
 			"We start by listening to your objectives shape the entire day.",
 		details: [
@@ -37,7 +37,7 @@ const accordionItems = [
 	},
 	{
 		id: 2,
-		title: "AI-First Strategy Session",
+		title: "ai-first strategy session",
 		summary:
 			"We explore how AI can lower costs and increase scalable capacity.",
 		details: [
@@ -51,7 +51,7 @@ const accordionItems = [
 	},
 	{
 		id: 3,
-		title: "Process Mapping & ROI Analysis",
+		title: "process mapping & roi analysis",
 		summary:
 			"Stakeholder interviews, SOP review, time-and-motion understanding.",
 		details: [
@@ -66,7 +66,7 @@ const accordionItems = [
 	},
 	{
 		id: 4,
-		title: "Compliance & Security Overview",
+		title: "compliance & security overview",
 		summary:
 			"How your data stays in your network and how our secure AI agents work.",
 		details: [
@@ -80,7 +80,7 @@ const accordionItems = [
 	},
 	{
 		id: 5,
-		title: "End-of-Day Review",
+		title: "end-of-day review",
 		summary: "We confirm priorities and prepare your AI Audit Report.",
 		details: [
 			"At the end of the session, we regroup to:",
@@ -106,13 +106,13 @@ const afterItems = [
 
 export default function DiscoveryDayPage() {
 	const navItems = [
-		{ label: "Overview", href: "#overview" },
-		{ label: "Agenda", href: "#agenda" },
-		{ label: "Afterwards", href: "#after" },
+		{ label: "overview", href: "#overview" },
+		{ label: "agenda", href: "#agenda" },
+		{ label: "afterwards", href: "#after" },
 	];
 
 	const cta = {
-		label: "Start with a free 15-minute intro call.",
+		label: "start with a free 15-minute intro call.",
 		href: "/intro-call",
 	};
 
@@ -128,13 +128,13 @@ export default function DiscoveryDayPage() {
 						<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.28),transparent_60%),radial-gradient(circle_at_bottom,_rgba(16,185,129,0.25),transparent_55%)] opacity-70 mix-blend-screen" />
 					</div>
 					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
-						<div className="inline-flex items-center gap-2 rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.22em] text-sky-200">
+						<div className="inline-flex items-center gap-2 rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-sky-200">
 							<FileText className="h-4 w-4" />
-							Discovery Day & AI Audit (£100)
+							discovery day & ai audit (£100)
 						</div>
 						<div className="mt-6 space-y-4 text-left">
 							<h1 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-								What’s Included in Your £100 Discovery Day
+								what’s included in your £100 discovery day
 							</h1>
 							<p className="max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg">
 								A focused, single-day engagement that maps your
@@ -152,7 +152,7 @@ export default function DiscoveryDayPage() {
 						<div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
 							<div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 backdrop-blur-sm">
 								<h2 className="text-xl font-semibold text-slate-100 sm:text-2xl">
-									What’s Included
+									what’s included
 								</h2>
 								<ul className="mt-4 space-y-3">
 									{included.map((item) => (
@@ -169,7 +169,7 @@ export default function DiscoveryDayPage() {
 							</div>
 							<div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 backdrop-blur-sm">
 								<h2 className="text-xl font-semibold text-slate-100 sm:text-2xl">
-									Confidence Built In
+									confidence built in
 								</h2>
 								<ul className="mt-4 space-y-3">
 									<li className="flex items-start gap-2">
@@ -207,7 +207,7 @@ export default function DiscoveryDayPage() {
 					</div>
 					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
 						<h2 className="text-2xl font-semibold text-slate-100 sm:text-3xl">
-							Discovery Day Agenda (expand for details)
+							discovery day agenda (expand for details)
 						</h2>
 						<div className="mt-6 space-y-4">
 							{accordionItems.map((item) => (
@@ -216,8 +216,8 @@ export default function DiscoveryDayPage() {
 									className="group overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 backdrop-blur-sm">
 									<summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 text-left transition hover:bg-slate-900">
 										<div>
-											<p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
-												Step {item.id}
+											<p className="text-xs font-semibold tracking-[0.18em] text-slate-400">
+												step {item.id}
 											</p>
 											<p className="mt-1 text-base font-semibold text-slate-100 sm:text-lg">
 												{item.title}
@@ -259,7 +259,7 @@ export default function DiscoveryDayPage() {
 					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
 						<div className="rounded-3xl border border-slate-800 bg-slate-900/60 p-8 backdrop-blur-sm">
 							<h3 className="text-2xl font-semibold text-slate-100 sm:text-3xl">
-								What Happens After the Discovery Day
+								what happens after the discovery day
 							</h3>
 							<ul className="mt-4 space-y-3">
 								{afterItems.map((item) => (
@@ -286,7 +286,7 @@ export default function DiscoveryDayPage() {
 					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
 						<div className="rounded-3xl border border-slate-800 bg-slate-900/60 p-8 text-center backdrop-blur-sm">
 							<h3 className="text-2xl font-semibold text-slate-100 sm:text-3xl">
-								Ready to lock in your Discovery Day?
+								ready to lock in your discovery day?
 							</h3>
 							<p className="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
 								We’ll add a scheduler here. For now, reach out
@@ -296,7 +296,7 @@ export default function DiscoveryDayPage() {
 								<a
 									href="/intro-call"
 									className="rounded-lg bg-linear-to-r from-blue-500 to-purple-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-lg shadow-blue-500/40 transition-colors duration-300 ease-out hover:from-slate-800 hover:to-slate-800">
-									Start free with a 15-min Intro Call
+									start free with a 15-min intro call
 								</a>
 							</div>
 						</div>

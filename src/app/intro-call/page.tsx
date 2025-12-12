@@ -18,7 +18,7 @@ const discoveryDayItems = [
 
 export default function IntroCallPage() {
 	const cta = {
-		label: "Book discovery series",
+		label: "book discovery series",
 		href: "/discovery-day",
 	};
 
@@ -36,16 +36,16 @@ export default function IntroCallPage() {
 					</div>
 
 					<div className="relative mx-auto max-w-7xl px-4 md:px-6">
-						<div className="inline-flex items-center gap-2 rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.22em] text-sky-200">
+						<div className="inline-flex items-center gap-2 rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-sky-200">
 							<PhoneCall className="h-4 w-4" />
-							Book a 15-Minute Intro Call
+							book a 15-minute intro call
 						</div>
 
 						<div className="mt-8 grid gap-8 lg:grid-cols-2 lg:gap-12">
 							{/* Left Column - Text Content */}
 							<div className="space-y-6 text-left">
 								<h1 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-									Busy? Let&apos;s keep it quick and useful.
+									busy? let&apos;s keep it quick and useful.
 								</h1>
 								<p className="text-base leading-relaxed text-slate-300 sm:text-lg">
 									This short call helps us understand your
@@ -76,7 +76,7 @@ export default function IntroCallPage() {
 						<div className="grid gap-6 lg:grid-cols-2 lg:items-start">
 							<div className="h-full rounded-2xl border border-slate-800 bg-slate-900/60 p-6 backdrop-blur-sm">
 								<h2 className="text-xl font-semibold text-slate-100 sm:text-2xl">
-									What We&apos;ll Cover
+									what we&apos;ll cover
 								</h2>
 								<ul className="mt-4 space-y-3">
 									{whatWeCover.map((item) => (
@@ -104,8 +104,8 @@ export default function IntroCallPage() {
 										</div>
 										<div>
 											<h3 className="text-xl font-semibold text-slate-100 sm:text-2xl">
-												Next Steps: Book Your £100
-												Discovery Day
+												next steps: book your £100
+												discovery day
 											</h3>
 											<p className="mt-2 text-sm leading-relaxed text-slate-300">
 												Post 15-min call, the next step

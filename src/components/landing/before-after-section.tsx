@@ -27,16 +27,16 @@ const BeforeAfterSection: FC = () => {
 			</div>
 
 			<div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 text-center md:px-6">
-				<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.22em] text-emerald-200">
-					Before vs After
+				<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
+					before vs after
 				</div>
 
 				<div className="mt-6 space-y-4">
 					<h2 className="text-balance text-3xl font-semibold leading-tight text-slate-50 sm:text-4xl md:text-[2.5rem]">
-						Manual Processes Are Holding You Back.
+						manual processes are holding you back.
 					</h2>
 					<p className="mx-auto max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
-					Let ProcessZero handle the repetitive work so your team can focus on
+					let processzero handle the repetitive work so your team can focus on
 						strategy, customers and growth.
 					</p>
 				</div>
@@ -44,8 +44,8 @@ const BeforeAfterSection: FC = () => {
 				<div className="mt-12 grid w-full gap-8 md:grid-cols-2">
 					<article className="flex h-full flex-col overflow-hidden rounded-[2.5rem] border border-slate-800 bg-slate-950/80 shadow-[0_26px_90px_rgba(15,23,42,0.95)]">
 						<div className="flex justify-center border-b border-slate-800 bg-rose-950/50 px-6 py-4">
-							<span className="rounded-full bg-rose-900/70 px-5 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-rose-200">
-								Problem
+							<span className="rounded-full bg-rose-900/70 px-5 py-1.5 text-xs font-semibold tracking-[0.18em] text-rose-200">
+								problem
 							</span>
 						</div>
 						<div className="relative bg-rose-950/40 px-6 pb-4 pt-6">
@@ -61,7 +61,7 @@ const BeforeAfterSection: FC = () => {
 						</div>
 						<div className="flex flex-1 flex-col gap-3 px-8 pb-8 pt-6 text-left">
 							<h3 className="text-base font-semibold text-slate-50 sm:text-lg">
-								Expensive, slow and error‑prone manual process
+								expensive, slow and error‑prone manual process
 							</h3>
 							<ul className="mt-2 space-y-2">
 								{beforePoints.map((point) => (
@@ -76,8 +76,8 @@ const BeforeAfterSection: FC = () => {
 
 					<article className="flex h-full flex-col overflow-hidden rounded-[2.5rem] border border-slate-800 bg-slate-950/80 shadow-[0_26px_90px_rgba(15,23,42,0.95)]">
 						<div className="flex justify-center border-b border-slate-800 bg-emerald-950/50 px-6 py-4">
-							<span className="rounded-full bg-emerald-900/70 px-5 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-200">
-								Solution
+							<span className="rounded-full bg-emerald-900/70 px-5 py-1.5 text-xs font-semibold tracking-[0.18em] text-emerald-200">
+								solution
 							</span>
 						</div>
 						<div className="relative bg-emerald-950/40 px-6 pb-4 pt-6">
@@ -93,7 +93,7 @@ const BeforeAfterSection: FC = () => {
 						</div>
 						<div className="flex flex-1 flex-col gap-3 px-8 pb-8 pt-6 text-left">
 							<h3 className="text-base font-semibold text-slate-50 sm:text-lg">
-								Cheaper, faster and easy to use
+								cheaper, faster and easy to use
 							</h3>
 							<ul className="mt-2 space-y-2">
 								{afterPoints.map((point) => (
