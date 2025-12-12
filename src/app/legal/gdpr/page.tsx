@@ -47,13 +47,13 @@ function AnchorTitle({
 
 export default function GDPRPage() {
 	const navItems = [
-		{ label: "Home", href: "/" },
-		{ label: "About Us", href: "/about-us" },
-		{ label: "Services", href: "/services" },
+		{ label: "home", href: "/" },
+		{ label: "about us", href: "/about-us" },
+		{ label: "services", href: "/services" },
 	];
 
 	const cta = {
-		label: "Book free 15 min intro call",
+		label: "book free 15 min intro call",
 		href: "/intro-call",
 	};
 
@@ -89,77 +89,77 @@ export default function GDPRPage() {
 										<a
 											className="text-slate-300 hover:text-blue-400 transition-colors"
 											href="#overview">
-											Overview
+											overview
 										</a>
 									</li>
 									<li>
 										<a
 											className="text-slate-300 hover:text-blue-400 transition-colors"
 											href="#commitment">
-											Our Commitment
+											our commitment
 										</a>
 									</li>
 									<li>
 										<a
 											className="text-slate-300 hover:text-blue-400 transition-colors"
 											href="#role">
-											Our Role
+											our role
 										</a>
 									</li>
 									<li>
 										<a
 											className="text-slate-300 hover:text-blue-400 transition-colors"
 											href="#data-processing">
-											What Data We Process
+											what data we process
 										</a>
 									</li>
 									<li>
 										<a
 											className="text-slate-300 hover:text-blue-400 transition-colors"
 											href="#why-process">
-											Why We Process Data
+											why we process data
 										</a>
 									</li>
 									<li>
 										<a
 											className="text-slate-300 hover:text-blue-400 transition-colors"
 											href="#lawful-bases">
-											Lawful Bases
+											lawful bases
 										</a>
 									</li>
 									<li>
 										<a
 											className="text-slate-300 hover:text-blue-400 transition-colors"
 											href="#retention">
-											Data Retention
+											data retention
 										</a>
 									</li>
 									<li>
 										<a
 											className="text-slate-300 hover:text-blue-400 transition-colors"
 											href="#security">
-											Data Security
+											data security
 										</a>
 									</li>
 									<li>
 										<a
 											className="text-slate-300 hover:text-blue-400 transition-colors"
 											href="#third-parties">
-											Third Parties
+											third parties
 										</a>
 									</li>
 									<li>
 										<a
 											className="text-slate-300 hover:text-blue-400 transition-colors"
 											href="#rights">
-											Your Rights
+											your rights
 										</a>
 									</li>
 									<li>
 										<a
 											className="text-slate-300 hover:text-blue-400 transition-colors"
 											href="#contact">
-											Contact
+											contact
 										</a>
 									</li>
 								</ul>
@@ -188,7 +188,7 @@ export default function GDPRPage() {
 								</div>
 								<div>
 									<h1 className="text-3xl sm:text-4xl font-bold text-white">
-										Process Zero GDPR Statement
+										process zero GDPR statement
 									</h1>
 									<p className="text-sm text-slate-400 mt-1">
 										Last updated: {LAST_UPDATED}
@@ -196,19 +196,35 @@ export default function GDPRPage() {
 								</div>
 							</div>
 							<p className="text-slate-300 leading-relaxed text-lg">
-								At Process Zero, we specialise in designing and
-								deploying private AI agents, automation systems,
-								and customised large language models (LLMs) for
-								UK businesses. Because our work often interacts
-								directly with client systems, networks, and
-								data, we take data protection extremely
-								seriously.
+								At process zero, we recognise that using AI to automate business processes often involves handling personal data. We take our responsibility under the UK General Data Protection Regulation (UK GDPR) seriously, and we are committed to protecting your data and maintaining transparency in how it is used.
 							</p>
 							<p className="text-slate-300 leading-relaxed text-lg mt-4">
-								This GDPR Statement explains how we handle
-								personal data when delivering our AI and
-								automation solutions, and outlines your rights
-								under UK GDPR and the Data Protection Act 2018.
+								Our GDPR statement explains how we protect personal data when we deliver AI automation, AI strategy consulting, and support services. We process personal data only when it is necessary, for lawful purposes, and in ways that respect your rights and expectations.
+							</p>
+							<p className="text-slate-300 leading-relaxed text-lg mt-4">
+								Whether we are supporting your AI strategy session, developing automation workflows, or integrating intelligent systems into your operations, we ensure that:
+							</p>
+							<ul className="list-disc ml-6 space-y-2 text-slate-300 mt-4">
+								<li>We only process personal data that is necessary for the task at hand.</li>
+								<li>You, or your organisation, remain in control of your data.</li>
+								<li>All data is handled securely, lawfully, and transparently.</li>
+								<li>Personal data is not used beyond the purpose for which it was provided.</li>
+							</ul>
+							<p className="text-slate-300 leading-relaxed text-lg mt-4">
+								This helps protect both your business and the individuals whose data may be involved in the services we deliver.
+							</p>
+						</div>
+
+						{/* Data Protection Officer Section */}
+						<div className="rounded-2xl border border-slate-800 p-6 sm:p-8 bg-slate-900/40 shadow-lg">
+							<h2 className="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3 mb-4">
+								<span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 text-white shadow-lg">
+									<UserCheck className="w-5 h-5" />
+								</span>
+								<span>data protection officer</span>
+							</h2>
+							<p className="text-slate-300 leading-relaxed text-lg">
+								Our data protection officer is Martin McDonagh (<a href="mailto:martinm@processzero.co.uk" className="text-blue-400 hover:text-blue-300 underline">martinm@processzero.co.uk</a>)
 							</p>
 						</div>
 
@@ -219,7 +235,7 @@ export default function GDPRPage() {
 							<AnchorTitle
 								id="commitment"
 								icon={<Shield className="w-5 h-5" />}>
-								Our Commitment to Data Protection
+								our commitment to data protection
 							</AnchorTitle>
 
 							<div className="prose prose-invert max-w-none">
@@ -273,7 +289,7 @@ export default function GDPRPage() {
 							<AnchorTitle
 								id="role"
 								icon={<Users className="w-5 h-5" />}>
-								Our Role as Data Controller and Data Processor
+								our role as data controller and data processor
 							</AnchorTitle>
 
 							<div className="prose prose-invert max-w-none">
@@ -285,7 +301,7 @@ export default function GDPRPage() {
 								<div className="bg-slate-800/40 border border-slate-700 rounded-xl p-6 mb-6">
 									<h3 className="text-xl font-semibold text-white mb-3 flex items-center gap-2">
 										<UserCheck className="w-5 h-5 text-blue-400" />
-										Data Controller
+										data controller
 									</h3>
 									<p className="text-slate-300 leading-relaxed mb-3">
 										We act as a controller when processing
@@ -306,7 +322,7 @@ export default function GDPRPage() {
 								<div className="bg-slate-800/40 border border-slate-700 rounded-xl p-6">
 									<h3 className="text-xl font-semibold text-white mb-3 flex items-center gap-2">
 										<Database className="w-5 h-5 text-purple-400" />
-										Data Processor
+										data processor
 									</h3>
 									<p className="text-slate-300 leading-relaxed mb-3">
 										We act as a processor when delivering AI
@@ -347,7 +363,7 @@ export default function GDPRPage() {
 							<AnchorTitle
 								id="data-processing"
 								icon={<Database className="w-5 h-5" />}>
-								What Data We Process
+								what data we process
 							</AnchorTitle>
 
 							<div className="prose prose-invert max-w-none">
@@ -427,7 +443,7 @@ export default function GDPRPage() {
 							<AnchorTitle
 								id="why-process"
 								icon={<AlertCircle className="w-5 h-5" />}>
-								Why We Process Data
+								why we process data
 							</AnchorTitle>
 
 							<div className="prose prose-invert max-w-none">
@@ -478,7 +494,7 @@ export default function GDPRPage() {
 							<AnchorTitle
 								id="lawful-bases"
 								icon={<Scale className="w-5 h-5" />}>
-								Lawful Bases for Processing
+								lawful bases for processing
 							</AnchorTitle>
 
 							<div className="prose prose-invert max-w-none">
@@ -530,7 +546,7 @@ export default function GDPRPage() {
 							<AnchorTitle
 								id="retention"
 								icon={<Clock className="w-5 h-5" />}>
-								Data Retention
+								data retention
 							</AnchorTitle>
 
 							<div className="prose prose-invert max-w-none">
@@ -562,7 +578,7 @@ export default function GDPRPage() {
 							<AnchorTitle
 								id="security"
 								icon={<Lock className="w-5 h-5" />}>
-								Data Security
+								data security
 							</AnchorTitle>
 
 							<div className="prose prose-invert max-w-none">
@@ -620,7 +636,7 @@ export default function GDPRPage() {
 							<AnchorTitle
 								id="third-parties"
 								icon={<Users className="w-5 h-5" />}>
-								Third Parties and Sub-Processors
+								third parties and sub-processors
 							</AnchorTitle>
 
 							<div className="prose prose-invert max-w-none">
@@ -649,7 +665,7 @@ export default function GDPRPage() {
 							<AnchorTitle
 								id="rights"
 								icon={<UserCheck className="w-5 h-5" />}>
-								Your Rights Under UK GDPR
+								your rights under UK GDPR
 							</AnchorTitle>
 
 							<div className="prose prose-invert max-w-none">
