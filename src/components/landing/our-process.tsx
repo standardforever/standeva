@@ -10,8 +10,8 @@ const steps = [
 	},
 	{
 		id: 2,
-		title: "£100 discovery day",
-		body: "Spend a focused day mapping your processes, identifying automation opportunities and shaping your AI strategy.",
+		title: "£100 discovery series",
+		body: "Join a focused discovery series to map your processes, identify automation opportunities and shape your AI strategy.",
 	},
 	{
 		id: 3,

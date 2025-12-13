@@ -163,7 +163,7 @@ const actsPhases: ACTSPhase[] = [
 		bgColor: "bg-indigo-500/10",
 		image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&q=80",
 		cta: {
-			text: "Book Your Discovery Day",
+			text: "Book Your Discovery Series",
 			href: "/discovery-day",
 		},
 	},

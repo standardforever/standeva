@@ -57,13 +57,17 @@ export default function IntroCallPage() {
 							{/* Right Column - Embedded Zcal Calendar */}
 							<div className="overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl shadow-blue-500/20">
 								<iframe
-									src="https://zcal.co/standeva/30min"
+									src="https://zcal.co/munaray/15min"
 									className="h-[500px] w-full lg:h-[600px]"
 									frameBorder="0"
 									title="Book your 15-minute intro call"
 									allow="camera; microphone; payment"
 									loading="eager"
 								/>
+								<div className="border-t border-slate-800 bg-slate-950/80 px-4 py-3 text-center text-xs text-slate-400">
+									Bookings include a Microsoft Teams link in
+									the invite.
+								</div>
 							</div>
 						</div>
 					</div>
@@ -105,12 +109,12 @@ export default function IntroCallPage() {
 										<div>
 											<h3 className="text-xl font-semibold text-slate-100 sm:text-2xl">
 												next steps: book your £100
-												discovery day
+												discovery series
 											</h3>
 											<p className="mt-2 text-sm leading-relaxed text-slate-300">
 												Post 15-min call, the next step
-												is a £100 Discovery Day, which
-												includes:
+												is a £100 Discovery Series,
+												which includes:
 											</p>
 										</div>
 									</div>

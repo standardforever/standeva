@@ -4,6 +4,7 @@ import React, { useEffect, useMemo, useRef, useState, useCallback } from "react"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
+import Logo from "./logo";
 
 interface NavItemConfig {
 	label: string;
@@ -22,15 +23,17 @@ interface SecondaryHeaderProps {
 }
 
 const defaultNavItems: NavItemConfig[] = [
-	// { label: "Home", href: "/" },
-	// { label: "Solutions", href: "/solutions/ai-consulting" },
-	// { label: "Company", href: "/company/about" },
-	// { label: "Contact", href: "/contact" }, // Not implemented yet
+	{ label: "home", href: "/" },
+	{ label: "solutions", href: "/#solutions" },
+	{ label: "services", href: "/services" },
+	{ label: "pricing", href: "/#pricing" },
+	{ label: "about us", href: "/about-us" },
+	{ label: "contact", href: "/contact" },
 ];
 
 const defaultCTA: CTAConfig = {
-	label: "Get in touch",
-	href: "#contact", // Changed to anchor link since contact page not implemented
+	label: "get in touch",
+	href: "/contact",
 };
 
 const SecondaryHeader: React.FC<SecondaryHeaderProps> = ({
@@ -45,7 +48,7 @@ const SecondaryHeader: React.FC<SecondaryHeaderProps> = ({
 	const [isScrolled, setIsScrolled] = useState(false);
 	const lastScrollY = useRef(0);
 	const items = useMemo(
-		() => (navItems && navItems.length ? navItems : defaultNavItems),
+		() => (typeof navItems !== "undefined" ? navItems : defaultNavItems),
 		[navItems]
 	);
 	const ctaConfig = cta ?? defaultCTA;
@@ -123,19 +126,7 @@ const SecondaryHeader: React.FC<SecondaryHeaderProps> = ({
 			className={`fixed top-0 left-0 right-0 z-40 h-16 sm:h-20 border-b border-white/5 ${isScrolled ? "bg-slate-950/95" : "bg-slate-950/80"} backdrop-blur-xl transition-all ${className}`}>
 			<nav className="mx-auto flex h-full w-full max-w-6xl items-center justify-between px-4 sm:px-6">
 				<Link href="/" className="flex items-center gap-2 sm:gap-3 no-underline">
-					<motion.div
-						className="relative flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-linear-to-br from-blue-500 to-purple-600"
-						animate={{ rotate: 360 }}
-						transition={{
-							duration: 20,
-							repeat: Infinity,
-							ease: "linear",
-						}}>
-						<span className="h-4 w-4 sm:h-5 sm:w-5 rounded-md bg-white" />
-					</motion.div>
-					<span className="text-lg sm:text-xl font-bold text-white">
-						ProcessZero
-					</span>
+					<Logo wordmarkClassName="sm:text-xl" />
 				</Link>
 
 				<ul className="hidden items-center gap-4 lg:gap-8 md:flex">

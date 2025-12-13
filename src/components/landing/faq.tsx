@@ -16,7 +16,7 @@ const faqData = [
 			<>
 				Our pricing model is designed to be simple and fair. We start
 				with a free 15-minute introductory call, followed by a £100
-				Discovery Day where we map your processes and identify
+				Discovery Series where we map your processes and identify
 				automation opportunities. You then receive a structured AI Audit
 				Report outlining proposed automations, delivery timelines and
 				expected savings.
@@ -42,7 +42,7 @@ const faqData = [
 				impact.
 				<br />
 				<br />
-				2. £100 Discovery Day — A full day spent mapping your processes,
+				2. £100 Discovery Series — A full day spent mapping your processes,
 				speaking with stakeholders, reviewing SOPs and identifying
 				automation opportunities.
 				<br />

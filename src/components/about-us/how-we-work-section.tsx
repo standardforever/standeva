@@ -17,7 +17,7 @@ const steps = [
 	{
 		number: "02",
 		icon: Map,
-		title: "discovery day & ai audit (£100)",
+		title: "discovery series & ai audit (£100)",
 		description:
 			"A one-day deep dive into your business processes. We speak with key staff, review your workflows and identify high-value automation opportunities.",
 		color: "from-emerald-500 to-teal-600",

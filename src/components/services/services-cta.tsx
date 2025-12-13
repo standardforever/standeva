@@ -7,7 +7,7 @@ import { Sparkles, CheckCircle2 } from "lucide-react";
 
 const startSteps = [
 	"Free 15-Min Introductory Call",
-	"£100 Discovery Day & AI Audit",
+	"£100 Discovery Series & AI Audit",
 ];
 
 const actsReasons = [

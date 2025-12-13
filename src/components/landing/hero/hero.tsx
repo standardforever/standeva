@@ -143,7 +143,7 @@ const Hero: FC = () => {
 								whileHover={{ scale: 1.03 }}
 								whileTap={{ scale: 0.97 }}>
 								<span className="text-slate-100 leading-none">
-									discovery day
+									discovery series
 								</span>
 								<span className="text-[0.72rem] leading-tight font-normal text-slate-300">
 									1-day ai audit + strategy session (£100)

@@ -15,9 +15,9 @@ const actions = [
 	},
 	{
 		icon: Search,
-		title: "start your £100 discovery day",
+		title: "start your £100 discovery series",
 		description:
-			"A focused day mapping processes, stakeholders, and automation opportunities.",
+			"A focused discovery series that maps processes, stakeholders, and automation opportunities.",
 		accent: "from-emerald-500/15 to-sky-500/20",
 	},
 	{
@@ -129,7 +129,7 @@ const EarlyPartnersCTA: FC = () => {
 						className="inline-flex items-center justify-center rounded-md bg-slate-800/90 px-7 py-3 text-sm font-semibold text-slate-100 shadow-md shadow-slate-900/30 transition-colors duration-300 ease-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-600/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
 						whileHover={{ scale: 1.03 }}
 						whileTap={{ scale: 0.97 }}>
-						discovery day
+						discovery series
 					</motion.a>
 				</motion.div>
 			</div>

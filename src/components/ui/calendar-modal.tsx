@@ -88,13 +88,16 @@ export default function CalendarModal({ isOpen, onClose }: CalendarModalProps) {
 							{/* Calendar Iframe */}
 							<div className="h-full w-full pt-16 md:pt-0">
 								<iframe
-									src="https://zcal.co/standeva/30min"
+									src="https://zcal.co/standeva/15min?video=microsoft-teams"
 									className="h-full w-full"
 									frameBorder="0"
 									title="Book your 15-minute intro call"
 									allow="camera; microphone; payment"
 									loading="eager"
 								/>
+								<div className="border-t border-slate-800 bg-slate-950/80 px-4 py-3 text-center text-xs text-slate-400">
+									Bookings include a Microsoft Teams link in the invite.
+								</div>
 							</div>
 
 							{/* Fallback Link (if iframe fails) */}
@@ -104,7 +107,7 @@ export default function CalendarModal({ isOpen, onClose }: CalendarModalProps) {
 										Calendar requires JavaScript to load.
 									</p>
 									<a
-										href="https://zcal.co/standeva/30min"
+										href="https://zcal.co/standeva/15min?video=microsoft-teams"
 										target="_blank"
 										rel="noopener noreferrer"
 										className="rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 font-semibold text-white transition-colors hover:from-slate-800 hover:to-slate-800"

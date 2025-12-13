@@ -39,7 +39,7 @@ const PricingSection: FC = () => {
 				</h2>
 
 				<p className="mt-4 max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
-					free intro call → £100 discovery day → ai audit report → automation implementation
+					free intro call → £100 discovery series → ai audit report → automation implementation
 				</p>
 
 				<div className="mt-10 grid w-full gap-6 text-left sm:grid-cols-2 lg:grid-cols-4">

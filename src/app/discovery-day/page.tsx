@@ -8,9 +8,9 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-	title: "Discovery Day & AI Audit (£100) | ProcessZero",
+	title: "Discovery Series & AI Audit (£100) | ProcessZero",
 	description:
-		"Book your £100 Discovery Day. Map processes, shape an AI-first strategy, review security, and receive a clear AI Audit Report with timelines, costs, and ROI.",
+		"Book your £100 Discovery Series. Map processes, shape an AI-first strategy, review security, and receive a clear AI Audit Report with timelines, costs, and ROI.",
 };
 
 const included = [
@@ -130,11 +130,11 @@ export default function DiscoveryDayPage() {
 					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
 						<div className="inline-flex items-center gap-2 rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-sky-200">
 							<FileText className="h-4 w-4" />
-							discovery day & ai audit (£100)
+							discovery series & ai audit (£100)
 						</div>
 						<div className="mt-6 space-y-4 text-left">
 							<h1 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-								what’s included in your £100 discovery day
+								what’s included in your £100 discovery series
 							</h1>
 							<p className="max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg">
 								A focused, single-day engagement that maps your
@@ -207,7 +207,7 @@ export default function DiscoveryDayPage() {
 					</div>
 					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
 						<h2 className="text-2xl font-semibold text-slate-100 sm:text-3xl">
-							discovery day agenda (expand for details)
+							discovery series agenda (expand for details)
 						</h2>
 						<div className="mt-6 space-y-4">
 							{accordionItems.map((item) => (
@@ -259,7 +259,7 @@ export default function DiscoveryDayPage() {
 					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
 						<div className="rounded-3xl border border-slate-800 bg-slate-900/60 p-8 backdrop-blur-sm">
 							<h3 className="text-2xl font-semibold text-slate-100 sm:text-3xl">
-								what happens after the discovery day
+								what happens after the discovery series
 							</h3>
 							<ul className="mt-4 space-y-3">
 								{afterItems.map((item) => (
@@ -286,7 +286,7 @@ export default function DiscoveryDayPage() {
 					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
 						<div className="rounded-3xl border border-slate-800 bg-slate-900/60 p-8 text-center backdrop-blur-sm">
 							<h3 className="text-2xl font-semibold text-slate-100 sm:text-3xl">
-								ready to lock in your discovery day?
+								ready to lock in your discovery series?
 							</h3>
 							<p className="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
 								We’ll add a scheduler here. For now, reach out

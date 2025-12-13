@@ -10,6 +10,7 @@ export default function Home() {
 		{ label: "services", href: "/services" },
 		{ label: "pricing", href: "#pricing" },
 		{ label: "about us", href: "/about-us" },
+		{ label: "contact", href: "/contact" },
 	];
 
 	const cta = {
