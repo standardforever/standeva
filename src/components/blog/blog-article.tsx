@@ -97,7 +97,7 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 
 				while (
 					stack.length > 0 &&
-					level <= stack[stack.length 1].level
+					level <= stack[stack.length - 1].level
 				) {
 					stack.pop();
 				}
@@ -105,7 +105,7 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 				if (stack.length === 0) {
 					toc.push(item);
 				} else {
-					stack[stack.length 1].children?.push(item);
+					stack[stack.length - 1].children?.push(item);
 				}
 
 				stack.push(item);
@@ -121,7 +121,7 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ initialPost }) => {
 		const handleScroll = () => {
 			const doc = document.documentElement;
 			const scrollTop = doc.scrollTop || document.body.scrollTop;
-			const scrollHeight = doc.scrollHeight window.innerHeight;
+			const scrollHeight = doc.scrollHeight - window.innerHeight;
 			const progress =
 				scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
 			setReadingProgress(Math.min(progress, 100));

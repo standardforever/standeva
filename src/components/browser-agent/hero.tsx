@@ -13,8 +13,8 @@ const Hero: React.FC = () => {
 			if (heroRef.current) {
 				const rect = heroRef.current.getBoundingClientRect();
 				setMousePosition({
-					x: e.clientX rect.left,
-					y: e.clientY rect.top,
+					x: e.clientX - rect.left,
+					y: e.clientY - rect.top,
 				});
 			}
 		};

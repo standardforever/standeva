@@ -29,7 +29,7 @@ const Header: React.FC = () => {
 
 		const updateTimer = () => {
 			const now = new Date().getTime();
-			const distance = targetDate.getTime() now;
+			const distance = targetDate.getTime() - now;
 
 			if (distance > 0) {
 				setTimeLeft({

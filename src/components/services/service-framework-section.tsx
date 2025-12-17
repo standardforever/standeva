@@ -625,7 +625,7 @@ const ServiceFrameworkSection: FC = () => {
 								</div>
 
 								{/* Separator */}
-								{index < actsPhases.length 1 && (
+								{index < actsPhases.length - 1 && (
 									<div className="mx-auto mt-20 h-px w-32 bg-gradient-to-r from-transparent via-slate-700 to-transparent" />
 								)}
 							</motion.div>

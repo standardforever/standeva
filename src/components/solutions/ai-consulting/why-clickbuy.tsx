@@ -177,7 +177,7 @@ const WhyClickbuy: React.FC = () => {
 								</div>
 								
 								{/* Connector Line */}
-								{index < processSteps.length 1 && (
+								{index < processSteps.length - 1 && (
 									<div className="hidden md:block absolute top-6 left-full w-full h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 -z-10" />
 								)}
 								

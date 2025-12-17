@@ -148,7 +148,7 @@ const HowWeWorkSection: FC = () => {
 								</div>
 
 								{/* Connector line */}
-								{index < steps.length 1 && (
+								{index < steps.length - 1 && (
 									<div className="mx-auto my-4 h-12 w-0.5 bg-gradient-to-b from-sky-500/50 to-emerald-500/50" />
 								)}
 							</motion.div>
