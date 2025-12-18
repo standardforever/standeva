@@ -13,9 +13,9 @@ import FinalCTA from "@/components/solutions/ai-consulting/final-cta";
 import { getBlogPostsData } from "@/lib/blog-data";
 
 export const metadata = {
-	title: "AI Consulting Services - ProcessZero | Expert AI Strategy & Implementation",
+	title: "AI Consulting Services Process Zero | Expert AI Strategy & Implementation",
 	description:
-		"Navigate AI's complexities with ProcessZero's expert consulting services. We help you identify strategic opportunities, optimize performance, and ensure compliance for seamless AI adoption.",
+		"Navigate AI's complexities with Process Zero's expert consulting services. We help you identify strategic opportunities, optimize performance, and ensure compliance for seamless AI adoption.",
 };
 
 export default async function AIConsultingPage() {
@@ -24,7 +24,7 @@ export default async function AIConsultingPage() {
 		{ label: "overview", href: "#consulting-overview" },
 		{ label: "services", href: "#consulting-services" },
 		{ label: "internal ai", href: "#internal-ai" },
-		{ label: "why processzero", href: "#why-ProcessZero" },
+		{ label: "why process zero", href: "#why-process-zero" },
 		{ label: "partners", href: "#partners" },
 		{ label: "faq", href: "#consulting-faq" },
 		{ label: "blog", href: "/blog" }

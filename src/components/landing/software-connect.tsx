@@ -84,12 +84,12 @@ const SoftwareConnect: FC = () => {
 					<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
 						software connectivity
 					</div>
-					<h2 className="text-balance text-2xl font-semibold leading-tight sm:text-3xl md:text-[2.1rem]">
+					<h2 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
 						automate your teams processes on all major software
-						solutions.
+						solutions
 					</h2>
 					<p className="mx-auto max-w-3xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
-						mimic any human processing on any software solution.
+						mimic any human processing on any software solution
 					</p>
 				</div>
 			</div>
@@ -102,7 +102,7 @@ const SoftwareConnect: FC = () => {
 						<div className="mx-auto overflow-hidden px-2 py-4 md:px-4 md:py-5">
 							<div
 								className="flex flex-col gap-4 md:gap-5"
-								aria-label="Companies that integrate with ProcessZero">
+								aria-label="Companies that integrate with Process Zero">
 								{[0, 1, 2].map((rowIndex) => {
 									const rowLogos = featuredLogoIcons.filter(
 										(_, index) => index % 3 === rowIndex

@@ -9,8 +9,8 @@ import CTASection from "@/components/company/about/cta-section";
 import PerspectiveSection from "@/components/company/about/perspective-section";
 
 export const metadata = {
-	title: "About Us - ProcessZero | AI Solutions for Enterprise",
-	description: "Learn about ProcessZero, a generative AI company driving innovation and efficiency through scalable AI solutions for enterprises.",
+	title: "About Us Process Zero | AI Solutions for Enterprise",
+	description: "Learn about Process Zero, a generative AI company driving innovation and efficiency through scalable AI solutions for enterprises.",
 };
 
 export default function AboutPage() {

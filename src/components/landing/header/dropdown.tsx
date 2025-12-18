@@ -118,7 +118,7 @@ const dropdownContent: DropdownContentMap = {
 				title: "services",
 				items: [
 					{ label: "ai consulting", href: "/solutions/ai-consulting" },
-					// { label: "ProcessZero", href: "/solutions/ProcessZero" }, // Not implemented yet
+					// { label: "Process Zero", href: "/solutions/process-zero" }, // Not implemented yet
 				],
 			},
 			{
@@ -164,7 +164,7 @@ const dropdownContent: DropdownContentMap = {
 			{
 				title: "community",
 				items: [
-					// Community links - external
+					// Community links external
 					// { label: "Discord", href: "https://discord.gg/standeva" },
 					// { label: "GitHub", href: "https://github.com/standeva" },
 					// {

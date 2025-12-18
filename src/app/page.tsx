@@ -14,7 +14,7 @@ export default function Home() {
 	];
 
 	const cta = {
-		label: "15 min intro call",
+		label: "free 60 min discovery call",
 		href: "/intro-call",
 	};
 

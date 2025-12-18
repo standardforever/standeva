@@ -78,8 +78,8 @@ const MissionSection: FC = () => {
 									after 25+ years in change and ops
 								</h3>
 								<p className="mt-2 text-base leading-relaxed text-slate-300">
-									we&apos;ve seen SMEs drowning in repetitive work — costing time,
-									money and morale. ProcessZero was created to change that.
+									we&apos;ve seen SMEs drowning in repetitive work   costing time,
+									money and morale. Process Zero was created to change that.
 								</p>
 							</div>
 						</div>

@@ -61,7 +61,7 @@ const FeaturesSection: React.FC = () => {
 					viewport={{ once: true }}
 					transition={{ duration: 0.8 }}>
 					<h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-						What can ProcessZero Browser Agent do for you?
+						What can Process Zero Browser Agent do for you?
 					</h2>
 					<p className="mx-auto mt-6 text-xl text-slate-300">
 						Automate the work you don&apos;t want to do
@@ -114,7 +114,7 @@ const FeaturesSection: React.FC = () => {
 								</h3>
 							</div>
 							<p className="mt-4 text-slate-300">
-								Let ProcessZero handle these tasks automatically while you focus on what matters.
+								Let Process Zero handle these tasks automatically while you focus on what matters.
 							</p>
 						</div>
 

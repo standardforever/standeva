@@ -23,7 +23,7 @@ const CTASection: React.FC = () => {
 				<p className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
 					processzero ai
 				</p>
-				<h2 className="mt-5 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-[2.4rem]">
+				<h2 className="mt-5 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
 					ready to boost your team&apos;s efficiency?
 				</h2>
 				<p className="mt-4 max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
@@ -41,16 +41,16 @@ const CTASection: React.FC = () => {
 						className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-blue-500 to-purple-600 px-7 py-3 text-sm font-semibold text-white shadow-md shadow-blue-500/40 transition-colors duration-300 ease-out hover:from-slate-800 hover:to-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
 						whileHover={{ scale: 1.03 }}
 						whileTap={{ scale: 0.97 }}>
-						15 min intro call
+						free 60 min discovery call
 					</motion.a>
 
-					<motion.a
+					{/* <motion.a
 						href="/discovery-day"
 						className="inline-flex items-center justify-center rounded-md bg-slate-800/90 px-7 py-3 text-sm font-semibold text-slate-100 shadow-md shadow-slate-900/30 transition-colors duration-300 ease-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-600/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
 						whileHover={{ scale: 1.03 }}
 						whileTap={{ scale: 0.97 }}>
 						discovery series
-					</motion.a>
+					</motion.a> */}
 				</motion.div>
 			</div>
 		</section>

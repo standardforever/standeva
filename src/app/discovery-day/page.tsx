@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-	title: "Discovery Series & AI Audit (£100) | ProcessZero",
+	title: "Discovery Series & AI Audit (£100) | Process Zero",
 	description:
 		"Book your £100 Discovery Series. Map processes, shape an AI-first strategy, review security, and receive a clear AI Audit Report with timelines, costs, and ROI.",
 };

@@ -41,7 +41,7 @@ const Logo: React.FC<LogoProps> = ({
 			{showWordmark && (
 				<span
 					className={`${wordmarkSizes[size]} font-bold leading-none text-white ${wordmarkClassName}`}>
-					ProcessZero
+					Process Zero
 				</span>
 			)}
 		</div>

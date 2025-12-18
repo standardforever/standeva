@@ -77,7 +77,7 @@ const SuccessMetricsSection: FC = () => {
 					transition={{ duration: 0.6, delay: 0.2 }}
 					className="mx-auto mt-4 max-w-2xl text-sm text-slate-300 sm:text-base">
 					These are the tangible outcomes our clients achieve through AI
-					automation with ProcessZero.
+					automation with Process Zero.
 				</motion.p>
 
 				{/* Metrics grid */}

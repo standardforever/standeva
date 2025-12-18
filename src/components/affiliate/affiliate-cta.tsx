@@ -15,7 +15,7 @@ const AffiliateCta: FC = () => {
 
 			<div className="relative mx-auto flex max-w-3xl flex-col items-center px-4 text-center md:px-6">
 				<p className="text-xs font-medium uppercase tracking-[0.28em] text-slate-400">
-					ProcessZero AI Partners
+					Process Zero AI Partners
 				</p>
 				<h2 className="mt-5 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-[2.4rem]">
 					Ready to unlock new recurring revenue for your agency?

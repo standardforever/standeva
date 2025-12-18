@@ -68,8 +68,8 @@ const EarlyPartnersCTA: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.2 }}
 					className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg">
-					Discover how AI automation can streamline your operations and transform
-					how your team works.
+					Discover how AI automation can streamline your operations
+					and transform how your team works.
 				</motion.p>
 
 				<motion.div
@@ -84,7 +84,10 @@ const EarlyPartnersCTA: FC = () => {
 								key={item.title}
 								initial={{ opacity: 0, y: 16 }}
 								animate={isInView ? { opacity: 1, y: 0 } : {}}
-								transition={{ duration: 0.5, delay: 0.28 + index * 0.05 }}
+								transition={{
+									duration: 0.5,
+									delay: 0.28 + index * 0.05,
+								}}
 								className="group relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-left backdrop-blur-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-sky-500/50 hover:shadow-[0_0_30px_rgba(56,189,248,0.2)]">
 								<div
 									className={`absolute inset-0 bg-gradient-to-br ${item.accent} opacity-0 transition-opacity duration-300 group-hover:opacity-100`}
@@ -121,16 +124,16 @@ const EarlyPartnersCTA: FC = () => {
 						className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-blue-500 to-purple-600 px-7 py-3 text-sm font-semibold text-white shadow-md shadow-blue-500/40 transition-colors duration-300 ease-out hover:from-slate-800 hover:to-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
 						whileHover={{ scale: 1.03 }}
 						whileTap={{ scale: 0.97 }}>
-						15 min intro call
+						free 60 min discovery call
 					</motion.a>
 
-					<motion.a
+					{/* <motion.a
 						href="/discovery-day"
 						className="inline-flex items-center justify-center rounded-md bg-slate-800/90 px-7 py-3 text-sm font-semibold text-slate-100 shadow-md shadow-slate-900/30 transition-colors duration-300 ease-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-600/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
 						whileHover={{ scale: 1.03 }}
 						whileTap={{ scale: 0.97 }}>
 						discovery series
-					</motion.a>
+					</motion.a> */}
 				</motion.div>
 			</div>
 		</section>

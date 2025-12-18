@@ -18,7 +18,7 @@ const ProblemSection: React.FC = () => {
 		},
 		{
 			icon: FileText,
-			title: "You get answers, not action—projects stall because no one presses the buttons.",
+			title: "You get answers, not action projects stall because no one presses the buttons.",
 			description: "Traditional AI provides information but doesn&apos;t execute tasks.",
 		},
 		{
@@ -28,7 +28,7 @@ const ProblemSection: React.FC = () => {
 		},
 		{
 			icon: Zap,
-			title: "Repetitive tasks: exports, forms, file renames—again and again.",
+			title: "Repetitive tasks: exports, forms, file renames again and again.",
 			description: "Automation should handle the boring work, not you.",
 		},
 		{

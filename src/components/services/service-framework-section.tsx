@@ -59,7 +59,7 @@ const actsPhases: ACTSPhase[] = [
 		letter: "A",
 		letterBgColor: "bg-sky-400",
 		icon: Target,
-		title: "Align - Build shared understanding & direction",
+		title: "Align Build shared understanding & direction",
 		subtitle:
 			"The Align phase is where we establish clarity about your goals, challenges, systems, and constraints. It ensures we're fully aligned before moving into deeper analysis or automation design.",
 		briefDescription:
@@ -107,7 +107,7 @@ const actsPhases: ACTSPhase[] = [
 		letter: "C",
 		letterBgColor: "bg-indigo-400",
 		icon: Search,
-		title: "Clarify - Map your processes, diagnose bottlenecks & build your AI strategy",
+		title: "Clarify Map your processes, diagnose bottlenecks & build your AI strategy",
 		subtitle:
 			"In the Clarify phase, we turn assumptions into evidence. We deeply analyse your processes, data flows, systems and bottlenecks to determine where automation will have the greatest impact.",
 		briefDescription:
@@ -156,7 +156,7 @@ const actsPhases: ACTSPhase[] = [
 				],
 			},
 			closing:
-				"The Clarify phase ensures we're solving the right problems in the right order — with complete transparency.",
+				"The Clarify phase ensures we're solving the right problems in the right order   with complete transparency.",
 		},
 		color: "from-indigo-500 to-violet-600",
 		borderColor: "border-indigo-500/40",
@@ -172,7 +172,7 @@ const actsPhases: ACTSPhase[] = [
 		letter: "T",
 		letterBgColor: "bg-emerald-400",
 		icon: Rocket,
-		title: "Transform - AI Implementation Partner — build & deploy your automation agents",
+		title: "Transform AI Implementation Partner   build & deploy your automation agents",
 		subtitle:
 			"Now we move from strategy to action. In the Transform phase, Process Zero becomes your AI implementation partner, building private automation agents, workflows, and LLM powered systems that run securely inside your environment.",
 		briefDescription:
@@ -242,9 +242,9 @@ const actsPhases: ACTSPhase[] = [
 		letter: "S",
 		letterBgColor: "bg-amber-400",
 		icon: RefreshCw,
-		title: "Support - Ongoing optimisation, monitoring & long-term transformation advisory",
+		title: "Support Ongoing optimisation, monitoring & long-term transformation advisory",
 		subtitle:
-			"AI is not a one-off project — it's a continuous transformation. The Support phase ensures your automations grow stronger over time. We provide both operational support and strategic transformation partnership.",
+			"AI is not a one-off project   it's a continuous transformation. The Support phase ensures your automations grow stronger over time. We provide both operational support and strategic transformation partnership.",
 		briefDescription:
 			"Ensure your automations grow stronger over time with operational support and strategic transformation partnership.",
 		expandedContent: {
@@ -289,8 +289,8 @@ const actsPhases: ACTSPhase[] = [
 			deliverables: {
 				heading: "Support is both:",
 				items: [
-					"AI Support & Maintenance - keeping your automation running smoothly",
-					"AI Transformation Partnership - acting as your long-term consultant and solution provider",
+					"AI Support & Maintenance keeping your automation running smoothly",
+					"AI Transformation Partnership acting as your long-term consultant and solution provider",
 				],
 			},
 			closing:

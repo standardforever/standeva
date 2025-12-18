@@ -4,7 +4,7 @@ description: "Most businesses start with no-code automation platforms like n8n, 
 keywords: ["No-Code Automation", "Web Automation", "AI Agents", "RPA vs AI", "Data Security", "Business Process Automation", "Open Source AI", "Workflow Automation", "Automation Security", "Private AI", "n8n Alternative", "Business Automation Strategy"]
 ---
 
-<image src="../public/web-automation.png" alt="Web Automation Types - RPA, API-Based, Web Scraping, and Browser Automation" />
+<image src="../public/web-automation.png" alt="Web Automation Types RPA, API-Based, Web Scraping, and Browser Automation" />
 
 When businesses start thinking about automation, they usually begin with the same question:
 
@@ -66,7 +66,7 @@ Your financial information and commercial secrets never go to OpenAI, Google, An
 - Process thousands of tasks
 - Operate at scale with accuracy
 
-**They are built for real business automation — not just simple tasks.**
+**They are built for real business automation   not just simple tasks.**
 
 ---
 
@@ -173,7 +173,7 @@ There are always exceptions.
 - Route exceptions to humans
 - Learn from feedback
 
-**This is why real automation requires agents — not just workflows.**
+**This is why real automation requires agents   not just workflows.**
 
 ---
 
@@ -181,7 +181,7 @@ There are always exceptions.
 
 No-code tools are useful for hobby projects and micro-business tasks.
 
-But if you run a real business with staff, customers, suppliers, and operations — **you need more**.
+But if you run a real business with staff, customers, suppliers, and operations   **you need more**.
 
 ### here is why open-source agents are the better choice:
 
@@ -248,7 +248,7 @@ They lead to errors, security risks, data loss, and compliance issues.
 
 ## final thoughts
 
-Automation is powerful — but only when it is done correctly.
+Automation is powerful   but only when it is done correctly.
 
 **No-code tools have their place**, especially for simple, one-off tasks or for solo operators.
 

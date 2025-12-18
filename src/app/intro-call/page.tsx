@@ -1,30 +1,35 @@
 import SecondaryHeader from "@/components/layout/secondary-header";
 import SecondaryFooter from "@/components/layout/secondary-footer";
-import { CheckCircle2, PhoneCall, Rocket, FileText } from "lucide-react";
+import { CheckCircle2, Clock3, Users } from "lucide-react";
 
-const whatWeCover = [
-	"Your current pain points",
-	"How our AI automation process works",
-	"Pricing, ROI and commercial clarity",
-	"Why ProcessZero is different",
+const sessionCoverage = [
+	"Your current operating landscape a high-level snapshot of your systems, processes, people, and existing use of AI",
+	"Cost and growth constraints identifying bottlenecks, friction points, and constraints across your operations",
+	"AI automation opportunities where automation could improve efficiency, reduce friction, and unlock capacity",
+	"What, how, and when to automate clear guidance on priority, approach, and timing",
+	"Indicative cost ranges early investment guidance, with full accuracy confirmed during detailed process mapping and solution design",
 ];
 
-const discoveryDayItems = [
-	"AI strategy session to identify automation and scaling opportunities",
-	"Process mapping of repetitive tasks suitable for automation",
-	"AI Audit Report outlining recommended automations, timelines and full costings",
-	"This session provides a clear, actionable roadmap to begin your AI automation transformation.",
+const takeaways = [
+	"Automation-ready tasks a clear view of low-value, repetitive work suitable for AI automation",
+	"Bottlenecks and delays surfaced costly validation checks, hand-offs, and process slowdowns clearly identified",
+	"Growth constraints clarified insight into where processes limit scale and how automation could remove those constraints",
+	"Cost-reduction opportunities practical ways to lower operating costs while freeing teams for higher-value work",
+	"A prioritised automation roadmap focused on business impact, not technical complexity",
+	"Timelines and investment clarity indicative delivery timelines and cost ranges for each proposed automation",
+	"A written summary report everything discussed captured clearly and shared with you, with no obligation",
+];
+
+const afterSession = [
+	"A concise written report we package all findings and recommendations and send them to you",
+	"No pressure to proceed if and when you choose to move forward, you can come back to us",
+	"Commercial, scalable solutions we're confident our AI automations will be of interest, without the need for a hard sell",
 ];
 
 export default function IntroCallPage() {
-	const cta = {
-		label: "book discovery series",
-		href: "/discovery-day",
-	};
-
 	return (
 		<main className="min-h-screen w-full overflow-x-hidden bg-black">
-			<SecondaryHeader cta={cta} />
+			<SecondaryHeader navItems={[]} cta={null} />
 
 			<div className="w-full pt-16 sm:pt-20">
 				<section
@@ -37,53 +42,70 @@ export default function IntroCallPage() {
 
 					<div className="relative mx-auto max-w-7xl px-4 md:px-6">
 						<div className="inline-flex items-center gap-2 rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-sky-200">
-							<PhoneCall className="h-4 w-4" />
-							book a 15-minute intro call
+							<Clock3 className="h-4 w-4" />
+							free 60-minute discovery call
 						</div>
 
 						<div className="mt-8 grid gap-8 lg:grid-cols-2 lg:gap-12">
-							{/* Left Column - Text Content */}
 							<div className="space-y-6 text-left">
 								<h1 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-									busy? let&apos;s keep it quick and useful.
+									A free 60-minute session to identify cost
+									savings and growth opportunities using AI
 								</h1>
 								<p className="text-base leading-relaxed text-slate-300 sm:text-lg">
-									This short call helps us understand your
-									needs — and whether AI automation is the
-									right fit.
+									This team-led session uncovers where AI can
+									remove bottlenecks, reduce operating costs,
+									and unlock capacity no hard sell, just
+									clear recommendations.
 								</p>
+
+								<div className="grid gap-3 sm:grid-cols-2">
+									<div className="flex items-center gap-2 rounded-xl border border-slate-800 bg-slate-900/70 px-3 py-2">
+										<Clock3 className="h-5 w-5 text-sky-300" />
+										<span className="text-sm text-slate-200">
+											60 minutes
+										</span>
+									</div>
+									<div className="flex items-center gap-2 rounded-xl border border-slate-800 bg-slate-900/70 px-3 py-2">
+										<Users className="h-5 w-5 text-sky-300" />
+										<span className="text-sm text-slate-200">
+											Hosted by the consulting team
+										</span>
+									</div>
+								</div>
 							</div>
 
-							{/* Right Column - Embedded Zcal Calendar */}
-							<div className="overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl shadow-blue-500/20">
+							<div
+								id="booking"
+								className="overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl shadow-blue-500/20">
 								<iframe
-									src="https://zcal.co/munaray/15min"
+									src="https://zcal.co/consulting-team/60min-discovery"
 									className="h-[500px] w-full lg:h-[600px]"
 									frameBorder="0"
-									title="Book your 15-minute intro call"
+									title="Book your 60-minute discovery call"
 									allow="camera; microphone; payment"
 									loading="eager"
 								/>
 								<div className="border-t border-slate-800 bg-slate-950/80 px-4 py-3 text-center text-xs text-slate-400">
-									Bookings include a Microsoft Teams link in
-									the invite.
+									Duration: 60 minutes Hosted by the
+									Consulting Team Microsoft Teams link
+									included.
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section
-					id="cover"
-					className="relative z-10 bg-black pb-12 text-slate-50 sm:pb-16">
+				<section className="relative z-10 bg-black pb-12 text-slate-50 sm:pb-16">
 					<div className="relative mx-auto max-w-5xl px-4 md:px-6">
 						<div className="grid gap-6 lg:grid-cols-2 lg:items-start">
 							<div className="h-full rounded-2xl border border-slate-800 bg-slate-900/60 p-6 backdrop-blur-sm">
 								<h2 className="text-xl font-semibold text-slate-100 sm:text-2xl">
-									what we&apos;ll cover
+									What we&apos;ll cover in the 60-minute
+									session
 								</h2>
 								<ul className="mt-4 space-y-3">
-									{whatWeCover.map((item) => (
+									{sessionCoverage.map((item) => (
 										<li
 											key={item}
 											className="flex items-start gap-2">
@@ -95,50 +117,41 @@ export default function IntroCallPage() {
 									))}
 								</ul>
 							</div>
-							<div
-								id="next"
-								className="relative h-full overflow-hidden rounded-2xl border border-sky-500/30 bg-slate-950/60 p-6 shadow-[0_0_40px_rgba(56,189,248,0.15)] backdrop-blur-sm sm:p-8">
-								<div className="pointer-events-none absolute inset-0">
-									<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.12),transparent_55%)]" />
-								</div>
-								<div className="relative flex h-full flex-col">
-									<div className="flex items-start gap-3">
-										<div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-sky-500/20 text-sky-200 ring-1 ring-sky-400/40">
-											<Rocket className="h-5 w-5" />
-										</div>
-										<div>
-											<h3 className="text-xl font-semibold text-slate-100 sm:text-2xl">
-												next steps: book your £100
-												discovery series
-											</h3>
-											<p className="mt-2 text-sm leading-relaxed text-slate-300">
-												Post 15-min call, the next step
-												is a £100 Discovery Series,
-												which includes:
-											</p>
-										</div>
-									</div>
-
-									<ul className="mt-4 space-y-3">
-										{discoveryDayItems.map((item) => (
-											<li
-												key={item}
-												className="flex items-start gap-2">
-												<FileText className="mt-0.5 h-5 w-5 shrink-0 text-sky-300" />
-												<span className="text-sm text-slate-200">
-													{item}
-												</span>
-											</li>
-										))}
-									</ul>
-
-									<p className="mt-4 text-sm leading-relaxed text-slate-300">
-										This session provides a clear,
-										actionable roadmap to begin your AI
-										automation transformation.
-									</p>
-								</div>
+							<div className="h-full rounded-2xl border border-slate-800 bg-slate-900/60 p-6 backdrop-blur-sm">
+								<h2 className="text-xl font-semibold text-slate-100 sm:text-2xl">
+									What you&apos;ll leave with
+								</h2>
+								<ul className="mt-4 space-y-3">
+									{takeaways.map((item) => (
+										<li
+											key={item}
+											className="flex items-start gap-2">
+											<CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-400" />
+											<span className="text-sm text-slate-200">
+												{item}
+											</span>
+										</li>
+									))}
+								</ul>
 							</div>
+						</div>
+
+						<div className="mt-10 rounded-2xl border border-slate-800 bg-slate-900/60 p-6 backdrop-blur-sm">
+							<h2 className="text-xl font-semibold text-slate-100 sm:text-2xl">
+								After the session
+							</h2>
+							<ul className="mt-4 space-y-3">
+								{afterSession.map((item) => (
+									<li
+										key={item}
+										className="flex items-start gap-2">
+										<CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-400" />
+										<span className="text-sm text-slate-200">
+											{item}
+										</span>
+									</li>
+								))}
+							</ul>
 						</div>
 					</div>
 				</section>

@@ -19,7 +19,7 @@ const differentiators = [
 		title: "you fully own your ai agents",
 		subtitle: "open-source by default",
 		description:
-			"Everything is built with open-source tooling — no vendor lock-in, no hidden licensing, and complete transparency.",
+			"Everything is built with open-source tooling   no vendor lock-in, no hidden licensing, and complete transparency.",
 		highlight: "open-source & auditable",
 	},
 	{
@@ -43,7 +43,7 @@ const differentiators = [
 		title: "end-to-end delivery",
 		subtitle: "from strategy to optimisation",
 		description:
-			"We support you through the entire journey — from strategy and build to deployment and ongoing optimisation.",
+			"We support you through the entire journey   from strategy and build to deployment and ongoing optimisation.",
 		highlight: "strategy → build → optimise",
 	},
 ];

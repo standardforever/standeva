@@ -86,9 +86,9 @@ export const heroContent = {
 		},
 		{
 			title: "Integration",
-			code: `import { ProcessZeroAI } from '@ProcessZero/sdk'
+			code: `import { AutomationAI } from '@process-zero/sdk'
 
-const ai = new ProcessZeroAI({
+const ai = new AutomationAI({
   apiKey: process.env.API_KEY
 })
 
@@ -100,7 +100,7 @@ const result = await ai.generate({
 };
 
 export const headerContent = {
-	logoText: "ProcessZero",
+	logoText: "Process Zero",
 	navItems: [
 		{ name: "Platform", hasDropdown: true },
 		{ name: "Solutions", hasDropdown: true },

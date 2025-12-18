@@ -53,7 +53,7 @@ const ServicesHero: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.2 }}
 					className="mt-6 max-w-3xl text-balance text-base leading-relaxed text-slate-300 sm:text-lg md:text-xl">
-					ProcessZero helps organisations eliminate repetitive work,
+					Process Zero helps organisations eliminate repetitive work,
 					modernise inefficient processes, and scale their operations
 					through intelligent automation.
 				</motion.p>

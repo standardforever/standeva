@@ -19,8 +19,8 @@ const AffiliateBeforeAfter: FC = () => {
 					Manual Processes Are Holding Your Clients Back.
 				</h2>
 				<p className="mt-4 mx-auto max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
-					Let ProcessZero handle the repetitive work so your clients&apos; teams can focus on what truly
-					matters—and you can turn process problems into new revenue streams.
+					Let Process Zero handle the repetitive work so your clients&apos; teams can focus on what truly
+					matters and you can turn process problems into new revenue streams.
 				</p>
 
 				<div className="mt-12 grid gap-8 text-left md:grid-cols-2">
@@ -59,7 +59,7 @@ const AffiliateBeforeAfter: FC = () => {
 							<div className="relative mx-auto aspect-[4/3] w-full max-w-md overflow-hidden rounded-2xl bg-slate-900">
 								<Image
 									src="/after.png"
-									alt="Automated ProcessZero workspace"
+									alt="Automated Process Zero workspace"
 									fill
 									className="object-contain object-center"
 									sizes="(min-width: 1024px) 40vw, 100vw"

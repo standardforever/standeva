@@ -37,12 +37,12 @@ const ProblemSection: FC = () => {
 					<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
 						the problem
 					</div>
-					<h2 className="text-balance text-2xl font-semibold leading-tight sm:text-3xl md:text-[2.1rem]">
-						your team&apos;s processing costs are too high
+					<h2 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
+						need reduce time and cost processing digital tasks
 					</h2>
 					<p className="mx-auto max-w-3xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
-						Most of your processing tasks are not automated, which
-						is painfully slow and expensive to run.
+						We help your team get more time to do higher value tasks
+						that really matter
 					</p>
 				</div>
 

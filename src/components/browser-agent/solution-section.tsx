@@ -14,7 +14,7 @@ const SolutionSection: React.FC = () => {
 		{
 			icon: Monitor,
 			title: "Zero Setup Required",
-			description: "No installations, no setup—run automation directly in your browser.",
+			description: "No installations, no setup run automation directly in your browser.",
 		},
 		{
 			icon: Shield,
@@ -63,7 +63,7 @@ const SolutionSection: React.FC = () => {
 					transition={{ duration: 0.8, delay: 0.2 }}>
 					<div className="text-center">
 						<h3 className="text-2xl font-bold text-white">
-							Introducing our AI Computer use Agent—Automate your
+							Introducing our AI Computer use Agent Automate your
 							workflows securely
 						</h3>
 						<p className="mx-auto mt-4 max-w-3xl text-lg text-slate-300">
@@ -185,7 +185,7 @@ const SolutionSection: React.FC = () => {
 							</div>
 						</div>
 						<blockquote className="text-xl text-slate-100">
-							&ldquo;ProcessZero Browser Agent is a game-changer. It
+							&ldquo;Process Zero Browser Agent is a game-changer. It
 							speeds up prototyping and automation, cutting out
 							the endless back-and-forth. I&apos;d definitely miss
 							it if it were gone.&rdquo;

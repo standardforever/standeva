@@ -9,17 +9,17 @@ const FAQSection: React.FC = () => {
 
 	const faqs = [
 		{
-			question: "Does ProcessZero use my own computer?",
-			answer: "ProcessZero spins up a secure cloud browser environment you can return to anytime to find your data, files, and downloaded applications. The agent works inside this isolated environment tied to your account.",
+			question: "Does Process Zero use my own computer?",
+			answer: "Process Zero spins up a secure cloud browser environment you can return to anytime to find your data, files, and downloaded applications. The agent works inside this isolated environment tied to your account.",
 			icon: Monitor,
 		},
 		{
-			question: "Can I download desktop applications on ProcessZero?",
+			question: "Can I download desktop applications on Process Zero?",
 			answer: "Yes, you can download any application or use the preinstalled applications (Office, browser, terminal, VS Code, etc.). You can even download Photoshop and have the browser agent use it for you.",
 			icon: Download,
 		},
 		{
-			question: "Can ProcessZero use Excel?",
+			question: "Can Process Zero use Excel?",
 			answer: "Yes, it even has Excel and Sheets preinstalled for you to use.",
 			icon: Monitor,
 		},
@@ -52,7 +52,7 @@ const FAQSection: React.FC = () => {
 						Frequently Asked Questions
 					</h2>
 					<p className="mx-auto mt-6 text-lg text-slate-300">
-						Everything you need to know about ProcessZero Browser Agent
+						Everything you need to know about Process Zero Browser Agent
 					</p>
 				</motion.div>
 

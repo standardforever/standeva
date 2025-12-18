@@ -18,7 +18,7 @@ interface CTAConfig {
 
 interface SecondaryHeaderProps {
 	navItems?: NavItemConfig[];
-	cta?: CTAConfig;
+	cta?: CTAConfig | null;
 	className?: string;
 }
 
@@ -51,7 +51,7 @@ const SecondaryHeader: React.FC<SecondaryHeaderProps> = ({
 		() => (typeof navItems !== "undefined" ? navItems : defaultNavItems),
 		[navItems]
 	);
-	const ctaConfig = cta ?? defaultCTA;
+	const ctaConfig = cta === null ? null : cta ?? defaultCTA;
 
 	useEffect(() => {
 		const handleHashChange = () => {

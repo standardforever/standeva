@@ -190,7 +190,7 @@ const ContactFormSection = () => {
 								</p>
 								<p className="mt-2 text-sm leading-relaxed text-slate-300">
 									We review your note and share the most
-									useful next step—whether that&apos;s a quick
+									useful next step whether that&apos;s a quick
 									intro call or a working session to map the
 									workflow.
 								</p>

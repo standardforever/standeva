@@ -1,10 +1,10 @@
 ---
 title: "invoice processing automation: the complete guide to eliminating 90% of manual work"
-description: "Invoice processing is slow, error-prone, and consumes hours every week. This 10-step guide shows you how to automate it using private AI agents — achieving 50-90% workload reduction while maintaining accuracy, compliance, and full control."
+description: "Invoice processing is slow, error-prone, and consumes hours every week. This 10-step guide shows you how to automate it using private AI agents   achieving 50-90% workload reduction while maintaining accuracy, compliance, and full control."
 keywords: ["Invoice Automation", "AI Invoice Processing", "Finance Automation", "Invoice Processing", "Accounts Payable Automation", "Document Processing", "Private LLM", "Open Source AI", "Agentic Workflow", "Finance AI", "AP Automation", "Invoice OCR", "ERP Integration"]
 ---
 
-<image src="../public/AI-invoice.png" alt="AI-Powered Invoice Processing - Invoice Approved and Paid" />
+<image src="../public/AI-invoice.png" alt="AI-Powered Invoice Processing Invoice Approved and Paid" />
 
 Invoice processing is one of the most common and costly repetitive workflows inside finance teams.
 
@@ -83,10 +83,10 @@ Finance data must remain private, inside your environment.
 
 ### Your options include:
 
-- **Qwen 2.5** — Great for reasoning and structured extraction
-- **Llama 3.1** — Excellent generalist, strong reasoning
-- **Mistral** — Fast, efficient, good for lower/medium complexity
-- **Phi-3.5** — Lightweight, strong for classification and logic
+- **Qwen 2.5**   Great for reasoning and structured extraction
+- **Llama 3.1**   Excellent generalist, strong reasoning
+- **Mistral**   Fast, efficient, good for lower/medium complexity
+- **Phi-3.5**   Lightweight, strong for classification and logic
 
 ### Pick the model that balances:
 
@@ -124,7 +124,7 @@ vs
 
 ## 5. Break the Process Into Agentic Steps
 
-Now you define **agents** — small, specialised units that perform a specific part of the workflow.
+Now you define **agents**   small, specialised units that perform a specific part of the workflow.
 
 Think of them like digital employees.
 
@@ -229,7 +229,7 @@ Based on real test results, refine:
 
 ---
 
-## 9. Deploy Into Live — Slowly and Safely
+## 9. Deploy Into Live   Slowly and Safely
 
 Go live in stages:
 

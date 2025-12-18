@@ -4,22 +4,22 @@ description: "Most organisations get sold generic chatbots. We build private AI 
 keywords: ["AI Automation", "Process Automation", "Digital Workforce", "Repetitive Tasks", "Private AI", "Business Process Automation", "AI Agents", "Workflow Automation", "RPA Alternative", "Data Sovereignty"]
 ---
 
-<image src="../public/reality-vs-hype.png" alt="AI Hype vs Reality - Digital Workforce vs Real Automation" />
+<image src="../public/reality-vs-hype.png" alt="AI Hype vs Reality Digital Workforce vs Real Automation" />
 
 Process Zero builds private, secure AI automation agents that work inside your environment to remove repetitive digital tasks from your organisation.
 
-Our agents handle the work your team currently completes manually — logging into systems, reading information, applying logic, and updating data across tools — so your people can focus on higher-value work that drives growth.
+Our agents handle the work your team currently completes manually   logging into systems, reading information, applying logic, and updating data across tools   so your people can focus on higher-value work that drives growth.
 
 **We don't sell generic chatbots.**
 We deliver closed-loop, private AI automation that integrates with your existing systems and processes.
 
 ---
 
-## can your tasks be automated? - the simple rule
+## can your tasks be automated? the simple rule
 
 A practical rule we use with clients:
 
-**If you repeat a digital task more than three times a week, it uses a mouse or keyboard, follows predictable steps, and isn't a regulated compliance action — an AI automation agent can almost certainly automate it.**
+**If you repeat a digital task more than three times a week, it uses a mouse or keyboard, follows predictable steps, and isn't a regulated compliance action   an AI automation agent can almost certainly automate it.**
 
 These tasks drain your team's time but add little strategic value.
 Our agents take them over completely.
@@ -55,7 +55,7 @@ Private assistants trained on your business processes, capable of:
 - Answering operational questions
 - Supporting finance, HR, compliance, or customer service workflows
 
-**These assistants run privately for your organisation — not public AI tools.**
+**These assistants run privately for your organisation   not public AI tools.**
 
 ---
 
@@ -70,7 +70,7 @@ We automate data extraction and processing from:
 - Customer forms
 - Compliance documents
 
-Agents read, understand, validate, and route data into your systems automatically — removing manual entry and reducing errors.
+Agents read, understand, validate, and route data into your systems automatically   removing manual entry and reducing errors.
 
 ---
 
@@ -86,7 +86,7 @@ Our agents connect and automate:
 - Reporting cycles
 - Compliance and audit tasks
 
-**If your team currently clicks, types, copies, pastes, checks, updates, or reconciles information — we can automate it.**
+**If your team currently clicks, types, copies, pastes, checks, updates, or reconciles information   we can automate it.**
 
 ---
 
@@ -120,7 +120,7 @@ We specialise in removing repetitive work across:
 
 ---
 
-## deployment options - your data stays private
+## deployment options your data stays private
 
 We build automation using open-source models and deploy them:
 
@@ -159,19 +159,19 @@ We design, build, and implement your private automation agents within your chose
 ### 4. ongoing improvement
 
 We monitor performance, optimise workflows, and expand automation over time.
-Each agent builds the foundation for the next — automation compounds.
+Each agent builds the foundation for the next   automation compounds.
 
 ---
 
 ## why organisations choose process zero
 
 - **Private, secure, on-premise or cloud-based AI models**
-- **Full data sovereignty** — no sending your data to external LLMs
+- **Full data sovereignty**   no sending your data to external LLMs
 - Designed for real operational automation, not chatbots
 - Automation built around your existing systems and processes
 - Senior-led team with decades of process and transformation expertise
 - Transparent, fixed-cost delivery models
-- **Tangibly measurable impact** — 50–90% workload reduction in targeted areas
+- **Tangibly measurable impact**   50–90% workload reduction in targeted areas
 
 We remove the repetitive work so your people can focus on what truly moves the business forward.
 

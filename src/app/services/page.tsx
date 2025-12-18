@@ -4,9 +4,9 @@ import ServicesHero from "@/components/services/services-hero";
 import ServicesTransitionOverlay from "@/components/services/services-transition-overlay";
 
 export const metadata = {
-	title: "Our Services - ProcessZero | AI Automation & Transformation",
+	title: "Our Services Process Zero | AI Automation & Transformation",
 	description:
-		"ProcessZero's four-part service framework: AI Process Audit, Transformation Partner, Implementation Partner, and Ongoing Maintenance. Results-based pricing with 33% of savings model.",
+		"Process Zero's four-part service framework: AI Process Audit, Transformation Partner, Implementation Partner, and Ongoing Maintenance. Results-based pricing with 33% of savings model.",
 };
 
 export default function ServicesPage() {
@@ -19,7 +19,7 @@ export default function ServicesPage() {
 	];
 
 	const cta = {
-		label: "15 min intro call",
+		label: "free 60 min discovery call",
 		href: "/intro-call",
 	};
 

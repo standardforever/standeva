@@ -16,13 +16,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 	const post = await getBlogPostData(params.slug);
 	if (!post) {
 		return {
-			title: "ProcessZero Blog",
+			title: "Process Zero Blog",
 			description: "Insights on AI, automation, and product engineering."
 		};
 	}
 
 	return {
-		title: `${post.title} | ProcessZero Blog`,
+		title: `${post.title} | Process Zero Blog`,
 		description: post.description,
 		keywords: post.keywords
 	};

@@ -84,7 +84,7 @@ const ConsultingIntro: React.FC = () => {
 							whileInView={{ opacity: 1 }}
 							viewport={{ once: true }}
 							transition={{ duration: 0.8, delay: 0.4 }}>
-							At ProcessZero, we guide our clients through every phase of their AI journey, from initial conceptualisation to full-scale implementation and ongoing enhancement. Our approach ensures AI is not just deployed but strategically embedded to deliver measurable, long-term value.
+							At Process Zero, we guide our clients through every phase of their AI journey, from initial conceptualisation to full-scale implementation and ongoing enhancement. Our approach ensures AI is not just deployed but strategically embedded to deliver measurable, long-term value.
 						</motion.p>
 
 						{/* Stats Pills */}

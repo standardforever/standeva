@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-// Primary Button - Blue
+// Primary Button Blue
 export const PrimaryButton = styled(motion.button)`
 	padding: 0.75rem 2rem;
 	background: linear-gradient(135deg, #3b82f6, #2563eb);
@@ -24,7 +24,7 @@ export const PrimaryButton = styled(motion.button)`
 	}
 `;
 
-// Secondary Button - Outline
+// Secondary Button Outline
 export const SecondaryButton = styled(motion.button)`
 	padding: 0.75rem 2rem;
 	background: transparent;
@@ -47,7 +47,7 @@ export const SecondaryButton = styled(motion.button)`
 	}
 `;
 
-// Tertiary Button - Ghost (for dark backgrounds)
+// Tertiary Button Ghost (for dark backgrounds)
 export const TertiaryButton = styled(motion.button)`
 	padding: 0.75rem 2rem;
 	background: rgba(255, 255, 255, 0.1);

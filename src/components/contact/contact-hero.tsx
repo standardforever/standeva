@@ -26,7 +26,7 @@ const ContactHero = () => {
 						<Link
 							href="/intro-call"
 							className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-blue-500/40 transition-colors duration-300 ease-out hover:from-slate-800 hover:to-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black">
-							15 min intro call
+							free 60 min discovery call
 						</Link>
 						{/* <Link
 							href="#contact-form"
@@ -106,7 +106,7 @@ const ContactHero = () => {
 						</h3>
 						<p className="mt-2 text-sm leading-relaxed text-slate-300">
 							We review each request and suggest the right next
-							move—whether that&apos;s a quick intro call or a
+							move whether that&apos;s a quick intro call or a
 							deeper discovery workshop.
 						</p>
 						<div className="mt-4 flex flex-wrap gap-2">

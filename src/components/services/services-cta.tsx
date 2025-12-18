@@ -6,8 +6,8 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { Sparkles, CheckCircle2 } from "lucide-react";
 
 const startSteps = [
-	"Free 15-Min Introductory Call",
-	"£100 Discovery Series & AI Audit",
+	"Free 60 minute discovery call",
+	"1-Day AI Audit + Strategy Session (£100)",
 ];
 
 const actsReasons = [

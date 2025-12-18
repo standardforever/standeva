@@ -47,9 +47,9 @@ const AboutUsHero: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.6, delay: 0.2 }}
 					className="mt-6 max-w-3xl text-balance text-base leading-relaxed text-slate-300 sm:text-lg md:text-xl">
-					ProcessZero helps SMEs eliminate repetitive digital tasks so
+					Process Zero helps SMEs eliminate repetitive digital tasks so
 					teams can focus on customers, growth, and higher-value work
-					— not admin. Our automations reduce bottlenecks, speed up
+					  not admin. Our automations reduce bottlenecks, speed up
 					workflows, and cut operating costs.
 				</motion.p>
 

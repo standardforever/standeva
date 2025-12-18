@@ -29,7 +29,7 @@ const testimonials: Testimonial[] = [
 		role: "Director of CX",
 		company: "Loop Labs",
 		quote:
-			"Escalations went from thirty browser tabs to one Slack summary. ProcessZero reads Zendesk, digs into admin consoles, and loops us in only when policy demands it.",
+			"Escalations went from thirty browser tabs to one Slack summary. Process Zero reads Zendesk, digs into admin consoles, and loops us in only when policy demands it.",
 		avatar: "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=200&q=80",
 		results: ["58% faster resolutions", "CSAT +18 pts"],
 	},
@@ -42,7 +42,7 @@ const TestimonialsSection: React.FC = () => {
 				<div className="mb-12 text-center">
 					<p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-300">Proof</p>
 					<h2 className="mt-4 text-3xl font-bold text-white md:text-4xl">
-						Teams trust ProcessZero Browser Agent to run real work
+						Teams trust Process Zero Browser Agent to run real work
 					</h2>
 				</div>
 

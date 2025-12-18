@@ -41,7 +41,7 @@ const FinalCTA: React.FC = () => {
 						</div>
 
 						<h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-							Launch the ProcessZero Browser Agent
+							Launch the Process Zero Browser Agent
 						</h2>
 						<p className="mx-auto mt-4 text-xl text-slate-300">
 							Run repeatable browser work with an operator that remembers every tab, login, and step.
@@ -124,7 +124,7 @@ const FinalCTA: React.FC = () => {
 								<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-purple-600">
 									<span className="text-lg font-bold text-white">C</span>
 								</div>
-								<span className="text-xl font-bold text-white">ProcessZero</span>
+								<span className="text-xl font-bold text-white">Process Zero</span>
 							</div>
 							<p className="mt-4 text-sm text-slate-400">
 								Browser-native automation that feels like an expert operator.
@@ -160,7 +160,7 @@ const FinalCTA: React.FC = () => {
 
 					<div className="mt-12 border-t border-white/10 pt-8 text-center">
 						<p className="text-sm text-slate-400">
-							© {new Date().getFullYear()} ProcessZero. All Rights reserved.
+							© {new Date().getFullYear()} Process Zero. All Rights reserved.
 						</p>
 					</div>
 				</motion.footer>

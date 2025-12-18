@@ -4,15 +4,18 @@ import React from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 
 const otherProviderItems = [
-	"Send your data to public AI models (OpenAI, Google).",
-	"Run critical workflows on a rented, third‑party platform.",
-	"Rely on closed‑source tools with opaque licensing.",
+	"AI buzzwords make automation seem complex and difficult.",
+	"Run vital tasks on a platform you don't own or control.",
+	"Put your private data through public AI systems.",
+	"Rely on closed-source tools with opaque licensing.",
+	"They charge big upfront fees to plan, build, and maintain automations.",
 ];
 
-const ProcessZeroItems = [
-	"Keep sensitive data inside your own network perimeter.",
+const differentiators = [
+	"Use simple language, so automation is easy to understand and integrate.",
 	"Own and control every AI agent, prompt and workflow.",
-	"Build on an open, transparent stack with no hidden fees.",
+	"Your data never leaves your network when using our custom AI.",
+	"We're very cost effective.",
 ];
 
 const WhyChooseUs: React.FC = () => {
@@ -29,13 +32,13 @@ const WhyChooseUs: React.FC = () => {
 				</div>
 
 				<div className="mt-6 space-y-4">
-					<h2 className="text-balance text-3xl font-semibold leading-tight text-slate-50 sm:text-4xl md:text-[2.5rem]">
-						not all automation is created equal.
+					<h2 className="text-balance text-3xl font-semibold leading-tight text-slate-50 sm:text-4xl md:text-5xl">
+						not all automation is created equal
 					</h2>
 					<p className="mx-auto max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
-						See how our approach keeps your data secure, preserves ownership and
-						delivers long‑term value—without locking you into someone else&apos;s
-						platform.
+						See how our approach keeps your data secure, preserves
+						ownership and delivers long‑term value without locking
+						you into someone else&apos;s platform.
 					</p>
 				</div>
 
@@ -48,7 +51,7 @@ const WhyChooseUs: React.FC = () => {
 						</div>
 						<div className="border-b border-slate-800 bg-emerald-950/40 px-8 py-5 text-left md:border-b-0">
 							<div className="inline-flex rounded-full bg-emerald-900/70 px-5 py-2 text-xs font-semibold tracking-[0.18em] text-emerald-200">
-								the processzero approach
+								the process zero approach
 							</div>
 						</div>
 
@@ -64,7 +67,7 @@ const WhyChooseUs: React.FC = () => {
 						</div>
 
 						<div className="space-y-4 bg-emerald-950/30 px-8 pb-8 pt-6 text-left">
-							{ProcessZeroItems.map((item) => (
+							{differentiators.map((item) => (
 								<div key={item} className="flex gap-3">
 									<CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-emerald-400" />
 									<p className="text-sm leading-relaxed text-slate-100">
@@ -74,11 +77,6 @@ const WhyChooseUs: React.FC = () => {
 							))}
 						</div>
 					</div>
-
-					<p className="mt-6 text-xs text-slate-400 sm:text-[0.8rem]">
-						This is why teams that care about security, control and transparency
-						standardise on ProcessZero for automation.
-					</p>
 				</div>
 			</div>
 		</section>

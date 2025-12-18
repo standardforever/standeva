@@ -9,16 +9,16 @@ import AffiliateCta from "@/components/affiliate/affiliate-cta";
 import SecondaryFooter from "@/components/layout/secondary-footer";
 
 export const metadata: Metadata = {
-	title: "Affiliate Programme - ProcessZero AI",
+	title: "Affiliate Programme Process Zero AI",
 	description:
-		"Partner with ProcessZero to offer AI automation your clients need while unlocking new, recurring revenue streams for your business.",
+		"Partner with Process Zero to offer AI automation your clients need while unlocking new, recurring revenue streams for your business.",
 };
 
 const AffiliatePage = () => {
 	const navItems = [
 		{ label: "overview", href: "#affiliate-overview" },
 		{ label: "solutions", href: "#affiliate-solutions" },
-		{ label: "why processzero", href: "#affiliate-why-ProcessZero" },
+		{ label: "why process zero", href: "#affiliate-why-process-zero" },
 		{ label: "before vs after", href: "#affiliate-before-after" },
 		{ label: "pricing", href: "#affiliate-pricing" },
 	];

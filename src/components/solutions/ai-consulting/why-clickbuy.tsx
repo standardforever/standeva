@@ -23,7 +23,7 @@ const whyCards = [
 		icon: Cpu,
 		title: "Advanced Agentic AI",
 		subtitle: "Intelligent Automation",
-		description: "We are experts in deploying Agentic AI—intelligent, autonomous agents capable of managing complex, multi-step workflows. Our AI agents function as a tireless digital workforce.",
+		description: "We are experts in deploying Agentic AI intelligent, autonomous agents capable of managing complex, multi-step workflows. Our AI agents function as a tireless digital workforce.",
 		highlight: "24/7 Operations"
 	},
 	{
@@ -61,7 +61,7 @@ const processSteps = [
 const WhyClickbuy: React.FC = () => {
 	return (
 		<section
-			id="why-ProcessZero"
+			id="why-process-zero"
 			className="py-20 bg-linear-to-br from-slate-900 via-blue-900/10 to-slate-900 text-white relative overflow-hidden">
 			{/* Background Elements */}
 			<div className="absolute inset-0">
@@ -80,7 +80,7 @@ const WhyClickbuy: React.FC = () => {
 					{/* Tag */}
 					<div className="inline-flex items-center px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-6">
 						<span className="text-sm text-blue-400 font-medium uppercase tracking-wider">
-							Why ProcessZero
+							Why Process Zero
 						</span>
 					</div>
 
@@ -93,7 +93,7 @@ const WhyClickbuy: React.FC = () => {
 					</h2>
 
 					<p className="text-xl text-slate-300 max-w-4xl mx-auto">
-						With ProcessZero, you get more than a service provider; you get a partner invested in your success. Our agile approach means we adapt to your needs throughout the entire project lifecycle.
+						With Process Zero, you get more than a service provider; you get a partner invested in your success. Our agile approach means we adapt to your needs throughout the entire project lifecycle.
 					</p>
 				</motion.div>
 

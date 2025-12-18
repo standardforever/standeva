@@ -32,12 +32,12 @@ const BeforeAfterSection: FC = () => {
 				</div>
 
 				<div className="mt-6 space-y-4">
-					<h2 className="text-balance text-3xl font-semibold leading-tight text-slate-50 sm:text-4xl md:text-[2.5rem]">
-						manual processes are holding you back.
+					<h2 className="text-balance text-3xl font-semibold leading-tight text-slate-50 sm:text-4xl md:text-5xl">
+						manual processes are holding you back
 					</h2>
 					<p className="mx-auto max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
-					let processzero handle the repetitive work so your team can focus on
-						strategy, customers and growth.
+						Process Zero handles the repetitive work, freeing your
+						team to focus on high value tasks
 					</p>
 				</div>
 
@@ -65,7 +65,9 @@ const BeforeAfterSection: FC = () => {
 							</h3>
 							<ul className="mt-2 space-y-2">
 								{beforePoints.map((point) => (
-									<li key={point} className="flex gap-3 text-sm text-slate-200">
+									<li
+										key={point}
+										className="flex gap-3 text-sm text-slate-200">
 										<XCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-rose-400" />
 										<span>{point}</span>
 									</li>
@@ -84,7 +86,7 @@ const BeforeAfterSection: FC = () => {
 							<div className="relative mx-auto aspect-[4/3] w-full max-w-md overflow-hidden rounded-2xl bg-slate-950">
 								<Image
 									src="/after.png"
-									alt="Automated ProcessZero workspace managing documents"
+									alt="Automated Process Zero workspace managing documents"
 									fill
 									className="object-contain object-center"
 									sizes="(min-width: 1024px) 40vw, 100vw"
@@ -97,7 +99,9 @@ const BeforeAfterSection: FC = () => {
 							</h3>
 							<ul className="mt-2 space-y-2">
 								{afterPoints.map((point) => (
-									<li key={point} className="flex gap-3 text-sm text-slate-100">
+									<li
+										key={point}
+										className="flex gap-3 text-sm text-slate-100">
 										<CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-400" />
 										<span>{point}</span>
 									</li>

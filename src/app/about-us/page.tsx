@@ -4,9 +4,9 @@ import AboutUsHero from "@/components/about-us/about-hero";
 import AboutTransitionOverlay from "@/components/about-us/about-transition-overlay";
 
 export const metadata = {
-	title: "About Us - ProcessZero | Your Trusted AI Automation Partner",
+	title: "About Us Process Zero | Your Trusted AI Automation Partner",
 	description:
-		"Learn about ProcessZero's mission to help organisations eliminate repetitive work through secure, on-premise AI automation with up to 90% cost reduction.",
+		"Learn about Process Zero's mission to help organisations eliminate repetitive work through secure, on-premise AI automation with up to 90% cost reduction.",
 };
 
 export default function AboutUsPage() {
@@ -20,7 +20,7 @@ export default function AboutUsPage() {
 	];
 
 	const cta = {
-		label: "15 min intro call",
+		label: "free 60 min discovery call",
 		href: "/intro-call",
 	};
 

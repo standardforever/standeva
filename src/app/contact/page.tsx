@@ -4,14 +4,14 @@ import ContactFormSection from "@/components/contact/contact-form-section";
 import ContactHero from "@/components/contact/contact-hero";
 
 export const metadata = {
-	title: "Contact Us - ProcessZero | Strixton Manor Business Centre",
+	title: "Contact Us Process Zero | Strixton Manor Business Centre",
 	description:
-		"Contact ProcessZero to discuss automation projects, AI agents, and discovery workshops. Visit us at Strixton Manor Business Centre, Northamptonshire.",
+		"Contact Process Zero to discuss automation projects, AI agents, and discovery workshops. Visit us at Strixton Manor Business Centre, Northamptonshire.",
 };
 
 export default function ContactPage() {
 	const cta = {
-		label: "15 min intro call",
+		label: "free 60 min discovery call",
 		href: "/intro-call",
 	};
 

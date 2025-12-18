@@ -56,7 +56,7 @@ const OurStorySection: FC = () => {
 								thousands of hours of repetitive, low-value
 								processing
 							</span>{" "}
-							— from data entry to reconciliation, invoice
+							  from data entry to reconciliation, invoice
 							management to compliance checks.
 						</p>
 

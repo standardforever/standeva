@@ -7,7 +7,7 @@ const faqData = [
 	{
 		id: 1,
 		question: "what makes the processzero approach different?",
-		answer: "Our approach prioritises your security and ownership. Your data stays within your network and is never exposed to public AI models. We build open, transparent solutions with no hidden fees so you fully own and control your AI agents—unlike providers that run on rented, third‑party platforms.",
+		answer: "We keep things safe and simple. Your data never leaves your network, and you own all the automations we build. No hidden costs, no external platforms full control stays with you.",
 	},
 	{
 		id: 2,
@@ -23,7 +23,7 @@ const faqData = [
 				<br />
 				<br />
 				Implementation is priced as a straightforward project cost, with
-				flexible payment options — including upfront pricing or monthly
+				flexible payment options   including upfront pricing or monthly
 				plans. All solutions deliver strong recurring ROI, often
 				reducing repetitive workload costs by up to 90%.
 			</>
@@ -37,27 +37,27 @@ const faqData = [
 				Our process is simple and collaborative:
 				<br />
 				<br />
-				1. Free Introductory Call — A short call to understand your
+				1. Free Introductory Call   A short call to understand your
 				goals and identify where AI automation could have the most
 				impact.
 				<br />
 				<br />
-				2. £100 Discovery Series — A full day spent mapping your processes,
+				2. £100 Discovery Series   A full day spent mapping your processes,
 				speaking with stakeholders, reviewing SOPs and identifying
 				automation opportunities.
 				<br />
 				<br />
-				3. AI Audit Report — You receive a clear automation roadmap
+				3. AI Audit Report   You receive a clear automation roadmap
 				outlining recommended solutions, timelines, expected savings and
 				implementation costs.
 				<br />
 				<br />
-				4. Implementation — We build and deploy secure, open-source AI
+				4. Implementation   We build and deploy secure, open-source AI
 				agents inside your network, transforming repetitive processes
 				into automated workflows.
 				<br />
 				<br />
-				5. Ongoing Support (optional) — We provide continued monitoring,
+				5. Ongoing Support (optional)   We provide continued monitoring,
 				optimisation and extension of your automations as your business
 				grows.
 			</>
@@ -107,7 +107,7 @@ const FAQ: React.FC = () => {
 					<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
 						faqs
 					</div>
-					<h2 className="mt-6 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-[2.4rem]">
+					<h2 className="mt-6 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
 						all you need to know
 					</h2>
 					<p className="mt-4 text-sm text-slate-300 sm:text-[0.95rem] md:text-base">

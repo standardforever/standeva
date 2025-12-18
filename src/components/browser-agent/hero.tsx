@@ -95,7 +95,7 @@ const Hero: React.FC = () => {
 						<motion.h1
 							variants={titleVariants}
 							className="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
-							Standeva—AI that uses
+							Standeva AI that uses
 							<br />
 							The computer.
 						</motion.h1>
@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
 						<motion.p
 							variants={subtitleVariants}
 							className="text-lg text-slate-300 sm:text-xl">
-							Ask me to do any computer task— I will do it on your own virtual PC
+							Ask me to do any computer task  I will do it on your own virtual PC
 						</motion.p>
 
 						<motion.div

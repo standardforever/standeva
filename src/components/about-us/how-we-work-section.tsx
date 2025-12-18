@@ -43,7 +43,7 @@ const steps = [
 		icon: RefreshCw,
 		title: "ongoing support & ai transformation",
 		description:
-			"As your organisation grows, we help refine, extend and scale your automations — guiding you on the journey to becoming an AI-first business.",
+			"As your organisation grows, we help refine, extend and scale your automations   guiding you on the journey to becoming an AI-first business.",
 		color: "from-rose-500 to-pink-600",
 	},
 ];

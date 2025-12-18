@@ -143,7 +143,7 @@ const ConsultingHero: React.FC = () => {
 							transition={{ duration: 0.6, delay: 0.4 }}>
 							Our expert consultants help you navigate AI&apos;s
 							complexities and harness its potential to solve
-							critical business challenges—from operational
+							critical business challenges from operational
 							inefficiencies to customer experience
 							transformation.
 						</motion.p>

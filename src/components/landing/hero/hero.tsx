@@ -2,9 +2,7 @@
 
 import type { FC } from "react";
 import Image from "next/image";
-import { Star } from "lucide-react";
 import { motion, Variants } from "framer-motion";
-import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const headingContainerVariants: Variants = {
 	hidden: {
@@ -50,18 +48,16 @@ const imageRevealVariants: Variants = {
 	},
 };
 
-const Hero: FC = () => {
-	const { ref, isInView } = useScrollAnimation({
-		threshold: 0.35,
-		triggerOnce: true,
-		rootMargin: "0px 0px -10% 0px",
-	});
+const viewportConfig = {
+	amount: 0.35,
+	once: true,
+	margin: "0px 0px -10% 0px",
+};
 
+const Hero: FC = () => {
 	return (
 		<>
-			<section
-				ref={ref}
-				className="relative overflow-hidden bg-black text-slate-50">
+			<section className="relative overflow-hidden bg-black text-slate-50">
 				<div className="pointer-events-none absolute inset-0">
 					<div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-950 to-black" />
 					<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.35),transparent_60%),radial-gradient(circle_at_bottom,_rgba(16,185,129,0.32),transparent_55%)] opacity-70 mix-blend-screen" />
@@ -71,29 +67,9 @@ const Hero: FC = () => {
 					className="relative z-10"
 					variants={headingContainerVariants}
 					initial="hidden"
-					animate={isInView ? "visible" : "hidden"}>
+					whileInView="visible"
+					viewport={viewportConfig}>
 					<div className="mx-auto flex max-w-6xl flex-col items-center px-4 pb-24 pt-24 text-center md:px-6 md:pb-28">
-						<div className="flex flex-col items-center gap-2">
-							<motion.div
-								className="flex items-center gap-1 text-yellow-400"
-								initial={{ opacity: 0, y: 10 }}
-								animate={isInView ? { opacity: 1, y: 0 } : {}}>
-								{[0, 1, 2, 3, 4].map((star) => (
-									<Star
-										key={star}
-										className="h-4 w-4 fill-yellow-400"
-									/>
-								))}
-							</motion.div>
-							<motion.p
-								className="text-xs font-medium tracking-[0.25em] text-slate-400"
-								initial={{ opacity: 0, y: 10 }}
-								animate={isInView ? { opacity: 1, y: 0 } : {}}
-								transition={{ duration: 0.4, delay: 0.1 }}>
-								your trusted ai partner
-							</motion.p>
-						</div>
-
 						<motion.div className="mt-7 space-y-4">
 							<h1 className="text-balance text-3xl font-semibold leading-tight text-slate-50 sm:text-4xl md:text-5xl">
 								<span className="block overflow-hidden">
@@ -109,35 +85,36 @@ const Hero: FC = () => {
 										className="block"
 										variants={lineRevealVariants}
 										custom={1}>
-										from repetitive work.
+										from repetitive work
 									</motion.span>
 								</span>
 							</h1>
 							<motion.p
 								className="mx-auto max-w-2xl text-balance text-sm text-slate-300 sm:text-base md:text-lg"
 								initial={{ opacity: 0, y: 12 }}
-								animate={isInView ? { opacity: 1, y: 0 } : {}}
+								whileInView={{ opacity: 1, y: 0 }}
+								viewport={viewportConfig}
 								transition={{ duration: 0.6, delay: 0.2 }}>
-								ProcessZero frees teams from manual work,
-								enabling high-impact output and 50–90% lower
-								operating costs
+								Process Zero removes low-value work so your team
+								can focus on higher-value work
 							</motion.p>
 						</motion.div>
 
 						<motion.div
 							className="mt-8 flex gap-8"
 							initial={{ opacity: 0, y: 12 }}
-							animate={isInView ? { opacity: 1, y: 0 } : {}}
+							whileInView={{ opacity: 1, y: 0 }}
+							viewport={viewportConfig}
 							transition={{ duration: 0.5, delay: 0.3 }}>
 							<motion.a
 								href="/intro-call"
 								className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-blue-500 to-purple-600 px-7 py-3 text-sm font-semibold text-white shadow-md shadow-blue-500/40 transition-colors duration-300 ease-out hover:from-slate-800 hover:to-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
 								whileHover={{ scale: 1.03 }}
 								whileTap={{ scale: 0.97 }}>
-								15 min intro call
+								free 60 min discovery call
 							</motion.a>
 
-							<motion.a
+							{/* <motion.a
 								href="/discovery-day"
 								className="inline-flex flex-col items-center justify-center rounded-md bg-slate-800/90 px-7 py-3 text-sm font-semibold text-slate-100 shadow-md shadow-slate-900/30 transition-colors duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-600/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:text-white"
 								whileHover={{ scale: 1.03 }}
@@ -146,9 +123,9 @@ const Hero: FC = () => {
 									discovery series
 								</span>
 								<span className="text-[0.72rem] leading-tight font-normal text-slate-300">
-									1-day ai audit + strategy session (£100)
+									free 60 min discovery call
 								</span>
-							</motion.a>
+							</motion.a> */}
 						</motion.div>
 
 						<div className="mt-10 w-full">
@@ -158,7 +135,8 @@ const Hero: FC = () => {
 									style={{ transformOrigin: "left" }}
 									variants={imageRevealVariants}
 									initial="hidden"
-									animate={isInView ? "visible" : "hidden"}
+									whileInView="visible"
+									viewport={viewportConfig}
 								/>
 								<Image
 									src="/hero-image-new.png"

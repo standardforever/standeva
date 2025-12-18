@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ProcessZero",
-  description: "ProcessZero Landing Page",
+  title: "Process Zero",
+  description: "Process Zero Landing Page",
 };
 
 export default function RootLayout({

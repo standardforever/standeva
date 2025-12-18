@@ -72,7 +72,7 @@ export default function GDPRPage() {
 	];
 
 	const cta = {
-		label: "book free 15 min intro call",
+		label: "book free 60 min discovery call",
 		href: "/intro-call",
 	};
 
@@ -220,22 +220,50 @@ export default function GDPRPage() {
 								</div>
 							</div>
 							<p className="text-slate-300 leading-relaxed text-lg">
-								At process zero, we recognise that using AI to automate business processes often involves handling personal data. We take our responsibility under the UK General Data Protection Regulation (UK GDPR) seriously, and we are committed to protecting your data and maintaining transparency in how it is used.
+								At process zero, we recognise that using AI to
+								automate business processes often involves
+								handling personal data. We take our
+								responsibility under the UK General Data
+								Protection Regulation (UK GDPR) seriously, and
+								we are committed to protecting your data and
+								maintaining transparency in how it is used.
 							</p>
 							<p className="text-slate-300 leading-relaxed text-lg mt-4">
-								Our GDPR statement explains how we protect personal data when we deliver AI automation, AI strategy consulting, and support services. We process personal data only when it is necessary, for lawful purposes, and in ways that respect your rights and expectations.
+								Our GDPR statement explains how we protect
+								personal data when we deliver AI automation, AI
+								strategy consulting, and support services. We
+								process personal data only when it is necessary,
+								for lawful purposes, and in ways that respect
+								your rights and expectations.
 							</p>
 							<p className="text-slate-300 leading-relaxed text-lg mt-4">
-								Whether we are supporting your AI strategy session, developing automation workflows, or integrating intelligent systems into your operations, we ensure that:
+								Whether we are supporting your AI strategy
+								session, developing automation workflows, or
+								integrating intelligent systems into your
+								operations, we ensure that:
 							</p>
 							<ul className="list-disc ml-6 space-y-2 text-slate-300 mt-4">
-								<li>We only process personal data that is necessary for the task at hand.</li>
-								<li>You, or your organisation, remain in control of your data.</li>
-								<li>All data is handled securely, lawfully, and transparently.</li>
-								<li>Personal data is not used beyond the purpose for which it was provided.</li>
+								<li>
+									We only process personal data that is
+									necessary for the task at hand.
+								</li>
+								<li>
+									You, or your organisation, remain in control
+									of your data.
+								</li>
+								<li>
+									All data is handled securely, lawfully, and
+									transparently.
+								</li>
+								<li>
+									Personal data is not used beyond the purpose
+									for which it was provided.
+								</li>
 							</ul>
 							<p className="text-slate-300 leading-relaxed text-lg mt-4">
-								This helps protect both your business and the individuals whose data may be involved in the services we deliver.
+								This helps protect both your business and the
+								individuals whose data may be involved in the
+								services we deliver.
 							</p>
 						</div>
 
@@ -322,8 +350,7 @@ export default function GDPRPage() {
 									<ul className="list-disc ml-6 space-y-2 text-slate-300">
 										<li>Website enquiries</li>
 										<li>
-											Intro calls and Discovery Series
-											bookings
+											Free 60 min discovery call bookings
 										</li>
 										<li>Client onboarding</li>
 										<li>Marketing and communications</li>

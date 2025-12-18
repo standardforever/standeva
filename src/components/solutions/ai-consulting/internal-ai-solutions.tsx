@@ -24,7 +24,7 @@ const solutions = [
 		category: "Internal AI Advisor",
 		title: "ERP Financial Planning & Analysis",
 		description:
-			"Enhance Financial Planning with AI-Driven Insights - Financial planning often requires sifting through vast datasets manually. Our AI solutions can analyse your ERP data to uncover hidden trends, forecast future performance, and empower your team with the strategic insights needed for data-driven decision-making.",
+			"Enhance Financial Planning with AI-Driven Insights Financial planning often requires sifting through vast datasets manually. Our AI solutions can analyse your ERP data to uncover hidden trends, forecast future performance, and empower your team with the strategic insights needed for data-driven decision-making.",
 		image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1000&auto=format&fit=crop",
 		benefits: [
 			"Unlock predictive financial forecasting and trend analysis",

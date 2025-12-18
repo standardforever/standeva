@@ -58,9 +58,9 @@ const WhatWeOffer: React.FC = () => {
 						</span>
 					</h2>
 
-					{/* Subtitle - Shortened Version */}
+					{/* Subtitle Shortened Version */}
 					<p className="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-4xl mx-auto">
-						Expert guidance to demystify AI and solve your core business challenges — from operational efficiency and customer experience to risk management.
+						Expert guidance to demystify AI and solve your core business challenges   from operational efficiency and customer experience to risk management.
 					</p>
 
 					{/* Alternative shorter subtitle if needed */}

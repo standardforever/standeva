@@ -17,8 +17,8 @@ const FounderMissionSection: FC = () => {
 					<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
 						built on experience, backed by leaders
 					</div>
-					<h2 className="mt-6 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-[2.4rem]">
-						a founder&apos;s mission to make ai safe and useful.
+					<h2 className="mt-6 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
+						a founder&apos;s mission to make ai safe and useful
 					</h2>
 				</div>
 
@@ -28,19 +28,32 @@ const FounderMissionSection: FC = () => {
 							a founder&apos;s mission
 						</p>
 						<p>
-							My mission is to help your organisation use AI to
-							cut costs, remove repetitive work and improve
-							operational quality—without adding unnecessary risk.
-							With over 25 years in change management, I know what
-							it feels like to be asked to do more with the same
-							resources.
+							We work with companies that know AI can help them
+							grow but don’t yet have a clear path forward. By
+							automating low value, repetitive work, we free your
+							team to focus on the higher-value, revenue-driving
+							tasks that move the business forward all without
+							adding risk.
 						</p>
 						<p>
-							Agentic AI can now deliver measurable savings,
-							higher accuracy and real productivity gains. Our AI
-							agents are designed to live inside your network,
-							controlled and owned by your team, so your data
-							stays private while automations scale.
+							After 25 years in change management, I understand
+							what it feels like to be asked to achieve more with
+							the same or fewer resources. That pressure is real,
+							and AI can finally start to relieve it.
+						</p>
+						<p>
+							Our team is here to help your business grow faster
+							through safe, practical AI automation. If you know
+							you need to take the first step but aren’t sure
+							where to begin, book a free 60 minute call and we’ll
+							guide you through your options.
+						</p>
+						<p>
+							I often say: “Once you see it, you can’t unsee it.”
+							And that’s exactly what I want for you to clearly
+							see the growth potential AI can unlock in your
+							business, as well as the cost reductions that can
+							make it more profitable, leaner and easier to run.
 						</p>
 					</div>
 
@@ -50,7 +63,7 @@ const FounderMissionSection: FC = () => {
 							<div className="absolute inset-[10%] overflow-hidden rounded-[2.4rem] bg-slate-950">
 								<Image
 									src="/blog-1-1.png"
-									alt="ProcessZero founder portrait"
+									alt="Process Zero founder portrait"
 									fill
 									className="object-cover object-center"
 									sizes="256px"
@@ -68,7 +81,7 @@ const FounderMissionSection: FC = () => {
 								</p>
 								<p className="mt-2 text-slate-200">
 									Selected for the Microsoft for Startups
-									Founders Hub.
+									Founders Hub
 								</p>
 							</div>
 
@@ -90,18 +103,6 @@ const FounderMissionSection: FC = () => {
 							</div>
 						</div>
 					</div>
-				</div>
-
-				{/* Link to About Us page */}
-				<div className="mt-8 flex justify-center">
-					<Link
-						href="/about-us"
-						className="group inline-flex items-center gap-2 text-sm font-semibold text-sky-400 transition hover:text-sky-300">
-						learn more about our story
-						<span className="transition-transform group-hover:translate-x-1">
-							→
-						</span>
-					</Link>
 				</div>
 			</div>
 		</section>
