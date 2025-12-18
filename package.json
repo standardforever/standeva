@@ -10,13 +10,14 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@lobehub/icons": "^2.48.0",
     "aos": "^2.3.4",
     "framer-motion": "^12.23.24",
     "gsap": "^3.13.0",
     "locomotive-scroll": "^4.1.4",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.546.0",
-    "next": "15.5.6",
+    "next": "15.5.9",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-intersection-observer": "^9.16.0",
@@ -43,5 +44,9 @@
     "eslint-config-next": "15.5.6",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   }
 }

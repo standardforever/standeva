@@ -8,7 +8,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import {
 	Search,
-	Lightbulb,
 	Rocket,
 	RefreshCw,
 	PhoneCall,
@@ -383,7 +382,6 @@ const ServiceFrameworkSection: FC = () => {
 				{/* ACTS Phases */}
 				<div className="mt-20 space-y-20">
 					{actsPhases.map((phase, index) => {
-						const Icon = phase.icon;
 						const isEven = index % 2 === 0;
 						const isExpanded = expandedPhases[phase.id] || false;
 

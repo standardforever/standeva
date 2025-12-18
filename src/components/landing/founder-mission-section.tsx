@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Github, MetaAI } from "@lobehub/icons";
 
 const FounderMissionSection: FC = () => {
 	return (
@@ -90,15 +90,17 @@ const FounderMissionSection: FC = () => {
 									our technology partners
 								</p>
 								<div className="mt-3 flex flex-wrap justify-end gap-3">
-									{["Meta AI", "GitHub", "Browse AI"].map(
-										(partner) => (
-											<span
-												key={partner}
-												className="inline-flex items-center rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-[0.7rem] font-medium text-slate-100">
-												{partner}
-											</span>
-										)
-									)}
+									<span className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-[0.7rem] font-medium text-slate-100">
+										<MetaAI size={16} />
+										<span>Meta AI</span>
+									</span>
+									<span className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-[0.7rem] font-medium text-slate-100">
+										<Github size={16} />
+										<span>GitHub</span>
+									</span>
+									<span className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-[0.7rem] font-medium text-slate-100">
+										<span>Browse AI</span>
+									</span>
 								</div>
 							</div>
 						</div>
