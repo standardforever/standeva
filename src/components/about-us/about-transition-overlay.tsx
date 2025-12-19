@@ -8,7 +8,7 @@ import WhatMakesUsDifferent from "./what-makes-us-different";
 import HowWeWorkSection from "./how-we-work-section";
 // import SuccessMetricsSection from "./success-metrics-section";
 import EarlyPartnersCTA from "./early-partners-cta";
-import PricingSection from "../landing/pricing-section";
+import PricingSection from "../landing/act-section";
 import WhatWeAutomate from "./what-we-automate";
 
 const AboutTransitionOverlay: React.FC = () => {

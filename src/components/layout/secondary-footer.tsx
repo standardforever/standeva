@@ -15,20 +15,20 @@ const footerSections = [
 			// { name: "Careers", href: "/careers" }, // Not implemented yet
 		],
 	},
-	{
-		title: "ai development",
-		links: [
-			// All AI development service pages not implemented yet
-			// { name: "AI Development Services", href: "/services/ai-development" },
-			// { name: "Enterprise AI Development", href: "/services/enterprise-ai" },
-			{
-				name: "ai consulting services",
-				href: "/solutions/ai-consulting",
-			}, // Implemented
-			// { name: "Computer Vision Development", href: "/services/computer-vision" },
-			// { name: "ML Development", href: "/services/ml-development" },
-		],
-	},
+	// {
+	// 	title: "ai development",
+	// 	links: [
+	// 		// All AI development service pages not implemented yet
+	// 		// { name: "AI Development Services", href: "/services/ai-development" },
+	// 		// { name: "Enterprise AI Development", href: "/services/enterprise-ai" },
+	// 		{
+	// 			name: "ai consulting services",
+	// 			href: "/solutions/ai-consulting",
+	// 		}, // Implemented
+	// 		// { name: "Computer Vision Development", href: "/services/computer-vision" },
+	// 		// { name: "ML Development", href: "/services/ml-development" },
+	// 	],
+	// },
 	{
 		title: "legal",
 		links: [

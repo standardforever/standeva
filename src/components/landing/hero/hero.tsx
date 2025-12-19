@@ -95,8 +95,8 @@ const Hero: FC = () => {
 								whileInView={{ opacity: 1, y: 0 }}
 								viewport={viewportConfig}
 								transition={{ duration: 0.6, delay: 0.2 }}>
-								Process Zero removes low-value work so your team
-								can focus on higher-value work
+								Process Zero removes low value work so your team
+								can focus on higher value work
 							</motion.p>
 						</motion.div>
 

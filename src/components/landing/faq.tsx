@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqData = [
 	{
 		id: 1,
-		question: "what makes the processzero approach different?",
+		question: "what makes the process zero approach different?",
 		answer: "We keep things safe and simple. Your data never leaves your network, and you own all the automations we build. No hidden costs, no external platforms full control stays with you.",
 	},
 	{
@@ -23,7 +23,7 @@ const faqData = [
 				<br />
 				<br />
 				Implementation is priced as a straightforward project cost, with
-				flexible payment options   including upfront pricing or monthly
+				flexible payment options including upfront pricing or monthly
 				plans. All solutions deliver strong recurring ROI, often
 				reducing repetitive workload costs by up to 90%.
 			</>
@@ -37,27 +37,26 @@ const faqData = [
 				Our process is simple and collaborative:
 				<br />
 				<br />
-				1. Free Introductory Call   A short call to understand your
-				goals and identify where AI automation could have the most
-				impact.
+				1. Free Introductory Call A short call to understand your goals
+				and identify where AI automation could have the most impact.
 				<br />
 				<br />
-				2. £100 Discovery Series   A full day spent mapping your processes,
-				speaking with stakeholders, reviewing SOPs and identifying
-				automation opportunities.
+				2. £100 Discovery Series A full day spent mapping your
+				processes, speaking with stakeholders, reviewing SOPs and
+				identifying automation opportunities.
 				<br />
 				<br />
-				3. AI Audit Report   You receive a clear automation roadmap
+				3. AI Audit Report You receive a clear automation roadmap
 				outlining recommended solutions, timelines, expected savings and
 				implementation costs.
 				<br />
 				<br />
-				4. Implementation   We build and deploy secure, open-source AI
+				4. Implementation We build and deploy secure, open-source AI
 				agents inside your network, transforming repetitive processes
 				into automated workflows.
 				<br />
 				<br />
-				5. Ongoing Support (optional)   We provide continued monitoring,
+				5. Ongoing Support (optional) We provide continued monitoring,
 				optimisation and extension of your automations as your business
 				grows.
 			</>

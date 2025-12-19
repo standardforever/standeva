@@ -13,6 +13,7 @@ import WhyChooseUs from "@/components/landing/why-choose-us";
 import Faq from "@/components/landing/faq";
 import CtaSection from "@/components/landing/cta-section";
 import SoftwareConnect from "../landing/software-connect";
+import ActSection from "@/components/landing/act-section";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,9 +75,10 @@ const TransitionOverlay: React.FC = () => {
 			<SolutionsSection />
 			<WhyChooseUs />
 			<BeforeAfterSection />
-			<PricingSection />
+			<ActSection />
 			<FounderMissionSection />
 			<OurProcess />
+			<PricingSection />
 			<Faq />
 			<CtaSection />
 		</>

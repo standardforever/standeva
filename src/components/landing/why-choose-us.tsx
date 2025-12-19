@@ -28,7 +28,7 @@ const WhyChooseUs: React.FC = () => {
 
 			<div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 text-center md:px-6">
 				<div className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
-					why processzero
+					why process zero
 				</div>
 
 				<div className="mt-6 space-y-4">
@@ -38,7 +38,7 @@ const WhyChooseUs: React.FC = () => {
 					<p className="mx-auto max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
 						See how our approach keeps your data secure, preserves
 						ownership and delivers long‑term value without locking
-						you into someone else&apos;s platform.
+						you into someone else&apos;s platform
 					</p>
 				</div>
 
