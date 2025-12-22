@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import Image from "next/image";
-import { MetaAI, Microsoft } from "@lobehub/icons";
+import { Aws, MetaAI, Microsoft } from "@lobehub/icons";
 
 const FounderMissionSection: FC = () => {
 	return (
@@ -83,6 +83,26 @@ const FounderMissionSection: FC = () => {
 									Selected for the Microsoft for Startups
 									Founders Hub
 								</p>
+								<div className="mt-4">
+									<div className="relative ml-auto w-full max-w-[12rem] h-32 overflow-hidden rounded-2xl border border-violet-400/40 bg-gradient-to-br from-violet-700 via-purple-600 to-indigo-700 p-3 text-left shadow-[0_24px_60px_rgba(88,28,135,0.45)]">
+										<div className="pointer-events-none absolute -right-10 -top-12 h-36 w-36 rounded-full bg-white/10 blur-3xl" />
+										<div className="pointer-events-none absolute -left-8 bottom-0 h-24 w-24 rounded-full bg-white/10 blur-2xl" />
+											<div className="relative space-y-4">
+											<div className="flex items-center gap-2 text-[0.7rem] font-semibold text-white/90">
+												<Microsoft.Color size={18} />
+												<span>Microsoft</span>
+											</div>
+											<div className="space-y-1 text-white">
+												<p className="text-xs font-medium sm:text-sm">
+													Microsoft for Startups
+												</p>
+												<p className="text-lg font-semibold leading-tight sm:text-xl">
+													Founders Hub
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 
 							<div>
@@ -91,12 +111,12 @@ const FounderMissionSection: FC = () => {
 								</p>
 								<div className="mt-3 flex flex-wrap justify-end gap-3">
 									<span className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-[0.7rem] font-medium text-slate-100">
-										<MetaAI size={16} />
+										<MetaAI.Color size={16} />
 										<span>Meta AI</span>
 									</span>
 									<span className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-[0.7rem] font-medium text-slate-100">
-										<Microsoft size={16} />
-										<span>Microsoft for Startups Founders Hub</span>
+										<Aws.Color size={16} />
+										<span>AWS</span>
 									</span>
 									<span className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-[0.7rem] font-medium text-slate-100">
 										<Image
@@ -104,7 +124,7 @@ const FounderMissionSection: FC = () => {
 											alt="Browse AI"
 											width={16}
 											height={16}
-											className="h-4 w-4"
+											className="h-4 w-4 brightness-110"
 										/>
 										<span>Browse AI</span>
 									</span>

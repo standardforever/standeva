@@ -68,9 +68,9 @@ const actsPhases: ACTSPhase[] = [
 				heading: "This phase includes:",
 				items: [
 					{
-						title: "15-Minute Introductory Call",
+						title: "Free 60 minute discovery call",
 						description:
-							"A quick conversation to understand where you are, what's happening inside the business, and whether AI automation can meaningfully help.",
+							"A focused conversation to understand where you are, what's happening inside the business, and whether AI automation can meaningfully help.",
 					},
 					{
 						title: "Discovery Series: Alignment Session(s)",
@@ -97,7 +97,7 @@ const actsPhases: ACTSPhase[] = [
 		bgColor: "bg-sky-500/10",
 		image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&q=80",
 		cta: {
-			text: "Book Intro Call",
+			text: "Book free 60 minute discovery call",
 			href: "/intro-call",
 		},
 	},
@@ -161,10 +161,7 @@ const actsPhases: ACTSPhase[] = [
 		borderColor: "border-indigo-500/40",
 		bgColor: "bg-indigo-500/10",
 		image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&q=80",
-		cta: {
-			text: "Book Your Discovery Series",
-			href: "/discovery-day",
-		},
+		cta: undefined,
 	},
 	{
 		id: "transform",

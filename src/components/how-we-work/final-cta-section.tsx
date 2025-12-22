@@ -17,6 +17,9 @@ const FinalCtaSection: FC = () => {
 			<h2 className="mt-6 text-balance text-2xl font-semibold sm:text-3xl md:text-4xl">
 				start with clarity
 			</h2>
+			<h3 className="mt-4 text-md text-slate-300 sm:text-md">
+				Book a free 60-minute discovery call
+			</h3>
 			<p className="mt-4 text-sm text-slate-300 sm:text-base">
 				A calm, practical conversation to help you
 			</p>

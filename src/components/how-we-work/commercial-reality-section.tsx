@@ -18,7 +18,7 @@ const CommercialRealitySection: FC = () => {
 				built for commercial reality
 			</h2>
 			<p className="mt-4 text-sm text-slate-300 sm:text-base">
-				We work with businesses GBP 1m turnover and above
+				We work with businesses £1m turnover and above
 			</p>
 			<p className="mt-6 text-sm font-semibold text-slate-100 sm:text-base">
 				That means
@@ -32,7 +32,8 @@ const CommercialRealitySection: FC = () => {
 				))}
 			</ul>
 			<p className="mt-6 text-sm text-slate-200 sm:text-base">
-				If a task involves a mouse, keyboard or browser, it can usually be automated
+				If a task involves a mouse, keyboard or browser, it can usually
+				be automated
 			</p>
 		</SectionShell>
 	);

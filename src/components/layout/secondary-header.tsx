@@ -27,7 +27,6 @@ const defaultNavItems: NavItemConfig[] = [
 	{ label: "solutions", href: "/#solutions" },
 	{ label: "services", href: "/services" },
 	{ label: "pricing", href: "/#pricing" },
-	{ label: "about us", href: "/about-us" },
 	{ label: "contact", href: "/contact" },
 ];
 

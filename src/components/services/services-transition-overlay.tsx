@@ -2,14 +2,15 @@
 
 import React from "react";
 import ServiceFrameworkSection from "./service-framework-section";
-import ServicePricingAdvantage from "./service-pricing-advantage";
+// import ServicePricingAdvantage from "./service-pricing-advantage";
 import ServicesCTA from "./services-cta";
+import PricingSection from "../landing/pricing-section";
 
 const ServicesTransitionOverlay: React.FC = () => {
 	return (
 		<>
 			<ServiceFrameworkSection />
-			<ServicePricingAdvantage />
+			<PricingSection />
 			<ServicesCTA />
 		</>
 	);
