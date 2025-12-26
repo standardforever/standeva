@@ -20,9 +20,6 @@ const CTASection: React.FC = () => {
 			</div>
 
 			<div className="relative mx-auto flex max-w-3xl flex-col items-center px-4 text-center md:px-6">
-				<p className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1 text-xs font-medium tracking-[0.22em] text-emerald-200">
-					processzero ai
-				</p>
 				<h2 className="mt-5 text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
 					ready to boost your team&apos;s efficiency?
 				</h2>

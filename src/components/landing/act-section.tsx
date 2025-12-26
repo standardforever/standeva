@@ -16,7 +16,7 @@ const steps: Step[] = [
 	{
 		label: "step 1 - a: align",
 		title: "free 60 minute discovery call",
-		short: "Pinpoint where AI automation can create value by solving your business efficiency and growth pain points",
+		short: "We pinpoint where AI automation can create value by solving your business efficiency and growth pain points",
 		details: [
 			"Understand your main pain points",
 			"Spot early low value, repetitive tasks",
@@ -93,8 +93,8 @@ const ActSection: FC = () => {
 				</h2>
 
 				<p className="mt-4 max-w-2xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
-					A simple, structured way to understand your business, design
-					the right automations, and deliver results safely.
+					Our structured process to understand your business and help
+					make it “future ready
 				</p>
 
 				<div className="mt-10 grid w-full gap-6 text-left">

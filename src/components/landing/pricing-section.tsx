@@ -116,12 +116,6 @@ const PricingSection: FC = () => {
 						))}
 					</div>
 				</div>
-
-				<div className="mt-12 w-full max-w-3xl rounded-2xl border border-slate-800 bg-slate-950/70 px-6 py-5 text-center shadow-[0_16px_50px_rgba(15,23,42,0.8)]">
-					<p className="text-base font-semibold text-slate-100 sm:text-lg">
-						That&apos;s it. No more. No less.
-					</p>
-				</div>
 			</div>
 		</section>
 	);

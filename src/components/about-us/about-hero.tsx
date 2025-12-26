@@ -29,7 +29,7 @@ const AboutUsHero: FC = () => {
 					animate={isInView ? { opacity: 1, y: 0 } : {}}
 					transition={{ duration: 0.5 }}
 					className="inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1.5 text-xs font-medium tracking-[0.22em] text-emerald-200">
-					about processzero
+					about process zero
 				</motion.div>
 
 				{/* Main heading */}

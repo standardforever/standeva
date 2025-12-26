@@ -94,7 +94,7 @@ const ContactFormSection = () => {
 									<input
 										type="text"
 										name="company"
-										placeholder="processzero"
+										placeholder="process zero"
 										className={inputClasses}
 									/>
 								</label>
@@ -114,20 +114,16 @@ const ContactFormSection = () => {
 								<select
 									name="topic"
 									className={inputClasses}
-									defaultValue="process-automation">
-									<option value="process-automation">
-										process automation
+									defaultValue="resolve-growth-constraints">
+									<option value="resolve-growth-constraints">
+										resolve growth constraints
 									</option>
-									<option value="ai-agent">
-										ai agents / copilots
+									<option value="reduce-operating-costs">
+										reduce operating costs
 									</option>
-									<option value="data-integration">
-										data and system integration
+									<option value="build-ai-strategy">
+										build an AI strategy for your business
 									</option>
-									<option value="discovery-day">
-										discovery workshop
-									</option>
-									<option value="other">other</option>
 								</select>
 							</label>
 
@@ -137,7 +133,6 @@ const ContactFormSection = () => {
 									name="message"
 									required
 									rows={4}
-									placeholder="tell us about your workflow, tools involved, and what success looks like."
 									className={`${inputClasses} min-h-[140px] resize-none`}
 								/>
 							</label>
@@ -184,6 +179,28 @@ const ContactFormSection = () => {
 								</div>
 							</div>
 
+							<div className="rounded-xl border border-slate-800 bg-slate-900/70 p-4">
+								<p className="text-sm font-semibold text-white">
+									company details
+								</p>
+								<div className="mt-2 text-sm text-slate-300">
+									<p className="text-slate-100">
+										EACH GROUP LIMITED
+									</p>
+									<p className="mt-1">
+										Company Number: 14108972
+									</p>
+									<p className="mt-1">
+										Trading as Process Zero
+									</p>
+									<a
+										href="https://find-and-update.company-information.service.gov.uk/company/14108972"
+										className="mt-2 inline-flex text-xs text-blue-200 underline decoration-blue-300/60 underline-offset-4 transition-colors hover:text-blue-100">
+										https://find-and-update.company-information.service.gov.uk/company/14108972
+									</a>
+								</div>
+							</div>
+
 							<div className="rounded-xl border border-slate-800/80 bg-slate-900/80 p-4">
 								<p className="text-sm font-semibold text-white">
 									what happens next
@@ -196,36 +213,13 @@ const ContactFormSection = () => {
 								</p>
 							</div>
 
-							<div className="rounded-xl border border-slate-800 bg-slate-900/70 p-4">
-								<p className="text-sm font-semibold text-white">
-									make your message count
-								</p>
-								<ul className="mt-3 space-y-2 text-sm text-slate-300">
-									<li className="flex gap-2">
-										<span className="mt-2 h-1.5 w-1.5 rounded-full bg-blue-400" />
-										<span>key systems or vendors involved</span>
-									</li>
-									<li className="flex gap-2">
-										<span className="mt-2 h-1.5 w-1.5 rounded-full bg-blue-400" />
-										<span>team sizes and roles impacted</span>
-									</li>
-									<li className="flex gap-2">
-										<span className="mt-2 h-1.5 w-1.5 rounded-full bg-blue-400" />
-										<span>
-											timelines, metrics, or requirements
-											to hit
-										</span>
-									</li>
-								</ul>
-							</div>
-
 							<div className="rounded-xl border border-blue-500/30 bg-blue-500/10 p-4">
 								<p className="text-sm font-semibold text-blue-100">
 									prefer to talk it through?
 								</p>
 								<p className="mt-2 text-sm text-blue-50/90">
-									Book a 15 minute intro call to cover your
-									goals live with our team.
+									Book a 60 minute free discovery call to
+									cover your goals live with our team.
 								</p>
 								<Link
 									href="/intro-call"

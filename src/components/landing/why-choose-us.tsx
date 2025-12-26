@@ -7,7 +7,6 @@ const otherProviderItems = [
 	"AI buzzwords make automation seem complex and difficult.",
 	"Run vital tasks on a platform you don't own or control.",
 	"Put your private data through public AI systems.",
-	"Rely on closed-source tools with opaque licensing.",
 	"They charge big upfront fees to plan, build, and maintain automations.",
 ];
 
@@ -15,7 +14,7 @@ const differentiators = [
 	"Use simple language, so automation is easy to understand and integrate.",
 	"Own and control every AI agent, prompt and workflow.",
 	"Your data never leaves your network when using our custom AI.",
-	"We're very cost effective.",
+	"Easy to understand, cost effective fee structure. ",
 ];
 
 const WhyChooseUs: React.FC = () => {

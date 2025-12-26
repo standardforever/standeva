@@ -85,8 +85,8 @@ const SoftwareConnect: FC = () => {
 						software connectivity
 					</div>
 					<h2 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-						automate your teams processes on all major software
-						solutions
+						automate how your team works, not where they work. we
+						plug into the software you already use.
 					</h2>
 					<p className="mx-auto max-w-3xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
 						mimic any human processing on any software solution

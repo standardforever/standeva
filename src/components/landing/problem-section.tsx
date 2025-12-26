@@ -17,8 +17,8 @@ const items = [
 	{
 		id: "sales-plus",
 		icon: ShoppingBag,
-		title: "sales plus",
-		body: "Finding, sourcing, and processing orders is extremely manual and expensive, putting pressure on your profit margins.",
+		title: "sales & marketing",
+		body: "Sales and marketing teams are overloaded with manual lead handling and order processing, slowing response times and limiting revenue growth",
 	},
 ];
 
@@ -38,7 +38,7 @@ const ProblemSection: FC = () => {
 						the problem
 					</div>
 					<h2 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
-						need reduce time and cost processing digital tasks
+						too much time spent on admin tasks?
 					</h2>
 					<p className="mx-auto max-w-3xl text-sm text-slate-300 sm:text-[0.95rem] md:text-base">
 						We help your team get more time to do higher value tasks

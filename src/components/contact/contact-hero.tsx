@@ -12,7 +12,7 @@ const ContactHero = () => {
 			<div className="relative mx-auto max-w-6xl px-4 md:px-6">
 				<div className="flex flex-col gap-4">
 					<span className="inline-flex w-fit items-center gap-2 rounded-full border border-sky-400/40 bg-sky-500/10 px-4 py-1 text-xs font-semibold tracking-[0.24em] text-sky-100">
-						contact processzero
+						contact process zero
 					</span>
 					<h1 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
 						let&apos;s plan your next automated workflow.
@@ -55,10 +55,6 @@ const ContactHero = () => {
 							Strixton, Northamptonshire,
 							<br />
 							NN29 7PA
-						</p>
-						<p className="mt-3 text-xs text-slate-400">
-							Northamptonshire base for in-person sessions when
-							they&apos;re helpful.
 						</p>
 					</div>
 
