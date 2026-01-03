@@ -1,6 +1,6 @@
 import type { FC } from "react";
-import Image from "next/image";
-import { Aws, MetaAI, Microsoft } from "@lobehub/icons";
+// import Image from "next/image";
+// import { Aws, MetaAI, Microsoft } from "@lobehub/icons";
 
 const FounderMissionSection: FC = () => {
 	return (
@@ -8,8 +8,8 @@ const FounderMissionSection: FC = () => {
 			id="founder-mission"
 			className="relative overflow-hidden bg-black py-20 text-slate-50 sm:py-24 md:py-28">
 			<div className="pointer-events-none absolute inset-0">
-				<div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-950 to-black" />
-				<div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.35),transparent_60%),radial-gradient(circle_at_bottom_right,_rgba(16,185,129,0.24),transparent_55%)] opacity-80 mix-blend-screen" />
+				<div className="absolute inset-0 bg-linear-to-b from-slate-950 via-slate-950 to-black" />
+				<div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.35),transparent_60%),radial-gradient(circle_at_bottom_right,rgba(16,185,129,0.24),transparent_55%)] opacity-80 mix-blend-screen" />
 			</div>
 
 			<div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 md:px-6">
@@ -45,7 +45,7 @@ const FounderMissionSection: FC = () => {
 							adding risk or complexity.
 						</p>
 					</div>
-
+					{/*
 					<div className="flex flex-col items-center gap-8 md:items-end">
 						<div className="w-full max-w-sm space-y-6 text-right text-xs text-slate-300 sm:text-[0.8rem]">
 							<div>
@@ -104,7 +104,7 @@ const FounderMissionSection: FC = () => {
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>
