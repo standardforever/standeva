@@ -73,22 +73,20 @@ export default function CalendarModal({ isOpen, onClose }: CalendarModalProps) {
 							duration: 0.3,
 							ease: "easeOut",
 						}}
-						className="fixed inset-4 z-50 flex items-start justify-end md:inset-auto md:right-5 md:top-5 md:h-[700px] md:w-[500px]"
-					>
+						className="fixed inset-4 z-50 flex items-start justify-end md:inset-auto md:right-5 md:top-5 md:h-[700px] md:w-[500px]">
 						<div className="relative h-full w-full overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl shadow-blue-500/20">
 							{/* Close Button */}
 							<button
 								onClick={onClose}
 								className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-slate-400 transition-colors hover:bg-slate-700 hover:text-white"
-								aria-label="Close calendar"
-							>
+								aria-label="Close calendar">
 								<X size={20} />
 							</button>
 
 							{/* Calendar Iframe */}
 							<div className="h-full w-full pt-16 md:pt-0">
 								<iframe
-									src="https://zcal.co/standeva/15min?video=microsoft-teams"
+									src="https://zcal.co/i/2QPIJq_0"
 									className="h-full w-full"
 									frameBorder="0"
 									title="Book your 15-minute intro call"
@@ -96,7 +94,8 @@ export default function CalendarModal({ isOpen, onClose }: CalendarModalProps) {
 									loading="eager"
 								/>
 								<div className="border-t border-slate-800 bg-slate-950/80 px-4 py-3 text-center text-xs text-slate-400">
-									Bookings include a Microsoft Teams link in the invite.
+									Bookings include a Microsoft Teams link in
+									the invite.
 								</div>
 							</div>
 
@@ -107,11 +106,10 @@ export default function CalendarModal({ isOpen, onClose }: CalendarModalProps) {
 										Calendar requires JavaScript to load.
 									</p>
 									<a
-										href="https://zcal.co/standeva/15min?video=microsoft-teams"
+										href="https://zcal.co/i/2QPIJq_0"
 										target="_blank"
 										rel="noopener noreferrer"
-										className="rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 font-semibold text-white transition-colors hover:from-slate-800 hover:to-slate-800"
-									>
+										className="rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 font-semibold text-white transition-colors hover:from-slate-800 hover:to-slate-800">
 										Open Calendar in New Tab
 									</a>
 								</div>

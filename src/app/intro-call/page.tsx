@@ -55,8 +55,8 @@ export default function IntroCallPage() {
 								<p className="text-base leading-relaxed text-slate-300 sm:text-lg">
 									This team-led session uncovers where AI can
 									remove bottlenecks, reduce operating costs,
-									and unlock capacity no hard sell, just
-									clear recommendations.
+									and unlock capacity no hard sell, just clear
+									recommendations.
 								</p>
 
 								<div className="grid gap-3 sm:grid-cols-2">
@@ -79,7 +79,7 @@ export default function IntroCallPage() {
 								id="booking"
 								className="overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl shadow-blue-500/20">
 								<iframe
-									src="https://zcal.co/aiautomationteam/60min"
+									src="https://zcal.co/i/2QPIJq_0"
 									className="h-[500px] w-full lg:h-[600px]"
 									frameBorder="0"
 									title="Book your 60-minute discovery call"
